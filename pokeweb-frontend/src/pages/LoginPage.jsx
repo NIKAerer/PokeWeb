@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const API_URL = "http://127.0.0.1:8001/api";
+
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -10,7 +11,30 @@ export default function LoginPage() {
 
   const navigate = useNavigate();
 
-  const handleLogin = async () => { console.log("tentative de connexion :", email, password) };
+   useEffect(() => {
+    const token = localStorage.getItem("pokeweb_token");
+    if (token) {
+    
+      navigate("/profile");
+    }
+  }, []);
+
+  const handleLogin = async () => {
+     try{
+      const reponse = await axios.post(`${API_URL}/login`, {email, password});
+
+      const token = reponse.data.token;
+
+      localStorage.setItem("pokeweb_token", token)
+      localStorage.setItem("pokeweb_user_email", email)
+
+      navigate("/profile")
+      
+     } catch(error) {
+      console.log("erreur de connexion", error)
+     }
+
+  };
   const handleRegister = async () => { navigate("/register"); };
 
   return (

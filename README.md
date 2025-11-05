@@ -57,18 +57,35 @@ npm start
 💡 Structure du projet
 
 Pokeweb/
-├── pokeweb-backend/ → API Symfony 7 (Backend principal)
-│ ├── src/Entity/ → Entités Doctrine : User, Pokemon, PokemonUser
-│ ├── src/Command/ → Import CSV du Pokédex
-│ ├── public/pokemons.csv → Source des données Pokémon
-│ └── config/packages/ → Configs (Doctrine, JWT, CORS, etc.)
+├── pokeweb-backend/           → API Symfony 7 (backend principal)
+│   ├── src/Entity/            → Entités Doctrine : User, Pokemon, PokemonUser
+│   ├── src/Command/           → Commande d’import CSV du Pokédex
+│   ├── src/Controller/AuthController.php → Auth / JWT
+│   ├── public/pokemons.csv    → Données sources Pokémon
+│   └── config/packages/       → Configs (Doctrine, JWT, CORS, etc.)
 │
-├── pokeweb-frontend/ → Application React (interface du jeu)
-│ ├── src/pages/ → Pages : Login, Profile, etc.
-│ ├── src/App.js → Routage principal
-│ └── src/AuthPage.jsx → Prototype d’inscription / test
+├── pokeweb-frontend/          → Application React (interface du jeu)
+│   ├── src/pages/             → Pages : Login, Register, Profile
+│   ├── src/App.js             → Routage principal
+│   └── src/components/        → Composants à venir (UI, 3D, etc.)
 │
-└── docs/ → Ressources, schémas UML et documentation à venir
+└── docs/                      → Documentation, schémas, UML
+
+🔒 Authentification actuelle
+
+Inscription (/api/register) → crée un compte utilisateur
+
+Connexion (/api/login) → renvoie un token JWT signé
+
+Frontend :
+
+Stocke le token + email dans localStorage
+
+Redirige vers /profile après connexion ou inscription
+
+Vérifie automatiquement le token (redirige vers /login si absent)
+
+Bouton Se déconnecter supprime les données locales et retourne sur /login
 
 💻 Stack technique
 Technologie	Rôle

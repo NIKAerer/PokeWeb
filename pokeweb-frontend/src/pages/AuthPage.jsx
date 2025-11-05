@@ -13,9 +13,15 @@ export default function AuthPage() {
   const handleRegister = async () => {
     try {
       const response = await axios.post(`${API_URL}/register`, { email, password });
-      setMessage(response.data.message || "Inscription réussie !");
-      // Redirige vers la page de connexion après une courte pause
-      setTimeout(() => navigate("/login"), 1000);
+
+      const loginResponse = await axios.post(`${API_URL}/login`, {email, password})
+      const token = loginResponse.data.token;
+
+      localStorage.setItem("pokeweb_token", token)
+      localStorage.setItem("pokeweb_user_email", email)
+
+      navigate("/profile");
+
     } catch (error) {
       setMessage(error.response?.data?.error || "Erreur lors de l'inscription");
     }
