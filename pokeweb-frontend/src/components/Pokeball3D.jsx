@@ -9,8 +9,30 @@ function Pokeball() {
   const groupRef = useRef();
 
   useFrame((state, delta) => {
-     if (groupRef.current) groupRef.current.rotation.z += delta * 0.08; 
-  });
+  if (!groupRef.current) return;
+
+  const rotation = groupRef.current.rotation;
+
+  // vitesses et directions de base
+  if (!groupRef.current.directions) {
+    groupRef.current.directions = { x: 1, y: 1, z: 1 };
+  }
+
+  const dir = groupRef.current.directions;
+  const speed = 0.1; // vitesse globale
+  const maxRotation = Math.PI / 8; // ~22.5°
+  const minRotation = -Math.PI / 8;
+
+  // rotation sur chaque axe
+  rotation.x += delta * speed * dir.x;
+  rotation.y += delta * speed * dir.y;
+  rotation.z += delta * (speed / 1.5) * dir.z;
+
+  // inversion automatique quand on atteint les limites
+  if (rotation.x > maxRotation || rotation.x < minRotation) dir.x *= -1;
+  if (rotation.y > maxRotation || rotation.y < minRotation) dir.y *= -1;
+  if (rotation.z > maxRotation || rotation.z < minRotation) dir.z *= -1;
+});
 
   return (
     <group ref={groupRef} rotation={[0, 0, 0]} scale={1.8}>
