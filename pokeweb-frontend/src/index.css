@@ -11,9 +11,7 @@
   color-scheme: dark;
 }
 
-body {
-  @apply bg-poke-dark text-slate-100 min-h-screen font-rajdhani antialiased;
-}
+
 
 #root {
   @apply min-h-screen;

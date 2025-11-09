@@ -4,23 +4,25 @@ import AuthPage from "./pages/AuthPage";
 import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
 import HomePage from "./pages/HomePage";
+import GalaxyBackground from "./components/GalaxyBackground";
 
 
 function App() {
   return (
-    <Router>
-      <Routes>
-       {/* <Route path="/" element={<Navigate to="/login" />} />  à mettre quand acceuil sera pret */}
+    <div className="relative min-h-screen overflow-hidden">
+      <GalaxyBackground/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<AuthPage />} />
+          <Route path="/profile" element={<ProfilePage/>}/>
+          <Route path="/home" element={<HomePage/>}/>
 
-        
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<AuthPage />} />
-        <Route path="/profile" element={<ProfilePage/>}/>
-        <Route path="/home" element={<HomePage/>}/>
 
-
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
