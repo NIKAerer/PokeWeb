@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from "react";
 const GalaxyBackground = () => {
     const canvasRef = useRef(null);
 
-    const STAR_COUNT = 180;
+    const STAR_COUNT = 210;
 
     useEffect(() => {
     const canvas = canvasRef.current;
