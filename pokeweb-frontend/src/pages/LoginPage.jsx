@@ -17,7 +17,7 @@ export default function LoginPage() {
     
       navigate("/profile");
     }
-  }, []);
+  }, [navigate]);
 
   const handleLogin = async () => {
      try{

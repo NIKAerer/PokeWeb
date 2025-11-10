@@ -12,7 +12,7 @@ export default function AuthPage() {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post(`${API_URL}/register`, { email, password });
+      //const response = await axios.post(`${API_URL}/register`, { email, password });
 
       const loginResponse = await axios.post(`${API_URL}/login`, {email, password})
       const token = loginResponse.data.token;
