@@ -14,10 +14,10 @@ const CaptureSection = () => {
             {/* Bloc droit : texte descriptif */}
             <div className="flex flex-col items-start text-left w-full md:w-1/2 gap-6 mt-12 md:mt-0 md:pl-24">
                 <h2 className="text-4xl md:text-5xl font-orbitron text-white drop-shadow-lg">
-                    Capturer & collectionner
+                    Capture & Collectionne
                 </h2>
                 <p className="text-slate-300 text-lg font-rajdhani leading-relaxed">
-                    descriptoin je sais pas quoi dire zzzz
+                    Capture les Pokémon que tu veux et commence ton aventure.
                 </p>
             </div>
 
