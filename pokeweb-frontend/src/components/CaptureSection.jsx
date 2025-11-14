@@ -3,6 +3,7 @@ import React from "react";
 const CaptureSection = () => {
 
     return (
+        
         <section className="relative flex flex-col md:flex-row items-center justify-between min-h-[80vh] px-8 md:px-16">
            {/* Bloc gauche : images Pokémon */}
             <div className="w-full md:w-1/2 flex justify-center mt-12 md:mt-0">
@@ -17,7 +18,7 @@ const CaptureSection = () => {
                     Capture & Collectionne
                 </h2>
                 <p className="text-slate-300 text-lg font-rajdhani leading-relaxed">
-                    Capture les Pokémon que tu veux et commence ton aventure.
+                    Attrape tes Pokémon preferés parmi des centaines et commence ton aventure.
                 </p>
             </div>
 
