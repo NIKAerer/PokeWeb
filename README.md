@@ -30,6 +30,9 @@ cd PokeWeb/pokeweb-backend
 
 2️⃣ Installer les dépendances PHP
 
+npm install three@0.152.2 @react-three/fiber@8.13.6 @react-three/drei@9.56.5
+
+
 composer install
 
 Créer la base de données et appliquer les migrations :

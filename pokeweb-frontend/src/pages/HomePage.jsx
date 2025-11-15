@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "../components/HeroSection";
 import CaptureSection from "../components/CaptureSection";
 import EvolutionSection from "../components/EvolutionSection";
+import CombatSection from "../components/CombatSection";
 
 
 function HomePage() {
@@ -10,6 +11,7 @@ function HomePage() {
         <HeroSection/>
         <CaptureSection/>
         <EvolutionSection/>
+        <CombatSection/>
       </div>
     )
 }

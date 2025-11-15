@@ -11,15 +11,18 @@ const EvolutionSection = () => {
                     Entraîne & Evolue.
                 </h2>
                 <p className="text-slate-300 text-lg font-rajdhani leading-relaxed">
-                    Renforce et construis l’équipe qui te mènera au sommet.
+                    Entraîne tes Pokémon, fais-les évoluer et construis une équipe prête pour les combats.
                 </p>
             </div>
 
             {/* Bloc droit : image */}
             <div className="flex justify-center w-full md:w-[45%]">
-                <div className="w-[120%] md:w-[140%] h-[400px] bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center">
-                <p className="text-slate-400 text-sm">[Image Pokémon en attaque ici]</p>
-                </div>
+                <img
+                    src="/images/evoli.png" 
+                    alt="Pokémon en attaque"
+                    className="w-[120%] md:w-[140%] object-contain drop-shadow-[0_0_40px_rgba(255,125,0,0.45)]"
+                />
+
             </div>
         </section>
 
