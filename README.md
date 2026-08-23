@@ -1,25 +1,24 @@
-.
+🌐 Pokeweb — Jeu d’aventure, capture, survie et exploration
 
-🌐 Pokeweb
+Pokeweb est une application web qui combine gestion de dresseur, exploration, capture de créatures, survie légère et construction progressive d’une ville.
+Le joueur commence dans un petit campement vide entouré d’arbres, puis développe sa base, découvre des zones via téléportation et progresse à travers un système d’arènes et de créatures capturables.
 
-Pokeweb est une application web moderne inspirée de l’univers Pokémon.
-Conçu comme un jeu interactif et évolutif, il permet de créer ton dresseur, gérer ton équipe et explorer un Pokédex complet.
-L’objectif est de combiner une architecture professionnelle (Symfony + React) avec une expérience fluide, stylisée et immersive — entre application web et mini-jeu en ligne.
+L’objectif du projet est de créer une expérience fluide, immersive et moderne, soutenue par une architecture professionnelle (Symfony + React) et un rendu 3D soigné.
 
 🚀 Démarrage rapide
 🧱 Prérequis
 
-Assure-toi d’avoir installé :
+Avoir installé :
 
-🐘 PHP 8.3 ou supérieur
+PHP 8.3
 
-⚙️ Composer
+Composer
 
-⚛️ Node.js + npm
+Node.js + npm
 
-🗃️ SQLite (utilisé en base de développement)
+SQLite
 
-💡 (Optionnel) Symfony CLI pour un serveur local plus pratique
+(Optionnel) Symfony CLI
 
 ⚙️ Installation
 1️⃣ Cloner le projet
@@ -28,138 +27,204 @@ git clone https://github.com/NIKAerer/PokeWeb.git
 
 cd PokeWeb/pokeweb-backend
 
-2️⃣ Installer les dépendances PHP
+2️⃣ Installer les dépendances
 
 npm install three@0.152.2 @react-three/fiber@8.13.6 @react-three/drei@9.56.5
-
-
 composer install
 
-Créer la base de données et appliquer les migrations :
+Créer la base de données :
 php bin/console doctrine:database:create
+
+Lancer les migrations :
 php bin/console doctrine:migrations:migrate
 
 3️⃣ Importer le Pokédex
 
 php bin/console app:import-pokemons
 
-4️⃣ Lancer le serveur backend
+4️⃣ Lancer le backend
 
-Méthode recommandée (avec Symfony CLI) :
 symfony serve --no-tls
-
-Ou avec le serveur PHP natif :
+ou
 php -S 127.0.0.1:8001 -t public
 
-👉 Backend accessible sur : http://127.0.0.1:8001/api
+Backend disponible sur : http://127.0.0.1:8001/api
 
-5️⃣ Lancer le serveur frontend
+5️⃣ Lancer le frontend
 
 cd ../pokeweb-frontend
 npm install
 npm start
 
-👉 Frontend accessible sur : http://localhost:3000
+Frontend accessible sur : http://localhost:3000
 
 💡 Structure du projet
+
 Pokeweb/
-├── pokeweb-backend/              → API Symfony 7 (backend principal)
-│   ├── src/Entity/               → Entités Doctrine : User, Pokemon, PokemonUser
-│   ├── src/Command/              → Commande d’import CSV du Pokédex
-│   ├── src/Controller/AuthController.php → Auth / JWT
-│   ├── public/pokemons.csv       → Données sources Pokémon
-│   └── config/packages/          → Configs (Doctrine, JWT, CORS, etc.)
+├── pokeweb-backend/
+│ ├── src/Entity/
+│ ├── src/Command/
+│ ├── src/Controller/
+│ ├── public/pokemons.csv
+│ └── config/packages/
 │
-├── pokeweb-frontend/             → Application React (interface du jeu)
-│   ├── src/pages/                → Pages : Login, Register, Profile, Home
-│   ├── src/components/           → Composants : Pokeball3D, UI futuriste, etc.
-│   ├── src/App.js                → Routage principal
-│   ├── tailwind.config.js        → Configuration du thème et des couleurs
-│   └── postcss.config.js         → Config Tailwind / PostCSS
+├── pokeweb-frontend/
+│ ├── src/pages/
+│ ├── src/components/
+│ ├── src/game/
+│ ├── src/App.js
+│ ├── tailwind.config.js
+│ └── postcss.config.js
 │
-└── docs/                         → Documentation, schémas, UML
+└── docs/
 
-🔒 Authentification actuelle
+🔒 Authentification
+Backend
 
-Inscription → /api/register → crée un utilisateur et le sauvegarde
+Inscription : /api/register
 
-Connexion → /api/login → renvoie un token JWT signé
+Connexion : /api/login (JWT)
 
 Frontend
 
-Stocke le token (pokeweb_token) et l’email (pokeweb_user_email) dans le localStorage
+Token stocké dans localStorage
 
-Redirige automatiquement vers /profile après connexion / inscription
+Redirections automatiques selon l’état du token
 
-Vérifie la validité du token à chaque chargement
-
-Redirige vers /login si le token est manquant ou expiré
-
-Le bouton Se déconnecter supprime les données locales et retourne sur /login
+Déconnexion : suppression du token + retour login
 
 💻 Stack technique
-Technologie	Rôle
-🐘 Symfony 7	Backend principal
-🔌 API Platform	API REST structurée
-🔐 LexikJWTAuthenticationBundle	Authentification sécurisée JWT
-🌐 NelmioCORSBundle	Communication Front ↔ Back
-🧱 Doctrine ORM	Mapping objet-relationnel
-⚛️ React	Frontend dynamique
-💅 TailwindCSS	Design moderne Web3 / futuriste
-🧩 React Three Fiber + Drei	Rendu 3D (Pokéball, animations, scènes)
-🗃️ SQLite	Base de données légère pour le développement
+
+Symfony 7 : backend et API
+API Platform : endpoints structurés
+JWT : authentification
+Doctrine ORM : gestion des entités
+React : interface
+TailwindCSS : design moderne
+React Three Fiber : rendu 3D
+SQLite : base de développement
+
 🎨 Identité visuelle & Pokéball 3D
 
-Mise en place complète de TailwindCSS (palette Pokéball : rouge, bleu néon, noir profond).
+Palette rouge / bleu néon / noir
 
-Création du composant Pokeball3D.jsx (React Three Fiber) :
+Pokeball 3D réaliste
 
-Demi-sphère rouge (haut) et blanche (bas)
+Halo subtil
 
-Bande noire encastrée
+Rotation lente
 
-Bouton central bombé avec cerclage noir
+Éclairage studio
 
-Halo énergétique rouge / bleu subtil
+Intégrée à la page d’accueil immersive
 
-Éclairage studio doux (RectAreaLight + AmbientLight)
+🌲 Gameplay et nouveaux systèmes
+Ville principale — Version 0
 
-Rotation lente et fluide
+Le joueur commence dans une zone simple et naturelle :
 
-Rendu HD réaliste et fluide, prêt à être intégré à la page d’accueil immersive.
+Feu de camp éteint
 
-🗺️ Roadmap
-✅ Phase 1 – Base & Authentification
+Abri rudimentaire
 
-Backend Symfony + Frontend React
+Caisses vides
 
-Auth JWT complète
+Terrain herbeux entouré d’arbres
 
-Pages : Login / Register / Profile
+Chemin naturel menant vers l’extérieur
 
-🎨 Phase 2 – Style & Identité visuelle (en cours)
+Panneau de téléportation cassé (à réparer)
 
-Setup TailwindCSS
+Cette zone évoluera progressivement en une véritable base puis une ville complète.
 
-Pokéball 3D terminée
+Construction et progression
 
-Page Home immersive à venir (fond animé, titre, bouton “Commencer l’aventure”)
+Évolution prévue du camp vers une ville :
 
-🐾 Phase 3 – Pokédex & Gameplay de base
+Niveau 1 :
 
-Endpoint /api/pokemons
+Feu utilisable
 
-Page /pokedex : affichage du Pokédex complet
+Petit atelier
 
-Système de capture → entité PokemonUser
+Coffre
 
-⚔️ Phase 4 – Combat, progression & monde Pokémon
+Réparation du panneau de téléportation
 
-Combat tour par tour (PvE)
+Niveau 2 :
 
-Système d’XP, évolutions, badges
+Maison
 
-Carte du monde (React + Three.js)
+Atelier avancé
+
+Jardin
+
+Enclos pour créatures
+
+Niveau 3 :
+
+Centre de soins
+
+Boutique
+
+Quartiers des dresseurs
+
+Portail de téléportation amélioré
+
+Zone d’entraînement
+
+Zones téléportées
+
+Le panneau permet d’accéder à plusieurs cartes distinctes :
+
+Zones de collecte :
+
+Forêt
+
+Prairie
+
+Rivière
+
+Montagne
+
+Marais
+
+Zones d’aventure :
+
+Biomes à thème
+
+Donjons
+
+Boss de zone
+
+Arènes :
+
+Maps indépendantes dédiées au combat
+
+Progression par badges
+
+Cette structure rend le développement plus simple et permet d’ajouter du contenu progressivement.
+
+📚 Roadmap
+Phase 1 — Base
+
+Backend, frontend, auth, pages Login/Register/Profile
+
+Phase 2 — Identité visuelle (en cours)
+
+UI, Pokeball 3D, page d’accueil
+
+Phase 3 — Pokédex et capture
+
+Listing des créatures, stockage joueur
+
+Phase 4 — Combat et progression
+
+Système de combat tour par tour, XP, évolutions, badges
+
+Phase 5 — Monde et survie
+
+Ville vide, construction, collecte, panneaux de téléportation, maps séparées
 
 📍 Backend : http://127.0.0.1:8001/api
 
