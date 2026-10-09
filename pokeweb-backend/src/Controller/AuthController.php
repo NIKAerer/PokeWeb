@@ -35,8 +35,16 @@ class AuthController extends AbstractController
             );
         }
 
+        if ($userRepository->findOneBy(['username' => $request->username]) !== null) {
+            return $this->json(
+                ['error' => 'Ce pseudo est déjà pris.'],
+                Response::HTTP_CONFLICT,
+            );
+        }
+
         $user = new User();
         $user->setEmail($request->email);
+        $user->setUsername($request->username);
         $user->setPassword($passwordHasher->hashPassword($user, $request->password));
 
         $em->persist($user);

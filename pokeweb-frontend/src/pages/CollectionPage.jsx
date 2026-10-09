@@ -34,11 +34,7 @@ export default function CollectionPage() {
 
   return (
     <main className="relative z-10 mx-auto max-w-7xl px-4 py-10 sm:px-8">
-      <Link to="/profile" className="font-rajdhani text-slate-400 hover:text-white">
-        ← Profil
-      </Link>
-
-      <header className="mt-4 mb-8">
+      <header className="mb-8">
         <h1 className="font-orbitron text-4xl text-white md:text-5xl">Ma collection</h1>
 
         {collection && (

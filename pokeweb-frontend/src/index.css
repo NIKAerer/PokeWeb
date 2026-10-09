@@ -20,3 +20,10 @@ body {
 #root {
   @apply min-h-screen;
 }
+
+/* Hauteur de l'écran moins la barre de navigation (4rem) */
+@layer utilities {
+  .min-h-page {
+    min-height: calc(100dvh - 4rem);
+  }
+}

@@ -116,11 +116,8 @@ export default function ExplorePage() {
   const canSearch = state?.encountersLeftToday > 0;
 
   return (
-    <main className="relative z-10 mx-auto flex min-h-screen max-w-3xl flex-col px-4 py-10 sm:px-8">
-      <div className="flex items-center justify-between font-rajdhani text-slate-400">
-        <Link to="/profile" className="hover:text-white">
-          ← Profil
-        </Link>
+    <main className="relative z-10 mx-auto flex min-h-page max-w-3xl flex-col px-4 py-10 sm:px-8">
+      <div className="flex min-h-6 items-center justify-end font-rajdhani text-slate-400">
         {state && (
           <span>
             Rencontres restantes aujourd'hui :{" "}

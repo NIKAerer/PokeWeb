@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom";
 import api from "../api/client";
 import PokemonCard from "../components/PokemonCard";
 import { GENERATIONS, TYPES, normalize } from "../utils/pokemon";
@@ -44,11 +43,7 @@ export default function PokedexPage() {
 
   return (
     <main className="relative z-10 mx-auto max-w-7xl px-4 py-10 sm:px-8">
-      <Link to="/home" className="font-rajdhani text-slate-400 hover:text-white">
-        ← Accueil
-      </Link>
-
-      <header className="mt-4 mb-8">
+      <header className="mb-8">
         <h1 className="font-orbitron text-4xl text-white md:text-5xl">Pokédex</h1>
         <p className="mt-2 font-rajdhani text-lg text-slate-400">
           Les 721 Pokémon des générations 1 à 6.

@@ -104,7 +104,7 @@ function Pokeball() {
 
 function Pokeball3D() {
   return (
-    <div className="w-full h-[600px]">
+    <div className="h-[340px] w-full md:h-[600px]">
       <Canvas
         camera={{ position: [0, 0, 3]}}
         dpr={[1, 2]}
