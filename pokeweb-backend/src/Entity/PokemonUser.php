@@ -5,6 +5,11 @@ namespace App\Entity;
 use App\Repository\PokemonUserRepository;
 use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * Un Pokémon capturé par un joueur (une ligne de sa collection).
+ *
+ * Un joueur peut capturer plusieurs fois la même espèce : chaque capture est une ligne.
+ */
 #[ORM\Entity(repositoryClass: PokemonUserRepository::class)]
 class PokemonUser
 {
@@ -13,29 +18,40 @@ class PokemonUser
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false, onDelete: 'CASCADE')]
+    private User $user;
+
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    private Pokemon $pokemon;
+
+    #[ORM\Column(length: 30, nullable: true)]
     private ?string $nickname = null;
 
     #[ORM\Column]
-    private ?int $level = null;
+    private \DateTimeImmutable $capturedAt;
 
-    #[ORM\Column]
-    private ?int $xp = null;
-
-    #[ORM\Column]
-    private ?\DateTimeImmutable $captured_at = null;
-
-    #[ORM\ManyToOne]
-    #[ORM\JoinColumn(nullable: false)]
-    private ?User $user = null;
-
-    #[ORM\ManyToOne]
-    #[ORM\JoinColumn(nullable: false)]
-    private ?Pokemon $pokemon = null;
+    public function __construct(User $user, Pokemon $pokemon)
+    {
+        $this->user = $user;
+        $this->pokemon = $pokemon;
+        $this->capturedAt = new \DateTimeImmutable();
+    }
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getUser(): User
+    {
+        return $this->user;
+    }
+
+    public function getPokemon(): Pokemon
+    {
+        return $this->pokemon;
     }
 
     public function getNickname(): ?string
@@ -50,63 +66,8 @@ class PokemonUser
         return $this;
     }
 
-    public function getLevel(): ?int
+    public function getCapturedAt(): \DateTimeImmutable
     {
-        return $this->level;
-    }
-
-    public function setLevel(int $level): static
-    {
-        $this->level = $level;
-
-        return $this;
-    }
-
-    public function getXp(): ?int
-    {
-        return $this->xp;
-    }
-
-    public function setXp(int $xp): static
-    {
-        $this->xp = $xp;
-
-        return $this;
-    }
-
-    public function getCapturedAt(): ?\DateTimeImmutable
-    {
-        return $this->captured_at;
-    }
-
-    public function setCapturedAt(\DateTimeImmutable $captured_at): static
-    {
-        $this->captured_at = $captured_at;
-
-        return $this;
-    }
-
-    public function getUser(): ?User
-    {
-        return $this->user;
-    }
-
-    public function setUser(?User $user): static
-    {
-        $this->user = $user;
-
-        return $this;
-    }
-
-    public function getPokemon(): ?Pokemon
-    {
-        return $this->pokemon;
-    }
-
-    public function setPokemon(?Pokemon $pokemon): static
-    {
-        $this->pokemon = $pokemon;
-
-        return $this;
+        return $this->capturedAt;
     }
 }
