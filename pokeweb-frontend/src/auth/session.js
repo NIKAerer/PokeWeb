@@ -18,7 +18,8 @@ export function clearToken() {
 function isExpired(token) {
   try {
     const payload = token.split(".")[1].replace(/-/g, "+").replace(/_/g, "/");
-    return JSON.parse(atob(payload)).exp * 1000 < Date.now();
+    const { exp } = JSON.parse(atob(payload));
+    return typeof exp !== "number" || exp * 1000 < Date.now();
   } catch {
     return true; // token illisible : on le considère comme expiré
   }

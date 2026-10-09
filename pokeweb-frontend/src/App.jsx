@@ -16,7 +16,8 @@ function App() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <GalaxyBackground />
-      <Router>
+      {/* "future" active déjà le comportement de React Router v7 (et évite ses avertissements) */}
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Navbar />
         {/* pt-16 : on laisse la place de la barre de navigation fixe */}
         <div className="pt-16">
