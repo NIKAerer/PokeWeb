@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import api from "../api/client";
 import PokemonCard from "../components/PokemonCard";
 import { GENERATIONS, TYPES, normalize } from "../utils/pokemon";
+import Loading from "../components/Loading";
 
 const selectStyle =
   "rounded-xl border border-slate-700 bg-slate-900/80 px-4 py-3 font-rajdhani text-slate-200 outline-none transition focus:border-poke-red focus:ring-2 focus:ring-poke-red/60";
@@ -93,7 +94,7 @@ export default function PokedexPage() {
         </label>
       </div>
 
-      {loading && <p className="text-center font-rajdhani text-slate-400">Chargement du Pokédex…</p>}
+      {loading && <Loading text="Chargement du Pokédex…" />}
 
       {error && <p className="text-center font-rajdhani text-red-400">{error}</p>}
 

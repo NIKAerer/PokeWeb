@@ -4,6 +4,7 @@ import api from "../api/client";
 import StatBar from "../components/StatBar";
 import TypeBadge from "../components/TypeBadge";
 import { STATS, TYPES, artworkUrl, formatNumber } from "../utils/pokemon";
+import Loading from "../components/Loading";
 
 const FIRST_ID = 1;
 const LAST_ID = 721;
@@ -45,7 +46,7 @@ export default function PokemonDetailPage() {
   if (!pokemon) {
     return (
       <main className="relative z-10 flex min-h-page items-center justify-center">
-        <p className="font-rajdhani text-slate-400">Chargement…</p>
+        <Loading />
       </main>
     );
   }
