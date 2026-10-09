@@ -6,7 +6,7 @@ Jeu web de collection Pokémon : explore les hautes herbes, affronte des Pokémo
 
 Projet personnel réalisé pour mon portfolio (BTS SIO SLAM), avec une **API Symfony** et une **interface React**.
 
-**Démo en ligne :** _le lien sera ajouté ici après la mise en ligne._
+**Démo en ligne :** https://poke-web-umber.vercel.app (API : https://pokeweb-api.onrender.com/api)
 **Compte de démo :** `demo@pokeweb.fr` / `pokeweb-demo` (ou le bouton « Essayer avec le compte de démo » sur la page de connexion).
 
 ![Un combat puis une capture](docs/screenshots/combat.gif)
