@@ -39,7 +39,7 @@ export default function RegisterPage() {
         password,
       });
 
-      // On sauvegarde le token
+      // L'API connecte directement le joueur en renvoyant un token
       const token = response.data.token;
 
       localStorage.setItem("pokeweb_token", token);
@@ -47,8 +47,11 @@ export default function RegisterPage() {
 
       navigate("/profile"); // Tu vas créer ton personnage ici
     } catch (error) {
-      console.error("Erreur :", error);
-      setErrorMessage("Impossible de créer le compte.");
+      // L'API renvoie "error" (email déjà pris) ou "violations" (champ invalide)
+      const data = error.response?.data;
+      setErrorMessage(
+        data?.error ?? data?.violations?.[0]?.title ?? "Impossible de créer le compte."
+      );
     } finally {
       setLoading(false);
     }

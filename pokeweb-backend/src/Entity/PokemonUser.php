@@ -25,11 +25,11 @@ class PokemonUser
     #[ORM\Column]
     private ?\DateTimeImmutable $captured_at = null;
 
-    #[ORM\ManyToOne(inversedBy: 'pokemonUsers')]
+    #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
     private ?User $user = null;
 
-    #[ORM\ManyToOne(inversedBy: 'pokemonUsers')]
+    #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
     private ?Pokemon $pokemon = null;
 
