@@ -1,44 +1,40 @@
 import { lazy, Suspense } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { isLoggedIn } from "../auth/session";
 
 // La Pokéball 3D (three.js) est lourde : on la charge à part pour afficher la page plus vite.
 const Pokeball3D = lazy(() => import("./Pokeball3D"));
 
-const HeroSection = () => {
+export default function HeroSection() {
+  // Un joueur déjà connecté part directement explorer
+  const startPath = isLoggedIn() ? "/explorer" : "/register";
 
-    const navigate = useNavigate();
-
-    return (
-        
-    <section className="relative flex flex-col md:flex-row items-center justify-between min-h-screen px-8 md:px-16">
-      <div className="flex flex-col items-center justify-center text-center gap-8 z-10  scale-125 md:scale-150 translate-x-[35%]">
-        <h1 className="text-5xl md:text-7xl font-orbitron text-white drop-shadow-lg">
-          POKEWEB
-        </h1>
-        <button
-          className="px-8 py-4 rounded-xl bg-[#ba181b] text-white shadow-[0_0_20px_#ef4444] hover:bg-[#a4161a] hover:shadow-[0_0_35px_#3b82f6] transition-all translate-x-[-4%]"
-          onClick={() => navigate("/login")}
-        >
-          Commencer l’aventure
-        </button>
-        <button
-          className="px-8 py-3 rounded-xl border border-slate-500 text-slate-200 hover:border-poke-blue hover:text-white hover:shadow-[0_0_25px_#3b82f6] transition-all translate-x-[-4%] -mt-4"
-          onClick={() => navigate("/pokedex")}
-        >
-          Explorer le Pokédex
-        </button>
+  return (
+    <section className="relative mx-auto grid min-h-page max-w-7xl items-center gap-6 px-6 py-10 md:grid-cols-2 md:px-16">
+      <div className="z-10 flex flex-col items-center gap-6 text-center md:items-start md:text-left">
+        <h1 className="font-orbitron text-5xl text-white drop-shadow-lg sm:text-6xl lg:text-8xl">POKEWEB</h1>
+        <p className="max-w-md font-rajdhani text-xl leading-relaxed text-slate-300">
+          Pars dans les hautes herbes, affronte des Pokémon sauvages et capture-les pour compléter ton Pokédex.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4 md:justify-start">
+          <Link
+            to={startPath}
+            className="rounded-xl bg-[#ba181b] px-8 py-4 font-rajdhani text-lg font-semibold text-white shadow-[0_0_20px_#ef4444] transition-all hover:bg-[#a4161a] hover:shadow-[0_0_35px_#3b82f6]"
+          >
+            Commencer l'aventure
+          </Link>
+          <Link
+            to="/pokedex"
+            className="rounded-xl border border-slate-500 px-8 py-4 font-rajdhani text-lg font-semibold text-slate-200 transition-all hover:border-poke-blue hover:text-white hover:shadow-[0_0_25px_#3b82f6]"
+          >
+            Explorer le Pokédex
+          </Link>
+        </div>
       </div>
 
-
-      {/* Bloc droit : Pokéball */}
-      <div className="w-full md:w-1/2 flex justify-center mt-12 md:mt-0">
-        <Suspense fallback={<div className="h-[600px]" />}>
-          <Pokeball3D />
-        </Suspense>
-      </div>
+      <Suspense fallback={<div className="h-[340px] md:h-[600px]" />}>
+        <Pokeball3D />
+      </Suspense>
     </section>
   );
-
 }
-
-export default HeroSection;

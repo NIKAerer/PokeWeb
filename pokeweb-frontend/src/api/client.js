@@ -1,4 +1,5 @@
 import axios from "axios";
+import { clearToken, getToken } from "../auth/session";
 
 // Client HTTP partagé par toutes les pages.
 // L'URL de l'API vient de VITE_API_URL (voir .env.example) pour pouvoir
@@ -10,11 +11,25 @@ const api = axios.create({
 
 // Ajoute automatiquement le token JWT à chaque requête si le joueur est connecté.
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem("pokeweb_token");
+  const token = getToken();
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
   return config;
 });
+
+// Si l'API répond 401 alors qu'on envoyait un token, c'est qu'il a expiré :
+// on déconnecte le joueur et on le renvoie vers la page de connexion.
+// (Sur /login, un 401 veut seulement dire "mauvais mot de passe".)
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401 && getToken() && error.config.url !== "/login") {
+      clearToken();
+      window.location.assign("/login?expired=1");
+    }
+    return Promise.reject(error);
+  }
+);
 
 export default api;

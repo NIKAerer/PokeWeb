@@ -17,6 +17,11 @@ final class RegisterRequest
         #[Assert\Email(message: "L'adresse email n'est pas valide.")]
         public readonly string $email = '',
 
+        #[Assert\NotBlank(message: 'Le pseudo est obligatoire.')]
+        #[Assert\Length(min: 3, max: 20, minMessage: 'Le pseudo doit contenir au moins {{ limit }} caractères.', maxMessage: 'Le pseudo ne peut pas dépasser {{ limit }} caractères.')]
+        #[Assert\Regex('/^[\p{L}0-9_-]+$/u', message: 'Le pseudo ne peut contenir que des lettres, des chiffres, - et _.')]
+        public readonly string $username = '',
+
         #[Assert\NotBlank(message: 'Le mot de passe est obligatoire.')]
         #[Assert\Length(min: 8, minMessage: 'Le mot de passe doit contenir au moins {{ limit }} caractères.')]
         public readonly string $password = '',

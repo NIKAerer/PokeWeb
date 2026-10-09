@@ -33,7 +33,7 @@ export default function PokemonDetailPage() {
 
   if (error) {
     return (
-      <main className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-6 px-4">
+      <main className="relative z-10 flex min-h-page flex-col items-center justify-center gap-6 px-4">
         <p className="font-rajdhani text-xl text-red-400">{error}</p>
         <Link to="/pokedex" className="font-rajdhani text-slate-300 hover:text-white">
           ← Retour au Pokédex
@@ -44,7 +44,7 @@ export default function PokemonDetailPage() {
 
   if (!pokemon) {
     return (
-      <main className="relative z-10 flex min-h-screen items-center justify-center">
+      <main className="relative z-10 flex min-h-page items-center justify-center">
         <p className="font-rajdhani text-slate-400">Chargement…</p>
       </main>
     );
@@ -58,7 +58,7 @@ export default function PokemonDetailPage() {
     <main className="relative z-10 mx-auto max-w-5xl px-4 py-10 sm:px-8">
       <div className="flex items-center justify-between font-rajdhani text-slate-400">
         <Link to="/pokedex" className="hover:text-white">
-          ← Pokédex
+          ← Tout le Pokédex
         </Link>
         <div className="flex gap-6">
           {previousId && (
