@@ -66,11 +66,15 @@ Backend disponible sur : http://127.0.0.1:8001/api
 
 5️⃣ Lancer le frontend
 
+```bash
 cd ../pokeweb-frontend
 npm install
-npm start
+npm run dev
+```
 
 Frontend accessible sur : http://localhost:3000
+
+Pour utiliser une autre URL d'API, copier `.env.example` en `.env.local` et modifier `VITE_API_URL`.
 
 💡 Structure du projet
 
@@ -113,7 +117,7 @@ Symfony 7 : backend et API
 API Platform : endpoints structurés
 JWT : authentification
 Doctrine ORM : gestion des entités
-React : interface
+React + Vite : interface
 TailwindCSS : design moderne
 React Three Fiber : rendu 3D
 SQLite : base de développement

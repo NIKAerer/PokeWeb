@@ -1,9 +1,8 @@
-import React from "react";
-import Pokeball3D from "./Pokeball3D";
+import { lazy, Suspense } from "react";
 import { useNavigate } from "react-router-dom";
 
-
-
+// La Pokéball 3D (three.js) est lourde : on la charge à part pour afficher la page plus vite.
+const Pokeball3D = lazy(() => import("./Pokeball3D"));
 
 const HeroSection = () => {
 
@@ -27,7 +26,9 @@ const HeroSection = () => {
 
       {/* Bloc droit : Pokéball */}
       <div className="w-full md:w-1/2 flex justify-center mt-12 md:mt-0">
-        <Pokeball3D />
+        <Suspense fallback={<div className="h-[600px]" />}>
+          <Pokeball3D />
+        </Suspense>
       </div>
     </section>
   );

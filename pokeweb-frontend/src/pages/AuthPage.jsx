@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
-import GalaxyBackground from "../components/GalaxyBackground";
-
-const API_URL = "http://127.0.0.1:8001/api";
+import api from "../api/client";
 
 export default function RegisterPage() {
   const [email, setEmail] = useState("");
@@ -34,7 +31,7 @@ export default function RegisterPage() {
     setLoading(true);
 
     try {
-      const response = await axios.post(`${API_URL}/register`, {
+      const response = await api.post("/register", {
         email,
         password,
       });
@@ -59,8 +56,6 @@ export default function RegisterPage() {
 
   return (
     <>
-      <GalaxyBackground />
-
       <div className="relative z-10 min-h-screen flex items-center justify-center px-4">
         <div
           className="
