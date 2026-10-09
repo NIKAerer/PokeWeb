@@ -1,0 +1,722 @@
+numero;nom;nom_anglais;categorie;type1;type2;pv;attaque;defense;attaque_speciale;defense_speciale;vitesse;generation;legendaire;description
+1;Bulbizarre;Bulbasaur;Pokémon Graine;grass;poison;45;49;49;65;65;45;1;0;Quand il est jeune, il absorbe les nutriments conservés dans son dos pour grandir et se développer.
+2;Herbizarre;Ivysaur;Pokémon Graine;grass;poison;60;62;63;80;80;60;1;0;La lumière du soleil le rend plus fort et vigoureux. Le bulbe sur son dos grossit en conséquence.
+3;Florizarre;Venusaur;Pokémon Graine;grass;poison;80;82;83;100;100;80;1;0;Une douce senteur émane de sa plante. Cette fragrance calme tous ceux qui sont engagés dans un combat.
+4;Salamèche;Charmander;Pokémon Lézard;fire;;39;52;43;60;50;65;1;0;Depuis sa naissance, une petite flamme brûle au bout de sa queue. Si cette flamme s’éteint, la vie de ce Pokémon s’éteindra elle aussi.
+5;Reptincel;Charmeleon;Pokémon Flamme;fire;;58;64;58;80;65;80;1;0;S’il s’excite pendant un combat, il crache de grandes flammes, brûlant tout ce qui se trouve aux alentours.
+6;Dracaufeu;Charizard;Pokémon Flamme;fire;flying;78;84;78;109;85;100;1;0;Ses ailes lui permettent de voler à plus de 1 400 m d’altitude. Ce Pokémon crache du feu à des températures très élevées.
+7;Carapuce;Squirtle;Pokémon Minitortue;water;;44;48;65;50;64;43;1;0;S’il se sent menacé, il rétracte ses pattes dans sa carapace pour se protéger et crache de l’eau.
+8;Carabaffe;Wartortle;Pokémon Tortue;water;;59;63;80;65;80;58;1;0;Il se sert habilement de sa queue et de ses oreilles touffues pour garder son équilibre sous l’eau.
+9;Tortank;Blastoise;Pokémon Carapace;water;;79;83;100;85;105;78;1;0;Les canons sur sa carapace tirent des jets d’eau capables de percer même de l’acier trempé.
+10;Chenipan;Caterpie;Pokémon Ver;bug;;45;30;35;20;20;45;1;0;Ses petites pattes munies de ventouses lui permettent de monter les pentes et de grimper aux murs sans se fatiguer.
+11;Chrysacier;Metapod;Pokémon Cocon;bug;;50;20;55;25;25;30;1;0;Bien que son corps soit entouré d’une carapace solide, l’intérieur est si mou qu’il ne résisterait pas à une attaque violente.
+12;Papilusion;Butterfree;Pokémon Papillon;bug;flying;60;45;50;90;80;70;1;0;Il ramasse du nectar chaque jour et l’agglutine sur les poils de ses pattes pour le transporter jusqu’à son nid.
+13;Aspicot;Weedle;Pokémon Insectopic;bug;poison;40;35;30;20;20;50;1;0;L’aiguillon sur son front est très pointu. Il se cache dans les bois et les hautes herbes, où il se gave de feuilles.
+14;Coconfort;Kakuna;Pokémon Cocon;bug;poison;45;25;50;25;25;35;1;0;Il peut à peine bouger. Quand il est menacé, il sort parfois son aiguillon pour empoisonner ses ennemis.
+15;Dardargnan;Beedrill;Pokémon Guêpoison;bug;poison;65;90;40;45;80;75;1;0;Il se sert de ses trois aiguillons empoisonnés situés sur les pattes avant et l’abdomen pour attaquer sans relâche ses adversaires.
+16;Roucool;Pidgey;Pokémon Minoiseau;normal;flying;40;45;40;35;35;56;1;0;De nature très docile, il préfère projeter du sable pour se défendre plutôt que contre-attaquer.
+17;Roucoups;Pidgeotto;Pokémon Oiseau;normal;flying;63;60;55;50;50;71;1;0;Ce Pokémon est très endurant. Il survole en permanence son territoire pour chasser.
+18;Roucarnage;Pidgeot;Pokémon Oiseau;normal;flying;83;80;75;70;70;101;1;0;Ce Pokémon vole à Mach 2 quand il chasse. Ses grandes serres sont des armes redoutables.
+19;Rattata;Rattata;Pokémon Souris;normal;;30;56;35;25;35;72;1;0;Il peut ronger n’importe quoi avec ses deux dents. Quand on en voit un, il y en a certainement 40 dans le coin.
+20;Rattatac;Raticate;Pokémon Souris;normal;;55;81;60;50;70;97;1;0;Ses pattes arrière sont palmées. Il peut donc poursuivre sa proie dans les cours d’eau et les rivières.
+21;Piafabec;Spearow;Pokémon Minoiseau;normal;flying;40;60;30;31;31;70;1;0;Il est incapable de voler à haute altitude. Il se déplace très vite pour protéger son territoire.
+22;Rapasdepic;Fearow;Pokémon Bec-Oiseau;normal;flying;65;90;65;61;61;100;1;0;Un Pokémon très ancien. S’il perçoit un danger, il fuit instantanément à haute altitude.
+23;Abo;Ekans;Pokémon Serpent;poison;;35;60;44;40;54;55;1;0;Plus il est âgé, plus son corps est long. La nuit, il s’enroule autour de branches d’arbres pour se reposer.
+24;Arbok;Arbok;Pokémon Cobra;poison;;60;85;69;65;79;80;1;0;Des études ont révélé que les marques effrayantes de son corps pouvaient former six motifs différents.
+25;Pikachu;Pikachu;Pokémon Souris;electric;;35;55;40;50;50;90;1;0;Les Pikachu se disent bonjour en se frottant la queue et en y faisant passer du courant électrique.
+26;Raichu;Raichu;Pokémon Souris;electric;;60;90;55;90;80;110;1;0;Si ses joues sont à court d’énergie, il lève la queue et capte l’électricité contenue dans l’atmosphère.
+27;Sabelette;Sandshrew;Pokémon Souris;ground;;50;75;85;20;30;40;1;0;Il creuse le sol pour construire sa tanière. Rien n’arrête ses griffes acérées, pas même la roche la plus solide.
+28;Sablaireau;Sandslash;Pokémon Souris;ground;;75;100;110;45;55;65;1;0;Il grimpe aux arbres grâce à ses griffes acérées et fait tomber des Baies pour les Sabelette qui attendent au sol.
+29;Nidoran♀;Nidoran♀;Pokémon Vénépic;poison;;55;47;52;40;40;41;1;0;Ce Pokémon se nourrit de Baies en les ouvrant avec ses incisives. Le bout de sa corne est plus arrondi que celui du mâle.
+30;Nidorina;Nidorina;Pokémon Vénépic;poison;;70;62;67;55;55;56;1;0;Si un danger menace le groupe, ces Pokémon se réunissent et l’affrontent en émettant des ultrasons en chœur.
+31;Nidoqueen;Nidoqueen;Pokémon Perceur;poison;ground;90;92;87;75;85;76;1;0;Ce Pokémon calme les petits de son espèce en les plaçant entre ses épines dorsales. Dans ce cas, elles ne libèrent pas de poison.
+32;Nidoran♂;Nidoran♂;Pokémon Vénépic;poison;;46;57;40;40;40;50;1;0;Malgré sa petite taille, il est très téméraire. Afin de protéger sa compagne, il est prêt à se battre et à risquer sa vie.
+33;Nidorino;Nidorino;Pokémon Vénépic;poison;;61;72;57;55;55;65;1;0;D’un naturel nerveux, il est prompt à se battre. Lorsqu’il a une montée d’adrénaline, la concentration de son poison augmente.
+34;Nidoking;Nidoking;Pokémon Perceur;poison;ground;81;102;77;85;75;85;1;0;Très fier de sa force, il se bat vigoureusement à l’aide de sa queue robuste et de sa corne capable de briser le diamant.
+35;Mélofée;Clefairy;Pokémon Fée;fairy;;70;45;48;60;65;35;1;0;Son comportement et son cri adorables font de lui un Pokémon très populaire. Malheureusement, il est difficile d’en croiser un spécimen.
+36;Mélodelfe;Clefable;Pokémon Fée;fairy;;95;70;73;95;90;60;1;0;Capable d’entendre une aiguille tomber à plus d’un kilomètre, ce Pokémon préfère les endroits calmes et isolés.
+37;Goupix;Vulpix;Pokémon Renard;fire;;38;41;40;50;65;65;1;0;Avec l’âge, la fourrure de ses six queues devient de plus en plus belle et soyeuse. Elle est chaude au toucher.
+38;Feunard;Ninetales;Pokémon Renard;fire;;73;76;75;81;100;100;1;0;Il est très intelligent et rancunier. Quiconque attrape une de ses queues se fera maudire pour 1 000 ans.
+39;Rondoudou;Jigglypuff;Pokémon Bouboule;normal;fairy;115;45;20;45;25;20;1;0;Il module librement la longueur d’onde de sa voix pour chanter une étrange mélodie qui endort à tous les coups celui qui l’écoute.
+40;Grodoudou;Wigglytuff;Pokémon Bouboule;normal;fairy;140;70;45;85;50;45;1;0;Sa fourrure soyeuse fait sa fierté. La touffe sur son front est si douce que la caresser donne l’impression d’être sur un petit nuage.
+41;Nosferapti;Zubat;Pokémon Chovsouris;poison;flying;40;45;35;30;40;55;1;0;Ils vivent dans les grottes où la lumière du jour ne perce jamais. Le matin, ils se blottissent les uns contre les autres pour se réchauffer et dormir.
+42;Nosferalto;Golbat;Pokémon Chovsouris;poison;flying;75;80;70;65;75;90;1;0;Il se déplace habilement sur ses petites pattes, s’approche silencieusement de sa proie endormie, et lui suce le sang à l’aide de ses crocs.
+43;Mystherbe;Oddish;Pokémon Racine;grass;poison;45;50;55;75;65;30;1;0;Pendant la journée, il reste en sous-sol et évite le soleil. Il grandit en se baignant au clair de lune.
+44;Ortide;Gloom;Pokémon Racine;grass;poison;60;65;70;85;75;40;1;0;Ce qui semble être sa bave est en fait du nectar très collant. Si on le touche, il est très difficile de s’en dépêtrer.
+45;Rafflesia;Vileplume;Pokémon Fleur;grass;poison;75;80;85;110;90;50;1;0;Plus ses pétales sont grands, plus il produit de pollen toxique. Toutefois, le poids de sa tête le fatigue.
+46;Paras;Paras;Pokémon Champignon;bug;grass;35;70;55;45;55;25;1;0;Il s’enfouit pour ronger des racines, mais ce sont les champignons sur son dos qui absorbent presque tous les nutriments.
+47;Parasect;Parasect;Pokémon Champignon;bug;grass;60;95;80;60;80;30;1;0;À force de voir son énergie aspirée, il semblerait que ce ne soit plus l’insecte qui réfléchisse, mais le champignon sur son dos.
+48;Mimitoss;Venonat;Pokémon Vermine;bug;poison;60;55;50;40;55;45;1;0;Ses grands yeux lui servent de radar. En pleine lumière, on peut y distinguer des facettes.
+49;Aéromite;Venomoth;Pokémon Papipoison;bug;poison;70;65;60;90;75;90;1;0;Les écailles de ses ailes sont presque impossibles à retirer lorsqu’elles se collent à la peau, et elles libèrent un poison violent au contact.
+50;Taupiqueur;Diglett;Pokémon Taupe;ground;;10;55;25;35;45;95;1;0;Ce Pokémon creuse sous terre à faible profondeur. La terre qu’il laisse dans son sillage le rend facile à repérer.
+51;Triopikeur;Dugtrio;Pokémon Taupe;ground;;35;80;50;50;70;120;1;0;Ce trio de Taupiqueur est capable de creuser jusqu’à 100 km sous terre, vers l’inconnu.
+52;Miaouss;Meowth;Pokémon Chadégout;normal;;40;45;35;40;40;90;1;0;Tatillon sur la propreté de la pièce sur son front, il se lave la figure avec grand soin. Il ne s’entend pas avec les Miaouss de Galar.
+53;Persian;Persian;Pokémon Chadeville;normal;;65;70;60;65;65;115;1;0;Il se comporte avec grâce et élégance, et ne s’entend pas avec les rustres Berserkatt : les deux espèces se méprisent.
+54;Psykokwak;Psyduck;Pokémon Canard;water;;50;52;48;65;50;55;1;0;Sa migraine s’intensifie à mesure que son stress monte. Il libère une force psychique puissante qui terrasse tous ceux qui l’entourent.
+55;Akwakwak;Golduck;Pokémon Canard;water;;80;82;78;95;80;85;1;0;D’après de vieilles légendes, ce Pokémon entraînait au fond de l’eau tous ceux qui osaient souiller sa rivière.
+56;Férosinge;Mankey;Pokémon Porsinge;fighting;;40;80;35;35;45;70;1;0;Agile et rapide, ce Pokémon vit dans les arbres. Il s’énerve facilement et s’attaque à tout ce qui bouge quand il est en colère.
+57;Colossinge;Primeape;Pokémon Porsinge;fighting;;65;105;60;60;70;95;1;0;Sa fureur prend fin quand il n’a plus personne à frapper. Il est difficile d’en être témoin.
+58;Caninos;Growlithe;Pokémon Chiot;fire;;55;70;45;70;50;60;1;0;Très fidèle, il aboie de toutes ses forces pour protéger son Dresseur d’Origine quand un danger le guette.
+59;Arcanin;Arcanine;Pokémon Légendaire;fire;;90;110;80;100;80;95;1;0;Ce Pokémon est admiré depuis toujours pour sa beauté. Il court avec tellement de légèreté qu’on dirait qu’il vole.
+60;Ptitard;Poliwag;Pokémon Têtard;water;;40;50;40;40;40;90;1;0;Dans les rivières au courant puissant, il se sert de ses lèvres épaisses comme d’une ventouse pour s’accrocher aux rochers.
+61;Têtarte;Poliwhirl;Pokémon Têtard;water;;65;65;65;50;50;90;1;0;Il sécrète une sorte de mucus huileux qui lui permet d’échapper aux ennemis qui tentent de l’attraper.
+62;Tartard;Poliwrath;Pokémon Têtard;water;fighting;90;95;95;70;90;70;1;0;Aussi habile à la nage qu’au combat, il peut donner de vigoureux coups de poing avec ses bras musclés.
+63;Abra;Abra;Pokémon Psy;psychic;;25;20;15;105;55;90;1;0;Il peut se téléporter en dormant. On dit que plus son sommeil est profond, plus il se téléporte loin.
+64;Kadabra;Kadabra;Pokémon Psy;psychic;;40;35;30;120;70;105;1;0;Incroyablement doué en télékinésie, il concentre son énergie psychique dans l’étoile sur son front en prévision de son évolution.
+65;Alakazam;Alakazam;Pokémon Psy;psychic;;55;50;45;135;95;120;1;0;Il dispose d’immenses pouvoirs psychiques. On raconte qu’il s’en est servi afin de créer les cuillères qu’il tient dans chaque main.
+66;Machoc;Machop;Pokémon Colosse;fighting;;70;80;50;35;35;35;1;0;Il essaie de dépenser son énergie débordante en soulevant des rochers, ce qui le rend encore plus fort.
+67;Machopeur;Machoke;Pokémon Colosse;fighting;;80;100;70;50;60;45;1;0;Son corps robuste ne se fatigue jamais. Il n’hésite pas à aider les gens lorsqu’il s’agit de soulever des objets très lourds.
+68;Mackogneur;Machamp;Pokémon Colosse;fighting;;90;130;80;65;85;55;1;0;Il enchaîne les coups de poing avec ses quatre bras à une vitesse surprenante.
+69;Chétiflor;Bellsprout;Pokémon Fleur;grass;poison;50;75;35;70;30;40;1;0;Il préfère les endroits chauds et humides. Il capture les Pokémon Insecte avec ses lianes pour les dévorer.
+70;Boustiflor;Weepinbell;Pokémon Carnivore;grass;poison;65;90;50;85;45;55;1;0;Quand il a faim, il avale tout ce qui bouge, puis achève ses proies avec de l’acide.
+71;Empiflor;Victreebel;Pokémon Carnivore;grass;poison;80;105;65;100;70;70;1;0;Il attire ses proies avec une odeur de miel et les avale tout entières. Il les digère en un jour seulement, les os y compris.
+72;Tentacool;Tentacool;Pokémon Mollusque;water;poison;40;40;35;50;100;70;1;0;Il est presque totalement composé d’eau. Lorsqu’il s’immerge dans les flots, son corps se fond dans l’eau, ce qui le rend presque invisible.
+73;Tentacruel;Tentacruel;Pokémon Mollusque;water;poison;80;70;65;80;120;100;1;0;Il peut allonger ses 80 tentacules à volonté et les utiliser comme un filet pour attraper sa proie et la transpercer de ses pics empoisonnés.
+74;Racaillou;Geodude;Pokémon Roche;rock;ground;40;80;100;30;30;20;1;0;On en trouve près des sentiers de montagne. Si vous marchez dessus par inadvertance, ils s’énervent et attaquent.
+75;Gravalanch;Graveler;Pokémon Roche;rock;ground;55;95;115;45;45;35;1;0;Il dévale les sentiers de montagne et traverse les obstacles en les pulvérisant.
+76;Grolem;Golem;Pokémon Titanesque;rock;ground;80;120;130;55;65;45;1;0;Juste après la mue, son corps est blanc et tendre. Au contact de l’air, sa peau se solidifie et forme une armure.
+77;Ponyta;Ponyta;Pokémon Cheval Feu;fire;;50;85;55;65;65;90;1;0;Il semblerait qu’une fois qu’un Dresseur a gagné la confiance de Ponyta, sa crinière enflammée ne le brûle plus au toucher.
+78;Galopa;Rapidash;Pokémon Cheval Feu;fire;;65;100;70;80;80;105;1;0;Au sein d’un troupeau, c’est le plus rapide qui devient le chef. Il choisit les lieux où se rendre et détermine la vitesse de galop.
+79;Ramoloss;Slowpoke;Pokémon Crétin;water;psychic;90;65;65;40;40;15;1;0;Lorsqu’il trempe le bout de sa queue dans l’eau, une substance sucrée s’en dégage. Il s’en sert pour appâter ses proies quand il pêche.
+80;Flagadoss;Slowbro;Pokémon Symbiose;water;psychic;95;75;110;100;80;30;1;0;La morsure du Kokiyas l’a tellement surpris qu’il est devenu bipède. Il paraît qu’il redevient un Ramoloss si le Kokiyas lâche prise.
+81;Magnéti;Magnemite;Pokémon Magnétique;electric;steel;25;35;70;95;55;45;1;0;Il se nourrit d’électricité et flotte dans les airs en libérant des ondes électromagnétiques avec les aimants situés de part et d’autre de son corps.
+82;Magnéton;Magneton;Pokémon Magnétique;electric;steel;50;60;95;120;70;70;1;0;Il émet constamment une énergie magnétique puissante qui interfère avec la grande majorité des ordinateurs dont il s’approche.
+83;Canarticho;Farfetch'd;Pokémon Canard Fou;normal;flying;52;65;55;58;62;60;1;0;Il se bat à l’aide de sa tige. Il existe plusieurs écoles quant à son maniement.
+84;Doduo;Doduo;Pokémon Duoiseau;normal;flying;35;85;45;35;35;75;1;0;Ses petites ailes ne lui permettent pas de voler, mais grâce à ses puissantes pattes, il peut courir très rapidement.
+85;Dodrio;Dodrio;Pokémon Trioiseau;normal;flying;60;110;70;60;60;100;1;0;Quand une des têtes de Doduo se divise, il devient un Dodrio capable de courir à 60 km/h.
+86;Otaria;Seel;Pokémon Otarie;water;;65;45;55;45;70;45;1;0;Il est à l’aise dans les endroits gelés. Il nage avec plaisir dans de l’eau à -10 ºC.
+87;Lamantine;Dewgong;Pokémon Otarie;water;ice;90;70;80;70;95;70;1;0;Son corps entier est aussi blanc que la neige. Il résiste bien au froid et peut même nager au milieu des icebergs.
+88;Tadmorv;Grimer;Pokémon Dégueu;poison;;80;80;50;40;50;25;1;0;Ce tas de fange sent si mauvais qu’il est impossible de le toucher. Plus rien ne pousse dans son sillage putride.
+89;Grotadmorv;Muk;Pokémon Dégueu;poison;;105;105;75;65;100;50;1;0;Son odeur immonde provoque des évanouissements. Son odorat s’est atrophié à cause de sa propre puanteur.
+90;Kokiyas;Shellder;Pokémon Bivalve;water;;30;65;100;45;25;40;1;0;Sa coquille est si résistante qu’elle repousse toutes les attaques. En revanche, il est vulnérable quand celle-ci s’ouvre.
+91;Crustabri;Cloyster;Pokémon Bivalve;water;ice;50;95;180;85;45;70;1;0;Quand il referme sa coquille, il est impossible de la rouvrir, même avec une force hors du commun.
+92;Fantominus;Gastly;Pokémon Gaz;ghost;poison;30;35;30;100;35;80;1;0;Son corps gazéiforme lui permet de se glisser n’importe où, mais au moindre coup de vent, il s’envole.
+93;Spectrum;Haunter;Pokémon Gaz;ghost;poison;45;50;45;115;55;95;1;0;On dit que lorsque quelqu’un a l’impression d’être surveillé dans le noir, c’est sûrement qu’un Spectrum se trouve dans les parages.
+94;Ectoplasma;Gengar;Pokémon Ombre;ghost;poison;60;65;60;130;75;110;1;0;On dit qu’Ectoplasma surgit parfois des ténèbres pour prendre la vie des personnes égarées en montagne.
+95;Onix;Onix;Pokémon Serpenroc;rock;ground;35;45;160;30;45;70;1;0;Il creuse dans le sol à une vitesse de 80 km/h en contorsionnant son immense corps de pierre.
+96;Soporifik;Drowzee;Pokémon Hypnose;psychic;;60;48;45;43;90;42;1;0;Si vous dormez tout le temps près de lui, il partagera parfois avec vous les rêves qu’il a dévorés par le passé.
+97;Hypnomade;Hypno;Pokémon Hypnose;psychic;;85;73;70;73;115;67;1;0;Évitez son regard quand vous en croisez un, ou il pourrait essayer de vous hypnotiser avec son pendule.
+98;Krabby;Krabby;Pokémon Doux Crabe;water;;30;105;90;25;25;50;1;0;S’il se sent menacé, il se cache derrière les bulles émises par sa bouche pour paraître plus gros.
+99;Krabboss;Kingler;Pokémon Pince;water;;55;130;115;50;50;75;1;0;Sa pince gigantesque possède une puissance destructrice phénoménale, mais hors combat, son poids devient un handicap.
+100;Voltorbe;Voltorb;Pokémon Balle;electric;;40;30;50;55;55;100;1;0;On dit qu’il se déguise en Poké Ball. Il s’autodétruit à la moindre stimulation.
+101;Électrode;Electrode;Pokémon Balle;electric;;60;50;70;80;80;140;1;0;Il stocke de l’énergie électrique dans son corps, ce qui le rend instable et explosif.
+102;Noeunoeuf;Exeggcute;Pokémon Œuf;grass;psychic;60;40;80;60;45;40;1;0;Il a besoin d’être constitué de ses six membres pour rester calme. Sitôt qu’il en manque un, il lui prend soudainement l’envie de fuir.
+103;Noadkoko;Exeggutor;Pokémon Fruitpalme;grass;psychic;95;95;85;125;65;55;1;0;Les attaques psychiques lancées par ses trois têtes à l’unisson sont très puissantes. Par temps nuageux, ses mouvements sont plus lents.
+104;Osselait;Cubone;Pokémon Solitaire;ground;;50;50;95;40;50;35;1;0;Il porte sur sa tête le crâne de sa défunte mère. Il lui arrive de rêver d’elle et de pleurer, mais chaque larme qu’il verse le rend plus fort.
+105;Ossatueur;Marowak;Pokémon Gard’Os;ground;;60;80;110;50;80;45;1;0;En évoluant, il est devenu violent, et le crâne de sa mère qu’il portait a fusionné avec sa tête.
+106;Kicklee;Hitmonlee;Pokémon Latteur;fighting;;50;120;53;35;110;87;1;0;Kicklee peut rétracter et étendre ses jambes à sa guise. La formidable allonge dont il dispose lui permet de frapper des adversaires éloignés.
+107;Tygnon;Hitmonchan;Pokémon Puncheur;fighting;;50;105;79;35;110;76;1;0;Ses poings fendent l’air, mais il se fatigue au bout de trois minutes à enchaîner les coups.
+108;Excelangue;Lickitung;Pokémon Lécheur;normal;;90;55;75;60;75;30;1;0;Excelangue se nourrit essentiellement de Pokémon Insecte. Il lèche ses ennemis avec sa longue langue pour les paralyser, puis les avale tout rond.
+109;Smogo;Koffing;Pokémon Gaz Mortel;poison;;40;65;95;60;45;35;1;0;On raconte qu’il y a longtemps, ces Pokémon amateurs d’air pollué étaient beaucoup plus nombreux à Galar.
+110;Smogogo;Weezing;Pokémon Gaz Mortel;poison;;65;90;120;85;70;60;1;0;Il ne peut pas aspirer autant d’air que le Smogogo de Galar, mais le poison qu’il produit est plus puissant.
+111;Rhinocorne;Rhyhorn;Pokémon Piquant;ground;rock;80;85;95;30;30;25;1;0;Il ne peut se souvenir que d’une chose à la fois. S’il se met à courir, il en oublie tout de suite la raison.
+112;Rhinoféros;Rhydon;Pokémon Perceur;ground;rock;105;130;120;45;45;40;1;0;Son épiderme est si épais qu’il lui permet même de survivre dans du magma d’une température de 2 000 °C.
+113;Leveinard;Chansey;Pokémon Œuf;normal;;250;5;5;35;105;50;1;0;Ce Pokémon lent à l’origine a appris à fuir plus vite pour protéger ses œufs des voleurs.
+114;Saquedeneu;Tangela;Pokémon Vigne;grass;;65;55;115;100;40;60;1;0;Ses lianes ont une odeur particulière. Elles servent d’herbes aromatiques dans une certaine zone de Galar.
+115;Kangourex;Kangaskhan;Pokémon Maternel;normal;;105;95;80;40;80;90;1;0;Certains documents certifient que les Kangourex sans progéniture élevaient des enfants humains en détresse.
+116;Hypotrempe;Horsea;Pokémon Dragon;water;;30;40;70;70;25;60;1;0;Hypotrempe crée des tourbillons en dansant sous l’eau. Il s’amuse à comparer la taille des remous qu’il fait avec ceux de ses congénères.
+117;Hypocéan;Seadra;Pokémon Dragon;water;;55;65;95;95;45;85;1;0;Sa puissance de succion est si forte qu’il peut aspirer en un instant ses proies pour les manger, même si elles sont plus grosses que sa bouche.
+118;Poissirène;Goldeen;Pokémon Poisson;water;;45;67;60;35;50;63;1;0;Ses nageoires dorsales et pectorales sont très développées. Elles lui permettent de nager à une vitesse de cinq nœuds.
+119;Poissoroy;Seaking;Pokémon Poisson;water;;80;92;65;65;80;68;1;0;S’il fait des trous dans les rochers avec sa corne pour bâtir son nid, c’est pour éviter que ses Œufs ne soient emportés par les flots.
+120;Stari;Staryu;Pokémon Étoile;water;;30;45;55;70;55;85;1;0;Il ne se soucie guère des Pokémon poissons qui viennent le grignoter, car même si son corps est déchiqueté, il se régénère aussitôt.
+121;Staross;Starmie;Pokémon Mystérieux;water;psychic;60;75;85;100;85;115;1;0;Il aspire du plancton quand il nage dans la mer en faisant tourner son corps à grande vitesse.
+122;M. Mime;Mr. Mime;Pokémon Bloqueur;psychic;fairy;40;45;65;100;120;90;1;0;Son talent pour le mime est indéniable. Il émet des ondes du bout des doigts pour créer un mur qui le protège de nombreuses attaques.
+123;Insécateur;Scyther;Pokémon Mante;bug;flying;70;110;80;55;80;105;1;0;Si l’on voit un grand nombre d’arbres abattus au même endroit dans une forêt, cela signifie que l’on se trouve sur le territoire d’un Insécateur.
+124;Lippoutou;Jynx;Pokémon Humanoïde;ice;psychic;65;50;35;115;95;95;1;0;Les Lippoutou vivant à Galar sont souvent dotés d’une belle voix cristalline, ce qui leur vaut d’attirer des fans.
+125;Élektek;Electabuzz;Pokémon Électrique;electric;;65;83;57;95;85;105;1;0;Quand un orage approche, ils se réunissent tous autour d’un grand arbre et attendent patiemment que la foudre s’abatte.
+126;Magmar;Magmar;Pokémon Crache-Feu;fire;;65;95;57;100;85;93;1;0;Tout son corps est en combustion permanente. Il est craint, car on dit qu’il cause des incendies.
+127;Scarabrute;Pinsir;Pokémon Scarabée;bug;;65;125;100;55;70;85;1;0;Une fois sa proie enserrée entre ses cornes, deux choix s’offrent à lui : la couper en deux ou la projeter au loin de toutes ses forces.
+128;Tauros;Tauros;Pokémon Buffle;normal;;75;100;95;40;70;110;1;0;Les Tauros vivant à Galar ont un tempérament violent et ne tolèrent pas que les êtres humains montent sur leur dos.
+129;Magicarpe;Magikarp;Pokémon Poisson;water;;20;10;55;15;20;80;1;0;Ce Pokémon est si faible que, dans les eaux à forts courants, il se contente de se laisser porter lamentablement.
+130;Léviator;Gyarados;Pokémon Terrifiant;water;flying;95;125;79;60;100;81;1;0;Quand il se laisse emporter par la rage, même la plus violente des tempêtes ne peut l’empêcher de détruire tout ce qui l’entoure.
+131;Lokhlass;Lapras;Pokémon Transport;water;ice;130;85;80;85;95;60;1;0;Il résiste bien aux très basses températures et peut nager dans des mers glaciales. Sa peau est lisse et légèrement froide au toucher.
+132;Métamorph;Ditto;Pokémon Morphing;normal;;48;48;48;48;48;48;1;0;Quand il rencontre l’un de ses semblables, il s’agite avec plus de vivacité que d’habitude pour adopter exactement la même forme que lui.
+133;Évoli;Eevee;Pokémon Évolutif;normal;;55;55;50;45;65;55;1;0;L’ADN de ce Pokémon très particulier recèle de nombreuses possibilités d’évolution.
+134;Aquali;Vaporeon;Pokémon Bulleur;water;;130;65;60;110;95;65;1;0;Sa structure cellulaire est similaire à la composition moléculaire de l’eau. Une fois dans cet élément, il devient indétectable à l’œil nu.
+135;Voltali;Jolteon;Pokémon Orage;electric;;65;65;60;110;95;130;1;0;Il se charge d’ions négatifs contenus dans l’air pour envoyer des décharges d’environ 10 000 volts.
+136;Pyroli;Flareon;Pokémon Flamme;fire;;65;130;60;95;110;65;1;0;Il emmagasine de l’air dans sa poche de flammes et le chauffe à une température de 1 700 °C.
+137;Porygon;Porygon;Pokémon Virtuel;normal;;65;60;70;85;75;40;1;0;Ces dernières années, il s’est rendu très utile dans le cyberespace, qu’il arpente pour s’assurer qu’il n’y a aucune donnée suspecte.
+138;Amonita;Omanyte;Pokémon Spirale;rock;water;35;40;100;90;55;35;1;0;Un Pokémon préhistorique aujourd’hui disparu. Il semble flotter lorsqu’il nage en brassant l’eau avec ses dix tentacules.
+139;Amonistar;Omastar;Pokémon Spirale;rock;water;70;60;125;115;70;55;1;0;Ses crocs sont capables de broyer la roche, mais il ne peut s’attaquer qu’aux proies à portée de ses tentacules.
+140;Kabuto;Kabuto;Pokémon Carapace;rock;water;30;80;90;55;45;55;1;0;On raconte qu’ils se seraient éteints, mais apparemment, on peut souvent en croiser dans une zone particulière.
+141;Kabutops;Kabutops;Pokémon Carapace;rock;water;60;115;105;65;70;80;1;0;Nul ne sait pourquoi il s’est éteint. Ce Pokémon préhistorique féroce vivait dans les mers chaudes.
+142;Ptéra;Aerodactyl;Pokémon Fossile;rock;flying;80;105;65;60;75;130;1;0;Sa dentition semblable à une scie peut même broyer la peau des Pokémon Acier.
+143;Ronflex;Snorlax;Pokémon Pionceur;normal;;160;110;65;65;110;30;1;0;L’estomac de ce Pokémon est si résistant qu’il peut même digérer de la nourriture avariée.
+144;Artikodin;Articuno;Pokémon Glaciaire;ice;flying;90;85;100;95;125;85;1;1;Il possède le pouvoir de contrôler la glace. Selon les dires, il vivrait sur les sommets recouverts de neiges éternelles.
+145;Électhor;Zapdos;Pokémon Électrique;electric;flying;90;90;85;125;90;100;1;1;On raconte que lorsque ce Pokémon oiseau légendaire fait vibrer ses plumes, le frottement fait tomber la foudre instantanément.
+146;Sulfura;Moltres;Pokémon Flamme;fire;flying;90;100;90;125;85;90;1;1;On raconte qu’il a sauvé des personnes perdues en montagne en illuminant les sentiers à l’aide de ses splendides ailes flamboyantes.
+147;Minidraco;Dratini;Pokémon Dragon;dragon;;41;64;45;50;50;50;1;0;On a longtemps douté de l’existence de ce Pokémon. La petite bosse sur son front est en fait sa corne en pleine croissance.
+148;Draco;Dragonair;Pokémon Dragon;dragon;;61;84;65;70;70;70;1;0;Il contrôle la météo en accumulant de l’énergie dans les orbes au bout de sa queue. Sa silhouette nimbée d’une aura lui confère un air mystique.
+149;Dracolosse;Dragonite;Pokémon Dragon;dragon;flying;91;134;95;100;100;80;1;0;On l’appelle « l’avatar de la mer ». Nombreux sont les navires arborant une figure de proue en forme de Dracolosse.
+150;Mewtwo;Mewtwo;Pokémon Génétique;psychic;;106;110;90;154;90;130;1;1;Son ADN est presque le même que celui de Mew, mais sa taille et son caractère sont très différents.
+151;Mew;Mew;Pokémon Nouveau;psychic;;100;100;100;100;100;100;1;0;À l’aide d’un microscope, on peut distinguer le pelage extrêmement court, fin et délicat de ce Pokémon.
+152;Germignon;Chikorita;Pokémon Feuille;grass;;45;49;65;49;65;45;2;0;Lorsqu’il se bat, Germignon secoue sa feuille pour tenir son ennemi à distance. Un doux parfum s’en dégage également, apaisant les Pokémon qui se battent et créant une atmosphère agréable et amicale.
+153;Macronium;Bayleef;Pokémon Feuille;grass;;60;62;80;63;80;60;2;0;Le cou de Macronium est entouré de nombreuses feuilles. Dans chacune d’elles se trouve une pousse d’arbre. Le parfum de cette pousse donne la pêche aux personnes qui le sentent.
+154;Méganium;Meganium;Pokémon Herbe;grass;;80;82;100;83;100;80;2;0;Le parfum de la fleur de Méganium apaise et calme les esprits. Pendant les combats, ce Pokémon émet son parfum relaxant pour atténuer l’agressivité de l’ennemi.
+155;Héricendre;Cyndaquil;Pokémon Souris Feu;fire;;39;52;43;60;50;65;2;0;Héricendre se protège en faisant jaillir des flammes de son dos. Ces flammes peuvent être violentes si le Pokémon est en colère. Cependant, s’il est fatigué, seules quelques flammèches vacillent laborieusement.
+156;Feurisson;Quilava;Pokémon Volcan;fire;;58;64;58;80;65;80;2;0;Feurisson garde ses ennemis à distance grâce à l’intensité de ses flammes et à des rafales d’air brûlant. Ce Pokémon utilise son incroyable agilité pour éviter les attaques, tout en enflammant ses ennemis.
+157;Typhlosion;Typhlosion;Pokémon Volcan;fire;;78;84;78;109;85;100;2;0;Typhlosion se cache derrière un chatoyant nuage de chaleur qu’il crée en attisant ses flammes intenses. Ce Pokémon peut générer des rafales explosives qui réduisent tout en cendres.
+158;Kaiminus;Totodile;Pokémon Mâchoire;water;;50;65;64;44;48;43;2;0;Malgré son tout petit corps, la mâchoire de Kaiminus est très puissante. Parfois, ce Pokémon mordille les gens pour jouer, sans se rendre compte que sa morsure peut gravement blesser quelqu’un.
+159;Crocrodil;Croconaw;Pokémon Mâchoire;water;;65;80;80;59;63;58;2;0;Une fois que Crocrodil a refermé sa mâchoire sur son ennemi, il est impossible de le faire lâcher prise. Ses crocs sont recourbés comme des hameçons et ne peuvent pas être retirés une fois enfoncés.
+160;Aligatueur;Feraligatr;Pokémon Mâchoire;water;;85;105;100;79;83;78;2;0;Aligatueur impressionne ses ennemis en ouvrant son énorme gueule. Pendant les combats, il piétine le sol de ses puissantes pattes arrière avant de charger ses adversaires à pleine vitesse.
+161;Fouinette;Sentret;Pokémon Espion;normal;;35;46;34;35;45;20;2;0;Lorsqu’un Fouinette dort, un autre monte la garde. La sentinelle réveille les autres au moindre signe de danger. Si un de ces Pokémon est séparé de sa meute, il est incapable de dormir, car il a peur.
+162;Fouinar;Furret;Pokémon Allongé;normal;;85;76;64;45;55;90;2;0;Fouinar est très mince. Lorsqu’il est attaqué, il peut s’enfuir en se faufilant habilement dans les recoins étroits. Malgré ses pattes courtes, ce Pokémon est très agile et rapide.
+163;Hoothoot;Hoothoot;Pokémon Hibou;normal;flying;60;30;30;36;56;50;2;0;Il hulule chaque jour aux mêmes moments. Certains Dresseurs s’en servent comme d’une montre.
+164;Noarfang;Noctowl;Pokémon Hibou;normal;flying;100;50;50;76;96;70;2;0;Quand il réfléchit, il tourne sa tête sur 180 degrés pour optimiser son mode de pensée.
+165;Coxy;Ledyba;Pokémon 5 Étoiles;bug;flying;40;20;30;40;80;55;2;0;Extrêmement timide, ce Pokémon défend le nid qu’il partage avec ses congénères en utilisant Protection.
+166;Coxyclaque;Ledian;Pokémon 5 Étoiles;bug;flying;55;35;50;55;110;85;2;0;Il vole dans le ciel nocturne en répandant une poudre scintillante. Si elle vous touche, quelque chose de positif devrait bientôt vous arriver.
+167;Mimigal;Spinarak;Pokémon Crache Fil;bug;poison;40;60;40;40;40;30;2;0;Le poison contenu dans les mandibules de ce Pokémon n’est pas très violent, mais il suffit à immobiliser les proies piégées dans sa toile.
+168;Migalos;Ariados;Pokémon Long-Patte;bug;poison;70;90;70;60;60;40;2;0;Il capture ses proies en projetant un fil qu’il sécrète. À la nuit tombée, il quitte sa toile et part chasser activement.
+169;Nostenfer;Crobat;Pokémon Chovsouris;poison;flying;85;90;80;70;80;130;2;0;Il vole en contrôlant librement ses quatre ailes et peut se déplacer sans avoir besoin de ralentir, même dans les grottes étroites.
+170;Loupio;Chinchou;Pokémon Poisson;water;electric;75;38;38;56;56;67;2;0;Au plus profond de l’océan, son seul moyen de communication est la lumière de ses antennes, qui clignotent constamment.
+171;Lanturn;Lanturn;Pokémon Lumière;water;electric;125;58;58;76;76;67;2;0;Il dégage une vive lumière pour éblouir ses proies, puis leur inflige un choc électrique bien senti.
+172;Pichu;Pichu;Pokémon Minisouris;electric;;20;40;15;35;35;60;2;0;Les poches électriques de ses joues sont très petites. Lorsqu’elles sont surchargées, il s’électrocute lui-même.
+173;Mélo;Cleffa;Pokémon Étoile;fairy;;50;25;28;45;55;15;2;0;Il ressemble un peu à une étoile. On suppose qu’il est venu sur terre accroché à une météorite.
+174;Toudoudou;Igglybuff;Pokémon Bouboule;normal;fairy;90;30;15;40;20;15;2;0;Il se déplace en faisant rebondir son corps tout mou. Lorsque sa température corporelle augmente, il devient rose foncé.
+175;Togepi;Togepi;Pokémon Balle Pic;fairy;;35;20;65;40;65;20;2;0;C’est un symbole de chance. On dit que sa coquille est remplie de joie.
+176;Togetic;Togetic;Pokémon Bonheur;fairy;flying;55;40;85;80;105;40;2;0;Ce Pokémon est capable de léviter sans battre des ailes. Il est vite démoralisé s’il n’est pas en compagnie de gens sympathiques.
+177;Natu;Natu;Pokémon Minoiseau;psychic;flying;40;50;45;70;45;70;2;0;Ses ailes ne sont pas assez développées donc il ne peut se déplacer qu’en sautillant. Il fixe toujours quelque chose du regard.
+178;Xatu;Xatu;Pokémon Mystique;psychic;flying;65;75;70;95;70;95;2;0;Capable de voir le passé et l’avenir, ce Pokémon mystérieux consacre toutes ses journées à observer la course du soleil.
+179;Wattouat;Mareep;Pokémon Laine;electric;;55;40;40;65;45;35;2;0;Il a beau être mignon, sa laine génère de l’électricité quand on la frotte. Tentez de le caresser, et il vous mettra vite au courant !
+180;Lainergie;Flaaffy;Pokémon Laine;electric;;70;55;55;80;60;45;2;0;Il accumule de l’électricité dans sa toison duveteuse. Il en a tellement stocké qu’il en a perdu sa laine par endroits.
+181;Pharamp;Ampharos;Pokémon Lumière;electric;;90;75;85;115;90;55;2;0;Sa queue brille d’une lumière éclatante. Depuis des temps très anciens, il est vénéré comme le guide des marins.
+182;Joliflor;Bellossom;Pokémon Fleur;grass;;75;80;95;90;100;50;2;0;Les Joliflor se réunissent parfois pour danser. On pense que c’est un rituel pour invoquer le soleil.
+183;Marill;Marill;Pokémon Aquasouris;water;fairy;70;20;50;20;50;40;2;0;Sa fourrure est hydrophobe, si bien qu’elle sèche en un instant. Il n’a donc jamais froid, même lorsqu’il sort d’une mer glaciale.
+184;Azumarill;Azumarill;Pokémon Aqualapin;water;fairy;100;50;80;60;80;50;2;0;Il crée des bulles d’air dont il enveloppe gentiment les Azurill venus jouer dans la rivière.
+185;Simularbre;Sudowoodo;Pokémon Imitation;rock;;70;100;115;30;65;30;2;0;Il se déguise en arbre pour éviter de se faire attaquer. Il déteste l’eau et se cache par temps de pluie.
+186;Tarpaud;Politoed;Pokémon Grenouille;water;;90;75;75;90;100;70;2;0;Le cri des mâles est plus puissant que celui des femelles, qui préfèrent les voix fortes et intimidantes.
+187;Granivol;Hoppip;Pokémon Pissenlit;grass;flying;35;35;40;35;55;50;2;0;Ce Pokémon flotte à la dérive, porté par le vent. S’il sent qu’un vent très fort approche, Granivol attache ses feuilles aux autres Granivol pour ne pas être emporté par la bourrasque.
+188;Floravol;Skiploom;Pokémon Pissenlit;grass;flying;55;45;50;45;65;80;2;0;La fleur de Floravol éclot lorsque la température atteint 18 °C. L’ouverture de la fleur change en fonction de la température. Certaines personnes se servent de ce Pokémon comme d’un thermomètre.
+189;Cotovol;Jumpluff;Pokémon Pissenlit;grass;flying;75;55;70;55;95;110;2;0;Cotovol traverse la mer, porté par les vents, pour découvrir de nouveaux territoires. Ce Pokémon se rapproche du sol quand le vent est trop froid.
+190;Capumain;Aipom;Pokémon Longqueue;normal;;55;70;55;40;55;85;2;0;Il guette ses proies depuis la cime des arbres. Quand il aperçoit un Croquine, son mets préféré, il se jette dessus.
+191;Tournegrin;Sunkern;Pokémon Graine;grass;;30;30;30;30;30;30;2;0;Tournegrin essaie de bouger le moins possible. C’est parce qu’il veut conserver tous les nutriments qu’il stocke dans son corps pour son évolution. Il ne mange pas, ne subsistant que grâce à la rosée matinale.
+192;Héliatronc;Sunflora;Pokémon Soleil;grass;;75;75;55;105;85;30;2;0;Héliatronc convertit l’énergie solaire en nutriments. Il remue activement pendant la journée, quand il fait chaud. Il redevient immobile dès que le soleil se couche.
+193;Yanma;Yanma;Pokémon Translaile;bug;flying;65;65;45;75;45;95;2;0;Yanma a un champ de vision de 360 degrés sans avoir besoin de bouger les yeux. Il vole incroyablement bien et peut faire des figures acrobatiques. Ce Pokémon descend en piqué sur ses proies.
+194;Axoloto;Wooper;Pokémon Poisson;water;ground;55;45;45;25;25;15;2;0;Lorsqu’il est sur la terre ferme, il couvre son corps d’un voile toxique qui le protège de la déshydratation.
+195;Maraiste;Quagsire;Pokémon Poisson;water;ground;95;85;85;65;65;35;2;0;Il est toujours gluant. Quand il nage, il se cogne souvent la tête au fond des rivières, mais semble s’en moquer.
+196;Mentali;Espeon;Pokémon Soleil;psychic;;65;65;60;130;95;110;2;0;Le joyau sur le front de Mentali projette des ondes psychiques en combat, et s’obscurcit quand il est à bout de force.
+197;Noctali;Umbreon;Pokémon Lune;dark;;95;65;110;60;130;65;2;0;Les nuits de pleine lune, ou s’il est agité, les anneaux sur sa peau se mettent à briller.
+198;Cornèbre;Murkrow;Pokémon Obscurité;dark;flying;60;85;42;85;42;91;2;0;Il cherche des objets brillants pour son chef. Sa réputation d’oiseau de mauvais augure lui vaut la haine de nombreuses personnes.
+199;Roigada;Slowking;Pokémon Royal;water;psychic;95;75;80;100;110;30;2;0;Il est capable de résoudre tous les problèmes qu’on lui présente, mais personne ne parvient à comprendre ce qu’il dit.
+200;Feuforêve;Misdreavus;Pokémon Strident;ghost;;60;60;60;85;85;85;2;0;Il adore faire peur aux humains en imitant leurs pleurs, et n’apprécie guère ceux qui ne se laissent pas intimider.
+201;Zarbi;Unown;Pokémon Symbolique;psychic;;48;72;48;72;48;48;2;0;Ce Pokémon a la forme d’un caractère d’écriture antique. Personne ne sait si ces écritures antiques sont apparues avant les Zarbi ou le contraire. Des études sont en cours, mais aucun résultat n’a été annoncé.
+202;Qulbutoké;Wobbuffet;Pokémon Patient;psychic;;190;33;58;33;58;33;2;0;Il vit discrètement dans l’obscurité pour cacher sa queue noire. Il n’attaque jamais en premier.
+203;Girafarig;Girafarig;Pokémon Long-Cou;normal;psychic;70;80;65;90;65;85;2;0;La tête à l’arrière de Girafarig abrite un cerveau trop petit pour penser. En revanche, cette tête arrière n’a pas besoin de dormir, ce qui lui permet de monter la garde tout le temps.
+204;Pomdepik;Pineco;Pokémon Ver Caché;bug;;50;65;90;35;35;15;2;0;Il grandit en utilisant sa salive pour coller l’écorce des arbres sur son corps. Un Pomdepik âgé peut prendre des proportions démesurées.
+205;Foretress;Forretress;Pokémon Ver Caché;bug;steel;75;90;140;60;60;40;2;0;On ne peut voir l’intérieur de sa carapace que lorsqu’il engloutit sa nourriture, mais il est si rapide que personne n’a encore jamais réussi.
+206;Insolourdo;Dunsparce;Pokémon Serpent;normal;;100;70;70;65;65;45;2;0;Bien que son nid ressemble à un labyrinthe, il ne s’y perd jamais, car il se repère grâce à l’odeur de la terre.
+207;Scorplane;Gligar;Pokémon Scorpivol;ground;flying;65;75;105;35;65;85;2;0;Scorplane plane dans les airs sans un bruit, comme s’il glissait. Ce Pokémon s’accroche au visage de son ennemi grâce aux serres de ses pattes arrière et aux pinces de ses pattes avant, et pique avec son dard empoisonné.
+208;Steelix;Steelix;Pokémon Serpenfer;steel;ground;75;85;200;55;65;30;2;0;On pense que son corps s’est transformé à force d’avaler le fer contenu dans la terre en creusant.
+209;Snubbull;Snubbull;Pokémon Fée;fairy;;60;80;50;40;40;30;2;0;Malgré les apparences, c’est un grand timide qui fait souvent l’objet de railleries quand il se trouve au milieu d’un groupe de Pokémon Chiot.
+210;Granbull;Granbull;Pokémon Fée;fairy;;90;120;75;60;60;45;2;0;Les jeunes gens en sont fous, mais sa timidité et sa grande délicatesse en font un piètre Pokémon de garde.
+211;Qwilfish;Qwilfish;Pokémon Bouboule;water;poison;65;95;75;55;55;85;2;0;Ses petites épines étaient autrefois des écailles. Elles sécrètent des toxines pouvant faire perdre connaissance.
+212;Cizayox;Scizor;Pokémon Pince;bug;steel;70;130;100;55;80;65;2;0;Malgré son corps fin, sa puissance de frappe est prodigieuse, car même ses muscles sont composés de métal.
+213;Caratroc;Shuckle;Pokémon Pourri;bug;rock;20;10;230;10;230;5;2;0;Les Baies qu’il conserve dans sa carapace en forme d’urne se changent en jus onctueux après un certain temps.
+214;Scarhino;Heracross;Pokémon Unicorne;bug;fighting;80;125;75;40;95;85;2;0;Ce Pokémon est fier de sa force colossale qui lui permet de soulever cent fois son propre poids avec facilité.
+215;Farfuret;Sneasel;Pokémon Grifacérée;dark;ice;55;95;55;35;75;115;2;0;Un Pokémon aussi cruel que fourbe. Il se glisse dans le nid des autres Pokémon en leur absence pour dérober leurs Œufs.
+216;Teddiursa;Teddiursa;Pokémon Mini Ours;normal;;60;80;50;50;50;40;2;0;Ce Pokémon aime se lécher les paumes quand elles sont encore pleines de miel. Teddiursa concocte son propre miel en mélangeant les fruits et le pollen récolté par Dardargnan.
+217;Ursaring;Ursaring;Pokémon Hibernant;normal;;90;130;75;75;75;55;2;0;On dit que les Ursaring trouvent leur nourriture dans les cours d’eau et les grands arbres des forêts où ils habitent. Ce Pokémon erre dans la forêt toute la journée pour chercher de la nourriture.
+218;Limagma;Slugma;Pokémon Lave;fire;;40;40;40;70;40;20;2;0;Les veines de Limagma ne contiennent pas de sang. Au lieu de ça, du magma en fusion circule dans le corps de ce Pokémon, apportant les nutriments et l’oxygène nécessaires à ses organes.
+219;Volcaropod;Magcargo;Pokémon Lave;fire;rock;50;50;120;80;80;30;2;0;La température de Volcaropod est d’environ 10 000 °C. L’eau s’évapore à son contact. Si ce Pokémon se retrouve sous la pluie, les gouttes d’eau forment de la vapeur et couvrent la zone de brouillard.
+220;Marcacrin;Swinub;Pokémon Cochon;ice;ground;50;50;40;30;30;50;2;0;S’il sent une odeur attrayante, il fonce la tête la première pour trouver d’où elle vient.
+221;Cochignon;Piloswine;Pokémon Porc;ice;ground;100;100;80;60;60;50;2;0;Bien qu’il soit pourvu de pattes courtes, ses sabots larges et pointus l’empêchent de glisser sur la glace.
+222;Corayon;Corsola;Pokémon Corail;water;rock;55;55;85;65;85;35;2;0;Ces Pokémon habitués des mers chaudes se trouvaient autrefois en masse sur les côtes de Galar.
+223;Rémoraid;Remoraid;Pokémon Jet;water;;35;65;35;65;35;65;2;0;À l’aide de sa nageoire dorsale en forme de ventouse, il s’accroche sous un Démanta pour récupérer ses restes.
+224;Octillery;Octillery;Pokémon Jet;water;;75;105;75;105;75;45;2;0;Il capture ses ennemis avec ses tentacules et les écrase ensuite avec sa tête dure comme la pierre.
+225;Cadoizo;Delibird;Pokémon Livraison;ice;flying;45;55;45;65;45;75;2;0;Ce Pokémon partage facilement son repas avec d’autres Pokémon et avec des humains, ce qui l’oblige à constamment courir après la nourriture.
+226;Démanta;Mantine;Pokémon Cervolant;water;flying;65;40;70;80;140;70;2;0;Il nage paisiblement, sans se soucier des Rémoraid qui s’agrippent à lui pour lui voler ses restes.
+227;Airmure;Skarmory;Pokémon Armoiseau;steel;flying;65;80;140;40;70;70;2;0;Ce Pokémon orne souvent les blasons, car les plumes qu’il perd sont utilisées pour forger des épées.
+228;Malosse;Houndour;Pokémon Sombre;dark;fire;45;60;30;80;50;65;2;0;Si ses congénères et lui poussent de sinistres hurlements avant l’aube, c’est pour signaler leur présence à tout le monde.
+229;Démolosse;Houndoom;Pokémon Sombre;dark;fire;75;90;50;110;80;95;2;0;Ceux qui le craignaient jadis lui ont donné le surnom de « messager de la Faucheuse » à cause de son hurlement sinistre si particulier.
+230;Hyporoi;Kingdra;Pokémon Dragon;water;dragon;75;95;95;95;95;85;2;0;Les écailles qui se détachent de son corps brillent d’un éclat si élégant et si intense qu’on les offre aux familles royales.
+231;Phanpy;Phanpy;Pokémon Long-Nez;ground;;90;60;60;40;40;40;2;0;Phanpy utilise sa petite trompe pour se doucher. Quand plusieurs d’entre eux se réunissent, ils s’arrosent joyeusement. On peut souvent voir ces Pokémon se sécher au bord de l’eau.
+232;Donphan;Donphan;Pokémon Armure;ground;;90;120;120;60;60;50;2;0;Si Donphan décidait de charger, il pourrait détruire une maison. Grâce à sa force étonnante, ce Pokémon peut aider à déplacer les rochers et les coulées de boue qui bloquent les chemins de montagne.
+233;Porygon2;Porygon2;Pokémon Virtuel;normal;;85;80;90;105;95;60;2;0;Depuis qu’on l’a doté d’une intelligence artificielle, il parle un langage mystérieux que seuls ses congénères comprennent.
+234;Cerfrousse;Stantler;Pokémon Maxi Corne;normal;;73;95;62;85;65;85;2;0;Les superbes bois de Cerfrousse étaient vendus très cher comme œuvres d’art. Ce Pokémon fut chassé et l’espèce proche de l’extinction à cause des gens qui recherchaient leurs précieux bois.
+235;Queulorior;Smeargle;Pokémon Peintre;normal;;55;20;35;20;45;75;2;0;Il se sert du liquide qui sort de sa queue pour dessiner sa marque. Ses fans s’arrachent ses plus beaux tracés à prix d’or.
+236;Debugant;Tyrogue;Pokémon Bagarreur;fighting;;35;35;35;35;35;35;2;0;Même s’il est petit, il vaut mieux ne pas l’ignorer : quand il trouve un adversaire à sa hauteur, il frappe fort et souvent sans prévenir.
+237;Kapoera;Hitmontop;Pokémon Poirier;fighting;;50;95;95;35;110;70;2;0;Après avoir effectué un poirier visant à désorienter son adversaire, il lui assène des coups de pied furieux.
+238;Lippouti;Smoochum;Pokémon Bisou;ice;psychic;45;30;15;85;65;65;2;0;Ce Pokémon très curieux touche tout et n’importe quoi avec ses lèvres pour déterminer ce qu’il aime et ce qu’il déteste.
+239;Élekid;Elekid;Pokémon Électrique;electric;;45;63;37;65;55;95;2;0;Il a encore du mal à emmagasiner l’électricité. Pour s’en nourrir, il se faufile dans les maisons à la recherche de prises électriques.
+240;Magby;Magby;Pokémon Charbon;fire;;45;75;37;70;55;83;2;0;Il vit près des volcans. À la fin de la journée, il se détend dans un bon bain de magma.
+241;Écrémeuh;Miltank;Pokémon Vachalait;normal;;95;80;105;40;70;100;2;0;Sa santé décline si on ne le trait pas tous les jours. Le goût de son lait varie selon la saison.
+242;Leuphorie;Blissey;Pokémon Bonheur;normal;;255;10;10;75;135;55;2;0;Il pond d’étranges œufs remplis de bonheur. On raconte que quiconque en mange un devient aimable envers tout le monde.
+243;Raikou;Raikou;Pokémon Foudre;electric;;90;85;75;115;100;115;2;1;Raikou incarne la vitesse de l’éclair. Les rugissements de ce Pokémon libèrent des ondes de choc provenant du ciel et frappant le sol avec la puissance de la foudre.
+244;Entei;Entei;Pokémon Volcan;fire;;115;115;85;90;75;100;2;1;Entei incarne la colère du magma. On pense que ce Pokémon est né suite à l’éruption d’un volcan. Il peut envoyer d’énormes jets de flammes qui calcinent tout ce qu’ils touchent.
+245;Suicune;Suicune;Pokémon Aurore;water;;100;75;115;90;115;85;2;1;Suicune incarne la tranquillité d’une source d’eau pure. Il parcourt les plaines avec grâce. Ce Pokémon a le pouvoir de purifier l’eau.
+246;Embrylex;Larvitar;Pokémon Peaupierre;rock;ground;50;64;50;45;50;41;2;0;Il vit en se nourrissant de terre. Après avoir dévoré une montagne, il s’endort et entame sa croissance.
+247;Ymphect;Pupitar;Pokémon Carapadure;rock;ground;70;84;70;65;70;51;2;0;Malgré son état de chrysalide, il ne reste pas immobile. Sous sa solide carapace, ses pattes sortent déjà.
+248;Tyranocif;Tyranitar;Pokémon Armure;rock;dark;100;134;110;95;100;61;2;0;Son pas est si lourd qu’il fait trembler le sol et s’écrouler même les plus grandes montagnes, ce qui altère la topographie de la zone.
+249;Lugia;Lugia;Pokémon Plongeon;psychic;flying;106;90;130;90;154;110;2;1;Les ailes de Lugia renferment une puissance dévastatrice. Un simple battement de ses ailes peut détruire de petites maisons. Du coup, ce Pokémon a choisi de vivre loin de tout, dans les profondeurs océaniques.
+250;Ho-Oh;Ho-oh;Pokémon Arcenciel;fire;flying;106;130;90;110;154;90;2;1;Les plumes de Ho-Oh brillent de sept couleurs selon l’orientation de son corps par rapport à la lumière. On raconte que ces plumes portent bonheur. On dit aussi que ce Pokémon vit au pied d’un arc-en-ciel.
+251;Celebi;Celebi;Pokémon Temporel;psychic;grass;100;100;100;100;100;100;2;0;Ce Pokémon venu du futur soigne les blessures et donne de la force aux plantes.
+252;Arcko;Treecko;Pokémon Bois Gecko;grass;;40;45;35;65;55;70;3;0;Arcko est cool, calme et serein. Il ne panique jamais, quelle que soit la situation. Quand un ennemi plus gros que lui lui lance un regard de défi, ce Pokémon reste stoïque et ne cède pas un centimètre de terrain.
+253;Massko;Grovyle;Pokémon Bois Gecko;grass;;50;65;45;85;65;95;3;0;Ce Pokémon vole de branche en branche avec brio. En forêt, aucun Pokémon, même le plus rapide, ne peut espérer attraper un Massko qui s’enfuit.
+254;Jungko;Sceptile;Pokémon Forêt;grass;;70;85;65;105;85;120;3;0;Jungko a des graines qui lui poussent sur le dos. On dit qu’elles regorgent de nutriments qui revitalisent les arbres. Ce Pokémon s’occupe des forêts avec amour.
+255;Poussifeu;Torchic;Pokémon Poussin;fire;;45;60;40;70;50;45;3;0;Poussifeu dispose d’un endroit dans son corps pour stocker sa flamme. Si on lui fait un gros câlin, sa flamme s’illumine chaleureusement. Ce Pokémon est couvert d’un duvet très doux.
+256;Galifeu;Combusken;Pokémon Poulet;fire;fighting;60;85;60;85;60;55;3;0;Galifeu combat grâce aux flammes ardentes qu’il crache de son bec et à ses coups de pied destructeurs. Le cri de ce Pokémon est très puissant et très gênant pour l’adversaire.
+257;Braségali;Blaziken;Pokémon Ardent;fire;fighting;80;120;70;110;70;80;3;0;Braségali a des jambes incroyablement puissantes. Il peut sauter par-dessus un immeuble de trente étages. Les coups de poing enflammés de ce Pokémon peuvent carboniser ses ennemis.
+258;Gobou;Mudkip;Pokémon Poissonboue;water;;50;70;50;50;50;40;3;0;Sous l’eau, Gobou peut respirer grâce aux branchies sur ses joues. S’il se retrouve en difficulté pendant un combat, ce Pokémon déchaîne ses pouvoirs incroyables. Il peut détruire des rochers plus gros que lui.
+259;Flobio;Marshtomp;Pokémon Poissonboue;water;ground;70;85;70;60;70;50;3;0;Flobio est bien plus rapide dans la boue que dans l’eau. L’arrière-train de ce Pokémon est particulièrement développé, ce qui lui donne la capacité de marcher sur ses pattes arrière.
+260;Laggron;Swampert;Pokémon Poissonboue;water;ground;100;110;90;85;90;60;3;0;Laggron peut prédire l’arrivée des tempêtes en utilisant ses nageoires pour sentir les variations dans les vagues et les marées. Si une tempête s’approche, il empile des rochers pour protéger son habitat.
+261;Medhyèna;Poochyena;Pokémon Morsure;dark;;35;55;35;30;30;35;3;0;Medhyèna est omnivore. Il mange de tout. Ses crocs sont très gros, comparés à son corps. Ce Pokémon essaie d’intimider ses ennemis en hérissant les poils de sa queue.
+262;Grahyèna;Mightyena;Pokémon Morsure;dark;;70;90;70;60;60;70;3;0;Les Grahyèna vivent et se déplacent en meute. Leurs réminiscences de la vie sauvage les poussent à n’obéir qu’aux Dresseurs qu’ils considèrent comme réellement talentueux.
+263;Zigzaton;Zigzagoon;Pokémon Petit Raton;normal;;38;30;41;30;41;60;3;0;Le Zigzaton de Galar a adopté cette forme dans les autres régions. Il est très doué pour dénicher des choses.
+264;Linéon;Linoone;Pokémon Fonceur;normal;;78;70;61;50;61;100;3;0;Il se sert de sa force de propulsion et de ses griffes aiguisées pour achever ses proies. Il a du mal à courir sur les routes sinueuses.
+265;Chenipotte;Wurmple;Pokémon Ver;bug;;45;45;35;20;30;20;3;0;Chenipotte est la proie de Hélédelle. Ce Pokémon essaie de résister en dirigeant les pointes de son dos vers le prédateur. Il affaiblit son ennemi en lui injectant du poison.
+266;Armulys;Silcoon;Pokémon Cocon;bug;;50;35;55;25;25;15;3;0;On pensait qu’Armulys pouvait résister à la faim et ne consommait rien avant son évolution. On sait maintenant que ce Pokémon étanche sa soif en récupérant l’eau de pluie déposée sur sa soie.
+267;Charmillon;Beautifly;Pokémon Papillon;bug;flying;60;70;50;100;50;65;3;0;Charmillon a une longue trompe en spirale, particulièrement pratique pour récupérer le pollen des fleurs. Ce Pokémon se laisse porter par les vents printaniers pendant qu’il butine.
+268;Blindalys;Cascoon;Pokémon Cocon;bug;;50;35;55;25;25;15;3;0;Lorsqu’il est attaqué, Blindalys reste immobile, même s’il a très mal. En effet, s’il bougeait, son corps serait affaibli lors de son évolution. En revanche, ce Pokémon n’oubliera pas la douleur endurée.
+269;Papinox;Dustox;Pokémon Papipoison;bug;poison;60;50;70;50;90;65;3;0;Lorsque Papinox bat des ailes, une légère poussière se répand. Cette poussière est en fait un puissant poison capable de mettre au tapis un boxeur professionnel. Ce Pokémon cherche sa nourriture avec ses antennes, comme un radar.
+270;Nénupiot;Lotad;Pokémon Aquaplante;water;grass;40;30;30;40;50;30;3;0;Sa feuille est devenue si grande et si lourde qu’il doit vivre en flottant sur l’eau.
+271;Lombre;Lombre;Pokémon Jovial;water;grass;60;50;50;60;70;50;3;0;Il vit au bord de l’eau dans les endroits ensoleillés. Il s’endort sur un tas d’algues dans la journée et ne se lève qu’à la nuit tombée.
+272;Ludicolo;Ludicolo;Pokémon Insouciant;water;grass;80;70;70;90;100;70;3;0;Il bouge son corps sur un rythme entraînant pour décupler ses forces.
+273;Grainipiot;Seedot;Pokémon Gland;grass;;40;40;50;30;30;30;3;0;Il se suspend aux branches par l’extrémité de sa tête. Il arrive qu’une bourrasque le fasse tomber.
+274;Pifeuil;Nuzleaf;Pokémon Malin;grass;dark;70;70;40;60;40;60;3;0;Il vit dans les trous des grands arbres. Le sifflement qu’il produit avec sa feuille suffit à remplir ses adversaires d’effroi.
+275;Tengalice;Shiftry;Pokémon Malveillant;grass;dark;90;100;60;90;60;80;3;0;Il vit caché au fond des forêts. On raconte qu’il fait souffler la bise lorsqu’il agite ses grands éventails.
+276;Nirondelle;Taillow;Pokémon Minirondel;normal;flying;40;55;30;30;30;85;3;0;Nirondelle est jeune. Il vient de quitter son nid. Du coup, il se sent parfois un peu seul et pleure la nuit. Ce Pokémon se nourrit des Chenipotte qu’il trouve dans les forêts.
+277;Hélédelle;Swellow;Pokémon Hirondelle;normal;flying;60;85;60;50;50;125;3;0;Hélédelle fait attention à bien entretenir ses ailes brillantes. Lorsque deux Hélédelle se rencontrent, ils se nettoient mutuellement les ailes avec attention.
+278;Goélise;Wingull;Pokémon Mouette;water;flying;40;30;30;55;30;85;3;0;Il niche dans les falaises. En utilisant les courants d’air, il peut voler sans battre des ailes.
+279;Bekipan;Pelipper;Pokémon Oiseaudo;water;flying;60;50;100;85;70;65;3;0;Avec son grand bec, il transporte de la nourriture qu’il a récoltée en volant la bouche ouverte au ras de la mer, gobant de l’eau au passage.
+280;Tarsal;Ralts;Pokémon Sentiment;psychic;fairy;28;25;25;45;35;40;3;0;Quand ses cornes rouges captent les ondes positives d’un Pokémon ou d’un humain, tout son corps se réchauffe.
+281;Kirlia;Kirlia;Pokémon Émotion;psychic;fairy;38;35;35;65;55;50;3;0;Il peut distordre l’espace-temps grâce à ses pouvoirs psychiques et ainsi voir l’avenir.
+282;Gardevoir;Gardevoir;Pokémon Étreinte;psychic;fairy;68;65;65;125;115;80;3;0;Prêt à tout pour protéger son Dresseur, il peut aller jusqu’à épuiser sa force mentale pour créer un mini trou noir.
+283;Arakdo;Surskit;Pokémon Maresurfeur;bug;water;40;30;32;50;52;65;3;0;Il vit dans les lacs ou les marais où prospèrent les plantes hydrophiles. Il se dispute souvent proies et territoire avec son voisin, Araqua.
+284;Maskadra;Masquerain;Pokémon Boule Œil;bug;flying;70;60;62;80;82;60;3;0;Ses antennes en forme d’ailes absorbent facilement l’humidité. Par temps de pluie, il attend patiemment au creux d’un arbre.
+285;Balignon;Shroomish;Pokémon Champignon;grass;;60;40;60;40;60;35;3;0;Lorsque Balignon sent un danger, il secoue son corps et répand ses spores du haut de sa tête. Les spores de ce Pokémon sont si toxiques qu’elles font dépérir les arbres et les herbes.
+286;Chapignon;Breloom;Pokémon Champignon;grass;fighting;60;130;80;60;60;70;3;0;Les graines autour de la queue de Chapignon sont des spores toxiques. Elles sont totalement immangeables. Une simple bouchée d’une graine de ce Pokémon peut causer de grandes douleurs à l’estomac.
+287;Parecool;Slakoth;Pokémon Flâneur;normal;;60;60;60;35;35;30;3;0;Le cœur de Parecool ne bat qu’une fois par minute. Quoi qu’il arrive, il se contente de s’avachir, immobile. Il est très rare de voir ce Pokémon se déplacer.
+288;Vigoroth;Vigoroth;Pokémon Turbusinge;normal;;80;80;80;55;55;90;3;0;Vigoroth ne tient pas en place. Même quand il essaie de dormir, le sang dans ses veines s’agite, obligeant ce Pokémon à courir comme un fou dans la forêt pour s’épuiser afin de pouvoir se reposer.
+289;Monaflèmit;Slaking;Pokémon Fainéant;normal;;150;160;100;95;65;100;3;0;On trouve parfois des cercles de plus de 1 m de rayon totalement désherbés dans les plaines. Ils sont faits par les Monaflèmit qui passent leurs journées allongés à manger toute l’herbe à portée de main.
+290;Ningale;Nincada;Pokémon Apprenti;bug;ground;31;45;90;30;30;40;3;0;Il peut passer plus de dix ans sous terre. Les racines des arbres constituent son régime alimentaire.
+291;Ninjask;Ninjask;Pokémon Ninja;bug;flying;61;90;45;50;50;160;3;0;Ce Pokémon est tellement rapide qu’on le dit capable d’éviter toutes les attaques. Il adore se nourrir de la sève sucrée des arbres.
+292;Munja;Shedinja;Pokémon Exuvie;bug;ghost;1;90;45;30;30;40;3;0;Cet étrange Pokémon, dont le corps est comme une coquille vide, ne respire pas et peut voler sans battre des ailes.
+293;Chuchmur;Whismur;Pokémon Chuchoteur;normal;;64;51;23;51;23;28;3;0;Quand il se met à crier, il se surprend lui-même et hurle de plus belle. Il continue ainsi jusqu’à ce qu’il se fatigue et tombe de sommeil.
+294;Ramboum;Loudred;Pokémon Grosse Voix;normal;;84;71;43;71;43;48;3;0;"Ses hurlements n’affectent pas seulement l’ouïe ; ils provoquent aussi une onde de choc qui balaie les ennemis et leur inflige des dégâts."
+295;Brouhabam;Exploud;Pokémon Bruit Sourd;normal;;104;91;63;91;73;68;3;0;"Pour communiquer avec ses semblables, il n’utilise pas que son cri puissant ; il émet aussi des sons par les trous de son corps."
+296;Makuhita;Makuhita;Pokémon Tenace;fighting;;72;60;30;20;30;25;3;0;Il existerait un plat mijoté traditionnel que les Dresseurs cuisinent pour rendre leur Makuhita encore plus fort.
+297;Hariyama;Hariyama;Pokémon Cogneur;fighting;;144;120;60;40;60;50;3;0;Les Hariyama les plus forts ne sont pas forcément les plus grands. Les petits gabarits aussi ont plus d’un tour dans leur sac.
+298;Azurill;Azurill;Pokémon Point Polka;normal;fairy;50;20;40;20;40;20;3;0;C’est un Pokémon docile, mais si on l’énerve, il n’hésite pas à frapper en faisant tournoyer la grosse boule au bout de sa queue.
+299;Tarinor;Nosepass;Pokémon Boussole;rock;;30;45;135;45;90;30;3;0;Grâce à sa force magnétique, il peut chasser ses proies sans se déplacer, mais il attire parfois ses pires ennemis.
+300;Skitty;Skitty;Pokémon Chaton;normal;;50;45;45;35;35;50;3;0;On sait que Skitty court souvent après sa queue. À l’état sauvage, ce Pokémon vit dans les cavités des arbres de la forêt. Il est tellement adorable qu’il a un grand succès comme animal de compagnie.
+301;Delcatty;Delcatty;Pokémon Guindé;normal;;70;65;65;55;55;70;3;0;Delcatty peut dormir n’importe où. Il n’a pas de nid permanent. Lorsque d’autres Pokémon lui cherchent des noises pendant son sommeil, il ne répond pas et se contente de partir dormir ailleurs.
+302;Ténéfix;Sableye;Pokémon Obscurité;dark;ghost;50;75;75;65;65;50;3;0;Ce Pokémon se nourrit de pierres précieuses. Dans les ténèbres, ses yeux brillent du reflet des joyaux.
+303;Mysdibule;Mawile;Pokémon Trompeur;steel;fairy;50;85;85;55;55;50;3;0;Ses cornes d’acier forment une grande mâchoire avec laquelle il mord férocement ses adversaires.
+304;Galekid;Aron;Pokémon Armurfer;steel;rock;50;70;100;40;40;30;3;0;Quand il évolue, il perd son armure d’acier. Autrefois, les gens la ramassaient pour en faire usage dans leur vie quotidienne.
+305;Galegon;Lairon;Pokémon Armurfer;steel;rock;60;90;140;50;50;40;3;0;Les Galegon se disputent les territoires en luttant au corps à corps, comme le montrent les éraflures sur leur armure d’acier.
+306;Galeking;Aggron;Pokémon Armurfer;steel;rock;70;110;180;60;60;50;3;0;Il y a fort longtemps, un roi portait un casque à l’effigie de Galeking, pensant qu’il pourrait ainsi s’approprier sa force.
+307;Méditikka;Meditite;Pokémon Méditation;fighting;psychic;30;40;55;40;55;60;3;0;Méditikka intensifie son énergie intérieure grâce à la méditation. Il lui suffit d’une Baie par jour pour survivre. La diète fait partie de l’entraînement de ce Pokémon.
+308;Charmina;Medicham;Pokémon Méditation;fighting;psychic;60;60;75;60;75;80;3;0;Grâce au pouvoir de la méditation, Charmina a développé son sixième sens. Il peut utiliser des pouvoirs télékinétiques. On sait que ce Pokémon peut méditer pendant un mois sans manger.
+309;Dynavolt;Electrike;Pokémon Orage;electric;;40;45;40;65;40;65;3;0;L’électricité statique s’accumule dans sa fourrure. Par temps sec, elle dégage des étincelles.
+310;Élecsprint;Manectric;Pokémon Décharge;electric;;70;75;60;105;60;105;3;0;Ce Pokémon évite de se montrer aux humains. On raconte qu’il fait son nid aux endroits où la foudre s’est abattue.
+311;Posipi;Plusle;Pokémon Acclameur;electric;;60;50;40;85;75;95;3;0;Quand Posipi veut encourager son partenaire, des étincelles jaillissent un peu partout de son corps. Si son partenaire perd, ce Pokémon pleure à chaudes larmes.
+312;Négapi;Minun;Pokémon Acclameur;electric;;60;40;50;75;85;95;3;0;Négapi adore encourager son partenaire pendant les combats. Des étincelles jaillissent alors de son corps. Lorsque son partenaire est en difficulté, le corps de ce Pokémon libère encore plus d’étincelles.
+313;Muciole;Volbeat;Pokémon Luciole;bug;;65;73;55;47;75;85;3;0;La queue de Muciole éclaire comme une ampoule. Ensemble, les Muciole dessinent des figures géométriques dans la nuit étoilée. Ce Pokémon adore le parfum dégagé par Lumivole.
+314;Lumivole;Illumise;Pokémon Luciole;bug;;65;47;55;73;75;85;3;0;Lumivole dirige un vol de Muciole lumineux pour dessiner des figures dans la nuit étoilée. On raconte que ce Pokémon gagne le respect de ses pairs en composant des figures complexes dans le ciel.
+315;Rosélia;Roselia;Pokémon Épine;grass;poison;50;60;45;100;80;65;3;0;Ses mains sécrètent chacune un poison différent dont il se sert pour attaquer. Plus le parfum de Rosélia est intense, plus sa santé est bonne.
+316;Gloupti;Gulpin;Pokémon Estomac;poison;;70;43;53;43;53;40;3;0;Le corps de Gloupti n’est pratiquement qu’un gros estomac. En comparaison, son cœur et son cerveau sont tout petits. L’estomac de ce Pokémon contient des enzymes spéciales capables de tout dissoudre.
+317;Avaltout;Swalot;Pokémon Sac Poison;poison;;100;73;83;73;83;55;3;0;Avaltout n’a pas de dents, ce qui le force à tout avaler en une bouchée. Quand il bâille, sa bouche prend une taille impressionnante, et on pourrait y placer une roue de voiture.
+318;Carvanha;Carvanha;Pokémon Féroce;water;dark;45;90;20;65;20;65;3;0;Il possède une mâchoire puissante garnie de dents acérées. Les marins ne s’approchent jamais des eaux habitées par les Carvanha.
+319;Sharpedo;Sharpedo;Pokémon Brutal;water;dark;70;120;40;95;40;95;3;0;Surnommé le « tyran des mers », ce Pokémon attaque sans exception tous les navires qui osent s’aventurer sur son territoire.
+320;Wailmer;Wailmer;Pokémon Baleinboule;water;;130;70;35;70;35;60;3;0;Il ressemble à un énorme ballon quand il avale de très grandes quantités d’eau de mer. Il dévore une tonne de nourriture par jour.
+321;Wailord;Wailord;Pokémon Cachabouée;water;;170;90;45;90;45;60;3;0;Sa taille fait de lui un Pokémon fascinant. Les sites touristiques proposant d’observer les Wailord ont toujours beaucoup de succès.
+322;Chamallot;Numel;Pokémon Engourdi;fire;ground;60;60;40;65;45;35;3;0;Chamallot stocke du magma à 1 200 °C dans son corps. Lorsqu’il est mouillé, le magma se refroidit et durcit. Le corps du Pokémon devient alors très lourd et ses mouvements très lents.
+323;Camérupt;Camerupt;Pokémon Éruption;fire;ground;70;100;70;105;75;40;3;0;Les bosses sur le dos de Camérupt sont apparues après une déformation de ses os. Elles crachent parfois du magma en fusion. Ce Pokémon entre apparemment en éruption lorsqu’il est énervé.
+324;Chartor;Torkoal;Pokémon Charbon;fire;;70;85;140;85;70;20;3;0;Les Chartor vivent en grand nombre dans les mines abandonnées, où ils extraient le charbon avec ardeur.
+325;Spoink;Spoink;Pokémon Rebond;psychic;;60;25;35;70;80;60;3;0;Spoink garde une perle sur sa tête. Elle lui sert à amplifier ses pouvoirs télékinétiques. Il est constamment en quête d’une perle plus grosse.
+326;Groret;Grumpig;Pokémon Magouilleur;psychic;;80;45;65;90;110;80;3;0;Groret utilise les perles noires sur son corps pour exercer ses formidables pouvoirs. Quand il est en action, il entame une étrange danse. Les perles noires de ce Pokémon ont une valeur inestimable.
+327;Spinda;Spinda;Pokémon Panda Tache;normal;;60;60;60;60;60;60;3;0;Chaque Spinda possède un pelage unique. Ce Pokémon esquive les attaques de son adversaire grâce à d’imprévisibles oscillations.
+328;Kraknoix;Trapinch;Pokémon Piégeur;ground;;45;100;45;45;45;10;3;0;Il creuse, puis attend ses proies dans son antre en forme de cône, dont il est impossible de s’échapper.
+329;Vibraninf;Vibrava;Pokémon Vibration;ground;dragon;50;70;50;50;50;70;3;0;Pour aider ses ailes à pousser, il se nourrit chaque jour d’un grand nombre de proies qu’il dissout en projetant de l’acide.
+330;Libégon;Flygon;Pokémon Mystique;ground;dragon;80;100;80;80;80;100;3;0;On l’appelle « l’esprit du désert », car ses battements d’ailes résonnent comme une mélodie entonnée par une voix douce.
+331;Cacnea;Cacnea;Pokémon Cactus;grass;;50;85;40;85;40;35;3;0;Si son environnement est aride et difficile, la fleur de Cacnea devient plus jolie et dégage un parfum délicat. Ce Pokémon se bat en agitant ses bras épineux.
+332;Cacturne;Cacturne;Pokémon Épouvantail;grass;dark;70;115;60;115;60;55;3;0;Lorsqu’un voyageur traverse le désert au milieu de la nuit, les Cacturne le suivent en groupe. Ces Pokémon attendent le bon moment, quand le voyageur est fatigué et qu’il n’est plus capable de bouger.
+333;Tylton;Swablu;Pokémon Oiseaucoton;normal;flying;45;40;60;40;75;50;3;0;Ses ailes en forme de nuage le dissimulent aux yeux des ennemis. On raconte qu’elles sont devenues blanches après plusieurs générations.
+334;Altaria;Altaria;Pokémon Virevolteur;dragon;flying;75;70;90;70;105;80;3;0;Il est de nature aimable, mais si on le met en colère, il intimide son adversaire en poussant un cri strident et l’attaque sans pitié.
+335;Mangriff;Zangoose;Pokémon Chat Furet;normal;;73;115;60;60;60;90;3;0;Mangriff est généralement à quatre pattes, mais lorsqu’il est en colère, il se lève sur ses pattes arrière et montre ses griffes. Ce Pokémon est l’ennemi juré de Séviper depuis plusieurs générations.
+336;Séviper;Seviper;Pokémon Serpacroc;poison;;73;100;60;100;60;65;3;0;La queue tranchante comme un sabre de Séviper a deux fonctions : elle peut frapper l’ennemi et lui injecter un poison qu’il sécrète. Ce Pokémon n’oublie jamais sa vieille rancune envers Mangriff.
+337;Séléroc;Lunatone;Pokémon Météorite;rock;psychic;70;55;65;95;85;70;3;0;Il a été découvert dans le cratère d’une météorite il y a 40 ans. Un simple regard de sa part endort ses ennemis.
+338;Solaroc;Solrock;Pokémon Météorite;rock;psychic;70;95;85;55;65;70;3;0;Tirant sa force de l’énergie solaire, il est particulièrement puissant pendant la journée. Il s’illumine quand il tourne.
+339;Barloche;Barboach;Pokémon Barbillon;water;ground;50;48;43;46;41;60;3;0;Il sonde les bords boueux des rivières avec ses barbillons. Un film fin et visqueux protège tout son corps.
+340;Barbicha;Whiscash;Pokémon Barbillon;water;ground;110;78;73;76;71;60;3;0;Il a besoin d’un marais entier pour vivre. Si un ennemi s’approche, il s’énerve et déclenche un séisme.
+341;Écrapince;Corphish;Pokémon Brute;water;;43;80;65;50;35;35;3;0;Un Pokémon importé, retourné à l’état sauvage. Il s’adapte même aux rivières les plus polluées.
+342;Colhomard;Crawdaunt;Pokémon Crapule;water;dark;63;120;85;90;55;55;3;0;Il adore se battre et frappe comme une brute tous ceux qui approchent de sa mare.
+343;Balbuto;Baltoy;Pokémon Poupargile;ground;psychic;40;40;55;40;70;55;3;0;Ce Pokémon découvert dans des ruines anciennes tourne sur lui-même pour se déplacer. Il se tient toujours sur un pied, même quand il dort.
+344;Kaorine;Claydol;Pokémon Poupargile;ground;psychic;60;70;105;70;120;75;3;0;Ce Pokémon aurait été créé à partir d’une poupée d’argile confectionnée par une ancienne civilisation. Il se déplace en lévitant.
+345;Lilia;Lileep;Pokémon Lis d’Eau;rock;grass;66;41;77;61;87;23;3;0;Accroché aux rochers des profondeurs, il attend qu’une proie s’approche de lui pour l’attraper avec ses tentacules en forme de pétales.
+346;Vacilys;Cradily;Pokémon Bernacle;rock;grass;86;81;97;81;107;43;3;0;Il attrape ses proies à l’aide de ses tentacules, puis les dissout immédiatement avec ses sucs digestifs pour en absorber les nutriments.
+347;Anorith;Anorith;Pokémon Crustage;rock;bug;45;95;50;40;50;75;3;0;Ce Pokémon peut nager très vite en agitant ses huit ailes comme des rames de bateau. Il fait partie des ancêtres des Pokémon Insecte.
+348;Armaldo;Armaldo;Pokémon Blindage;rock;bug;75;125;100;70;80;45;3;0;Bien que vivant sur la terre ferme, il est très bon nageur. Il plonge dans la mer à la recherche de proies et les abat avec ses pinces acérées.
+349;Barpau;Feebas;Pokémon Poisson;water;;20;15;20;10;55;80;3;0;Ce Pokémon a peut-être un physique disgracieux, mais il est robuste et peut survivre dans très peu d’eau.
+350;Milobellus;Milotic;Pokémon Tendre;water;;95;60;79;100;125;81;3;0;On dit que la beauté de ce Pokémon est telle qu’elle apaise l’esprit de ceux qui le voient.
+351;Morphéo;Castform;Pokémon Climat;normal;;70;70;70;70;70;70;3;0;Il n’y a pas que son apparence qui change en fonction de la météo : son tempérament aussi ! Plus il y a de vent, plus il se montre agressif.
+352;Kecleon;Kecleon;Pokémon Multicolor;normal;;60;90;70;60;120;40;3;0;Sa couleur change quand il se cache, mais varie aussi selon son humeur et son état de santé : plus il est en forme, plus sa couleur est vive.
+353;Polichombr;Shuppet;Pokémon Poupée;ghost;;44;75;35;63;33;45;3;0;Il existe un proverbe ancien qui dit : « Fuis la demeure où les Polichombr se rassemblent en nombre à la pénombre. »
+354;Branette;Banette;Pokémon Marionnette;ghost;;64;115;65;83;63;65;3;0;Il est né de la rancune qu’il a ressentie quand il a été abandonné. Il redevient apparemment une poupée si l’on en prend grand soin.
+355;Skelénox;Duskull;Pokémon Requiem;ghost;;20;40;90;30;90;25;3;0;Ce Pokémon devient invisible pour se rapprocher furtivement de ses proies. Il a le pouvoir de traverser les murs.
+356;Téraclope;Dusclops;Pokémon Appel;ghost;;40;70;130;60;130;25;3;0;Il cherche des feux follets pour les avaler. Ce qu’il se passe alors à l’intérieur de son corps vide est un mystère.
+357;Tropius;Tropius;Pokémon Fruit;grass;flying;99;68;83;72;87;51;3;0;Dans les régions où il fait chaud, on trouve des fermes dédiées à l’élevage de ce Pokémon, très apprécié pour les fruits poussant sur son cou.
+358;Éoko;Chimecho;Pokémon Carillon;psychic;;65;50;70;95;80;65;3;0;Lorsqu’il y a beaucoup de vent, Éoko pousse des cris, accroché à une branche ou à un auvent par une ventouse placée sur sa tête. Ce Pokémon attrape des Baies avec sa longue queue pour les manger.
+359;Absol;Absol;Pokémon Désastre;dark;;65;130;60;75;60;75;3;0;Sa capacité à pressentir le danger lui a autrefois valu la réputation de porter malheur.
+360;Okéoké;Wynaut;Pokémon Ravi;psychic;;95;23;48;23;48;23;3;0;Ces Pokémon adorent se déplacer en groupe. Ils se blottissent les uns contre les autres dans des cavernes pour dormir.
+361;Stalgamin;Snorunt;Pokémon Capuche;ice;;50;50;50;50;50;50;3;0;Il ne peut vivre que dans les plus froides contrées. Il s’accommode parfaitement de températures atteignant les - 100 °C.
+362;Oniglali;Glalie;Pokémon Face;ice;;80;80;80;80;80;80;3;0;Il a le pouvoir de geler l’humidité ambiante en un instant et peut ainsi immobiliser ses proies.
+363;Obalie;Spheal;Pokémon Clap Clap;ice;water;70;40;50;55;50;25;3;0;Il scrute la mer en se laissant porter par les vagues. Lorsqu’il repère des proies, il avertit les Kaimorse du groupe.
+364;Phogleur;Sealeo;Pokémon Roule Boule;ice;water;90;60;70;75;70;45;3;0;Il ne peut pas s’empêcher de faire tourner sur son museau tout ce qui a une forme sphérique, comme les Obalie ou les Poké Balls.
+365;Kaimorse;Walrein;Pokémon Brise Glace;ice;water;110;80;90;95;90;65;3;0;Ses défenses poussent tout au long de sa vie. Si l’une d’elles se brise au cours d’un combat, au bout d’un an, elle aura repoussé entièrement.
+366;Coquiperl;Clamperl;Pokémon Bivalve;water;;35;64;85;74;55;32;3;0;La perle de Coquiperl est tellement précieuse qu’elle peut valoir plus de dix fois la valeur de celle de Kokiyas.
+367;Serpang;Huntail;Pokémon Abysse;water;;55;104;105;94;75;52;3;0;Il habite dans les profondeurs de l’océan. Un Serpang trouvé sur la plage serait un mauvais présage.
+368;Rosabyss;Gorebyss;Pokémon Mer du Sud;water;;55;84;105;114;75;52;3;0;Il se nourrit en aspirant les fluides corporels de ses proies. Le reste tombe au fond de la mer, nourrissant ainsi d’autres Pokémon.
+369;Relicanth;Relicanth;Pokémon Longévité;water;rock;100;90;130;45;65;55;3;0;Découvert lors d’une expédition dans les abysses, son apparence inchangée depuis 100 millions d’années lui a valu le surnom de « fossile vivant ».
+370;Lovdisc;Luvdisc;Pokémon Rendezvous;water;;43;30;55;40;65;97;3;0;Il vit dans les récifs coralliens des mers chaudes, et aime particulièrement dormir entre les cornes des Corayon.
+371;Draby;Bagon;Pokémon Tête de Roc;dragon;;45;75;60;40;30;50;3;0;La tête de ce Pokémon solitaire est si solide qu’il est capable de fendre en deux un rocher d’un seul coup.
+372;Drackhaus;Shelgon;Pokémon Endurant;dragon;;65;95;100;60;50;50;3;0;Il se prive de nourriture, résistant à la faim. On dit que son évolution commence lorsque ses réserves d’énergie sont épuisées.
+373;Drattak;Salamence;Pokémon Dragon;dragon;flying;95;135;80;110;80;100;3;0;Heureux de pouvoir voler dans le ciel, il est souvent de bonne humeur, mais il devient incontrôlable lorsqu’on le met en colère.
+374;Terhal;Beldum;Pokémon Boulefer;steel;psychic;40;55;80;35;60;30;3;0;Les cellules de son corps sont composées d’aimants. Une force magnétique coule dans ses veines à la place du sang.
+375;Métang;Metang;Pokémon Pincefer;steel;psychic;60;75;100;55;80;50;3;0;Ce Pokémon vole par magnétisme. Il poursuit ses proies en slalomant à toute allure entre les pics escarpés.
+376;Métalosse;Metagross;Pokémon Pattefer;steel;psychic;80;135;130;95;90;70;3;0;Né de la fusion de deux Métang, il vient à bout de ses ennemis grâce à son cerveau qui est aussi performant qu’un superordinateur.
+377;Regirock;Regirock;Pokémon Pic Rocheux;rock;;80;100;200;50;100;50;3;1;Bien que son corps de pierre ait été examiné avec les technologies les plus modernes, nulle trace de cerveau ou de cœur n’a été trouvée.
+378;Regice;Regice;Pokémon Iceberg;ice;;80;50;100;100;200;50;3;1;Ce Pokémon de l’ère glaciaire dont le corps est entièrement composé d’eau gelée serait né sous une épaisse couche de glace.
+379;Registeel;Registeel;Pokémon Fer;steel;;80;75;150;75;150;50;3;1;Il paraît qu’il est né dans le manteau terrestre et qu’il en a émergé il y a environ 10 000 ans.
+380;Latias;Latias;Pokémon Éon;dragon;psychic;80;80;90;110;130;110;3;1;Latias est très intelligent et comprend le langage des hommes. Il est recouvert d’une espèce de duvet ressemblant à du verre. Ce Pokémon s’enveloppe dans ce duvet et reflète la lumière pour changer son apparence.
+381;Latios;Latios;Pokémon Éon;dragon;psychic;80;90;80;130;110;110;3;1;Latios n’ouvrira son cœur qu’à un Dresseur doté d’un esprit compatissant. Ce Pokémon peut voler plus vite qu’un avion à réaction en repliant ses pattes avant pour améliorer son aérodynamisme.
+382;Kyogre;Kyogre;Pokémon Bassinmarin;water;;100;100;90;150;140;90;3;1;Un Pokémon considéré comme l’avatar des océans. Selon les légendes, il a disputé de nombreux combats avec Groudon pour contrôler l’énergie de la nature.
+383;Groudon;Groudon;Pokémon Continent;ground;;100;150;140;100;90;90;3;1;Grâce à l’énergie de la nature, il peut accomplir sa Primo-Résurgence pour retrouver son apparence originelle. Ce pouvoir lui permet de créer du magma pour étendre les continents.
+384;Rayquaza;Rayquaza;Pokémon Cieux;dragon;flying;105;150;90;150;90;95;3;1;Un Pokémon qui vit dans la couche d’ozone et se nourrit des météorites qu’il intercepte. Leur énergie s’accumule dans son corps, ce qui lui permet de méga-évoluer.
+385;Jirachi;Jirachi;Pokémon Souhait;steel;psychic;100;100;100;100;100;100;3;1;On raconte que lorsqu’il se réveille de son sommeil millénaire, il exauce les vœux écrits sur les rubans de papier de sa tête.
+386;Deoxys;DeoxysNormal Forme;Pokémon ADN;psychic;;50;150;50;150;50;150;3;1;Deoxys était à l’origine un virus provenant de l’espace. Il est extrêmement intelligent et dispose de pouvoirs télékinétiques. Ce Pokémon envoie des lasers avec l’organe cristallin situé sur sa poitrine.
+387;Tortipouss;Turtwig;Pokémon Minifeuille;grass;;55;68;64;45;55;31;4;0;Son corps produit de l’oxygène par photosynthèse. La feuille sur sa tête flétrit quand il a soif.
+388;Boskara;Grotle;Pokémon Bosquet;grass;;75;89;85;55;65;36;4;0;Il sait d’instinct où trouver une source d’eau pure. Il y transporte d’autres Pokémon sur son dos.
+389;Torterra;Torterra;Pokémon Continent;grass;ground;95;109;105;75;85;56;4;0;Il arrive que de petits Pokémon se rassemblent sur son dos immobile pour y faire leur nid.
+390;Ouisticram;Chimchar;Pokémon Chimpanzé;fire;;44;58;44;58;44;61;4;0;La flamme de son postérieur brûle grâce à un gaz de son estomac. Elle faiblit quand il ne va pas bien.
+391;Chimpenfeu;Monferno;Pokémon Garnement;fire;fighting;64;78;52;78;52;81;4;0;Il attaque en prenant appui sur les murs et les plafonds. Sa queue ardente n’est pas son seul atout.
+392;Simiabraz;Infernape;Pokémon Flamme;fire;fighting;76;104;71;104;71;108;4;0;Il fait voltiger ses ennemis grâce à sa vitesse et son style de combat spécial qui utilise ses quatre membres.
+393;Tiplouf;Piplup;Pokémon Pingouin;water;;53;51;53;61;56;40;4;0;Il est fier et déteste accepter la nourriture qu’on lui offre. Son pelage épais le protège du froid.
+394;Prinplouf;Prinplup;Pokémon Pingouin;water;;64;66;68;81;76;50;4;0;C’est un Pokémon solitaire. Un seul coup de ses puissantes ailes peut briser un arbre en deux.
+395;Pingoléon;Empoleon;Pokémon Empereur;water;steel;84;86;88;111;101;60;4;0;Les trois cornes de son bec sont le symbole de sa force. Celles du chef sont plus grosses que les autres.
+396;Étourmi;Starly;Pokémon Étourneau;normal;flying;40;55;30;30;30;60;4;0;Ce Pokémon très bruyant parcourt champs et forêts en nuées pour chasser les Pokémon Insecte.
+397;Étourvol;Staravia;Pokémon Étourneau;normal;flying;55;75;50;40;40;80;4;0;Il peuple les champs et les forêts. Lorsque deux volées se croisent, elles luttent pour le territoire.
+398;Étouraptor;Staraptor;Pokémon Rapace;normal;flying;85;120;70;50;60;100;4;0;Lorsque Étourvol évolue en Étouraptor, il quitte son groupe pour vivre seul. Ses ailes sont très développées.
+399;Keunotor;Bidoof;Pokémon Souridodue;normal;;59;45;40;35;40;31;4;0;Il ronge constamment des troncs et des pierres pour se faire les incisives. Il niche le long de l’eau.
+400;Castorno;Bibarel;Pokémon Castor;normal;water;79;85;60;55;60;71;4;0;Il construit des barrages de boue et d’écorce le long des fleuves. C’est un ouvrier de renom.
+401;Crikzik;Kricketot;Pokémon Criquet;bug;;37;25;41;25;41;25;4;0;Quand ses antennes s’entrechoquent, elles laissent échapper un bruit de xylophone.
+402;Mélokrik;Kricketune;Pokémon Criquet;bug;;77;85;51;55;51;65;4;0;Il exprime ses émotions par des mélodies. Les scientifiques étudient actuellement leur structure.
+403;Lixy;Shinx;Pokémon Flash;electric;;45;65;34;40;34;45;4;0;Sa fourrure s’illumine grâce à l’électricité. Il agite l’extrémité lumineuse de sa queue pour envoyer des signes à ses congénères.
+404;Luxio;Luxio;Pokémon Étincelle;electric;;60;85;49;60;49;60;4;0;Quand il croise un ennemi, il se prépare au combat en sortant ses griffes dont les coups ont une puissance qui atteint un million de volts.
+405;Luxray;Luxray;Pokémon Brillœil;electric;;80;120;79;95;79;70;4;0;Il dort beaucoup pour récupérer la quantité d’énergie électrique énorme qu’il consomme afin de voir à travers la matière.
+406;Rozbouton;Budew;Pokémon Bourgeon;grass;poison;40;30;35;50;70;55;4;0;Il est sensible aux variations de température. Quand son bourgeon commence à s’ouvrir, l’arrivée du printemps est imminente.
+407;Roserade;Roserade;Pokémon Bouquet;grass;poison;60;70;65;125;105;90;4;0;Sa main gauche administre un poison lent, et la droite, un poison foudroyant. Les deux peuvent être fatals.
+408;Kranidos;Cranidos;Pokémon Coud’Boule;rock;;67;125;40;30;30;58;4;0;Son crâne extrêmement solide est sa principale caractéristique. Il s’en servait pour faire tomber des arbres les Baies dont il se nourrissait.
+409;Charkos;Rampardos;Pokémon Coud’Boule;rock;;97;165;60;65;50;58;4;0;Pokémon préhistorique célèbre pour ses coups de tête puissants et son petit cerveau, son extinction serait due à son extrême bêtise.
+410;Dinoclier;Shieldon;Pokémon Bouclier;rock;steel;30;42;118;42;88;30;4;0;On retrouve des fossiles de Dinoclier dans les couches sédimentaires préhistoriques, mais seule sa tête a résisté à l’épreuve du temps.
+411;Bastiodon;Bastiodon;Pokémon Bouclier;rock;steel;60;52;168;47;138;30;4;0;Un Pokémon éteint depuis environ 100 millions d’années. Sa tête incroyablement solide était plus dure que l’acier.
+412;Cheniti;Burmy;Pokémon Ver Caché;bug;;40;29;45;29;45;36;4;0;S’il perd sa cape au combat, il en tisse rapidement une nouvelle avec ce qui lui tombe sous la main.
+413;Cheniselle;WormadamPlant Cloak;Pokémon Ver Caché;bug;grass;60;59;85;79;105;36;4;0;Quand Cheniti a évolué, sa cape a fusionné avec son corps. Cheniselle ne s’en sépare jamais.
+414;Papilord;Mothim;Pokémon Phalène;bug;flying;70;94;50;94;50;66;4;0;Ce Pokémon s’active à la nuit tombée pour voler le miel des Apitrini pendant leur sommeil.
+415;Apitrini;Combee;Pokémon Miniabeille;bug;flying;30;30;42;30;42;70;4;0;Du lever du soleil à la tombée de la nuit, il récolte du nectar pour Apireine et sa colonie.
+416;Apireine;Vespiquen;Pokémon Ruche;bug;flying;70;80;102;80;102;40;4;0;Plus la quantité de phéromones qu’il libère est élevée, plus le nombre d’Apitrini qu’il peut diriger est grand.
+417;Pachirisu;Pachirisu;Pokémon Écurélec;electric;;60;45;70;45;90;95;4;0;Il arrive que deux Pachirisu se frottent les joues pour partager l’électricité qu’ils ont accumulée.
+418;Mustébouée;Buizel;Pokémon Aquabelette;water;;55;65;35;60;30;85;4;0;Il utilise la bouée autour de son cou pour passer sa tête hors de l’eau et observer les alentours.
+419;Mustéflott;Floatzel;Pokémon Aquabelette;water;;85;105;55;85;50;115;4;0;Il a développé une bouée pour poursuivre ses proies aquatiques. Elle fait office de canot gonflable.
+420;Ceribou;Cherubi;Pokémon Cerise;grass;;45;35;45;62;53;35;4;0;Plus son corps est rouge, plus la saveur de sa petite boule gorgée de nutriments est sucrée et délicieuse.
+421;Ceriflor;Cherrim;Pokémon Floraison;grass;;70;60;70;87;78;85;4;0;Lorsqu’il se ferme, ses pétales sont si durs qu’il ne craint plus les attaques des Pokémon oiseaux.
+422;Sancoki;Shellos;Pokémon Aqualimace;water;;76;48;48;57;62;34;4;0;Si on le caresse trop fort, il sécrète un étrange liquide mauve qui est inoffensif, mais dont la texture est très gluante.
+423;Tritosor;Gastrodon;Pokémon Aqualimace;water;ground;111;83;68;92;82;39;4;0;Son corps est caoutchouteux, mais très résistant, car la puissance des chocs qu’il subit se répand sur toute sa surface.
+424;Capidextre;Ambipom;Pokémon Longqueue;normal;;75;100;66;60;66;115;4;0;Il utilise toujours ses deux queues pour faire la moindre tâche. Il s’en sert aussi pour enlacer les gens qu’il affectionne tout particulièrement.
+425;Baudrive;Drifloon;Pokémon Bouboule;ghost;flying;90;50;34;60;44;70;4;0;Nés d’une concentration d’âmes, ces Pokémon peuvent apparaître en grand nombre les jours où le taux d’humidité est élevé.
+426;Grodrive;Drifblim;Pokémon Ballon;ghost;flying;150;80;44;90;54;80;4;0;Il attrape des personnes et des Pokémon pour les transporter vers une destination inconnue.
+427;Laporeille;Buneary;Pokémon Lapin;normal;;55;66;44;44;56;85;4;0;Plus il s’entraîne, plus les coups qu’il assène en déroulant vigoureusement ses oreilles gagnent en puissance.
+428;Lockpin;Lopunny;Pokémon Lapin;normal;;65;76;84;54;96;105;4;0;À la fin de la saison chaude, il mue et se recouvre d’une fourrure épaisse et légère pour se préparer à affronter le froid hivernal.
+429;Magirêve;Mismagius;Pokémon Magique;ghost;;60;60;60;105;105;105;4;0;Il susurre des malédictions pour tourmenter ses ennemis et leur infliger de terribles migraines ou des hallucinations terrifiantes.
+430;Corboss;Honchkrow;Pokémon Big Boss;dark;flying;100;125;52;105;52;71;4;0;Ses sous-fifres font le sale boulot pour lui. Il n’intervient en combat que pour donner le coup de grâce à son ennemi.
+431;Chaglam;Glameow;Pokémon Chafouin;normal;;49;55;42;42;37;85;4;0;Lorsqu’il est heureux, sa queue décrit des arabesques comme un ruban de gymnastique rythmique.
+432;Chaffreux;Purugly;Pokémon Chatigre;normal;;71;82;64;64;59;112;4;0;Il ceinture sa taille de sa queue bifide pour paraître plus imposant.
+433;Korillon;Chingling;Pokémon Clochette;psychic;;45;30;50;65;50;45;4;0;Quand il sautille, l’orbe qu’il a dans la bouche s’agite et tinte comme une cloche.
+434;Moufouette;Stunky;Pokémon Moufette;poison;dark;63;63;47;41;41;74;4;0;S’il lève la queue, c’est qu’il s’apprête à projeter un liquide tellement nauséabond qu’il peut faire perdre connaissance.
+435;Moufflair;Skuntank;Pokémon Moufette;poison;dark;103;93;67;71;61;84;4;0;Ce Pokémon, qui creuse son terrier dans le sol, peut projeter un liquide à l’odeur infecte avec le bout de sa queue.
+436;Archéomire;Bronzor;Pokémon Bronze;steel;psychic;57;24;86;24;86;23;4;0;On raconte qu’il se met à briller et à refléter la vérité quand on le polit, mais il a horreur de cela.
+437;Archéodong;Bronzong;Pokémon Clochebronze;steel;psychic;67;89;116;79;116;33;4;0;De nombreux savants pensent que ce Pokémon n’est pas originaire de Galar à cause des motifs qui ornent son corps.
+438;Manzaï;Bonsly;Pokémon Bonsaï;rock;;50;80;95;10;45;10;4;0;Il vit dans les zones rocheuses arides. Quand ses boules vertes sont sèches, elles se mettent à briller légèrement.
+439;Mime Jr.;Mime Jr.;Pokémon Mime;psychic;fairy;20;25;45;70;90;60;4;0;Il considère les meilleurs danseurs parmi les M. Glaquette comme ses maîtres et s’évertue à mimer leurs mouvements.
+440;Ptiravi;Happiny;Pokémon Maisonjouet;normal;;100;5;5;15;65;30;4;0;Il prête volontiers son caillou rond à ceux qu’il apprécie, mais éclate en sanglots et se met en colère si on ne le lui rend pas.
+441;Pijako;Chatot;Pokémon Note Musique;normal;flying;76;65;45;92;42;91;4;0;On peut lui enseigner quelques mots. S’il s’agit d’un groupe, ils retiendront les mêmes phrases.
+442;Spiritomb;Spiritomb;Pokémon Interdit;ghost;dark;50;92;108;92;108;35;4;0;Pour punir son comportement déplorable, un voyageur a utilisé un mystérieux sortilège pour l’enchaîner à une Clé de Voûte.
+443;Griknot;Gible;Pokémon Terrequin;dragon;ground;58;70;45;40;45;42;4;0;Il attaque et entraîne dans son antre tout ce qui bouge, sans distinction. Sa gueule est immense, mais son estomac est relativement petit.
+444;Carmache;Gabite;Pokémon Caverne;dragon;ground;68;90;65;50;55;82;4;0;Il cache des pierres précieuses dans le sol de sa grotte, et accueille à coups de griffes et de crocs quiconque ose y pénétrer.
+445;Carchacrok;Garchomp;Pokémon Supersonic;dragon;ground;108;130;95;80;85;102;4;0;Ce Pokémon très rapide même au sol capture ses proies sur les monts enneigés et rentre vite dans son antre avant que son corps ne gèle.
+446;Goinfrex;Munchlax;Pokémon Goinfre;normal;;135;85;40;40;85;5;4;0;Il conserve sa nourriture sous son épaisse fourrure. Il lui arrive d’en offrir un peu à ceux en qui il a confiance.
+447;Riolu;Riolu;Pokémon Émanation;fighting;;40;70;40;35;40;60;4;0;Il perçoit sous forme d’aura non seulement les sentiments des autres, mais aussi l’état de la nature.
+448;Lucario;Lucario;Pokémon Aura;fighting;steel;70;110;70;115;70;90;4;0;Étant capable de lire ce que pensent les humains, ce Pokémon ne s’attache qu’aux Dresseurs dotés d’un cœur pur.
+449;Hippopotas;Hippopotas;Pokémon Hippo;ground;;68;72;78;38;42;32;4;0;Il est principalement actif pendant la journée. Il s’enfouit profondément dans le sable pour dormir, car les nuits désertiques sont très froides.
+450;Hippodocus;Hippowdon;Pokémon Poids Lourd;ground;;108;112;118;68;72;47;4;0;Il entre dans une violente colère quand on l’énerve : il expulse le sable qu’il a accumulé pour provoquer de véritables tempêtes.
+451;Rapion;Skorupi;Pokémon Scorpion;poison;bug;40;50;90;30;55;65;4;0;Il attaque avec les pinces empoisonnées de sa queue. Le venin se répand alors dans le corps de la victime et la paralyse.
+452;Drascore;Drapion;Pokémon Scorpogre;poison;dark;70;90;110;60;75;95;4;0;Sa férocité lui a valu le surnom de « démon du désert », mais face à un Hippodocus, il est parfaitement docile et évite de le provoquer.
+453;Cradopaud;Croagunk;Pokémon Toxique;poison;fighting;48;61;40;61;40;50;4;0;Dilué, son poison sert de remède. Cela lui a valu de devenir la mascotte populaire d’une entreprise de produits pharmaceutiques.
+454;Coatox;Toxicroak;Pokémon Toxique;poison;fighting;83;106;65;86;65;85;4;0;Il lance un coassement viril de victoire quand il parvient à terrasser sa proie. Il s’apparente aux Crapustule.
+455;Vortente;Carnivine;Pokémon Chopinsecte;grass;;74;100;72;90;72;46;4;0;Il s’accroche aux arbres des marais et attire ses proies avec sa salive à l’odeur enivrante.
+456;Écayon;Finneon;Pokémon Poisson Ailé;water;;49;49;56;49;61;66;4;0;Il attire ses proies avec ses nageoires caudales lumineuses. Il passe la journée à la surface et se retire dans les abysses la nuit venue.
+457;Luminéon;Lumineon;Pokémon Néon;water;;69;69;76;69;86;91;4;0;Il se déplace en rampant dans les profondeurs de l’océan. Ses nageoires brillent telles des étoiles dans le ciel nocturne.
+458;Babimanta;Mantyke;Pokémon Cervolant;water;flying;45;20;50;60;120;50;4;0;Il nage au sein des bancs de Rémoraid. Lorsqu’un prédateur les attaque, il se bat à leurs côtés.
+459;Blizzi;Snover;Pokémon Arbregelé;grass;ice;60;62;50;62;60;40;4;0;Les Baies en forme de crèmes glacées qui poussent sur son ventre sont le mets favori des Darumarond vivant à Galar.
+460;Blizzaroi;Abomasnow;Pokémon Arbregelé;grass;ice;90;92;75;92;85;60;4;0;Ce grand Pokémon déclenche des blizzards. Lorsqu’il agite son corps, tout ce qui l’entoure se retrouve couvert de neige.
+461;Dimoret;Weavile;Pokémon Grifacérée;dark;ice;70;120;65;45;85;125;4;0;Il communique avec ses semblables en gravant des motifs avec ses griffes. Il existerait près de 500 signes différents.
+462;Magnézone;Magnezone;Pokémon Aimant;electric;steel;70;70;115;130;90;60;4;0;On pense qu’il a évolué après avoir été exposé à un champ magnétique particulier qui a modifié la structure moléculaire de son corps.
+463;Coudlangue;Lickilicky;Pokémon Lécheur;normal;;110;85;95;80;95;50;4;0;Il est aussi habile avec sa langue que les êtres humains le sont avec leurs mains. En revanche, il est maladroit quand il utilise ses doigts.
+464;Rhinastoc;Rhyperior;Pokémon Perceur;ground;rock;115;140;130;55;55;40;4;0;Il repousse les attaques avec ses Protecteurs et profite du moment où l’adversaire est déstabilisé pour le transpercer avec sa vrille, dont il est fier.
+465;Bouldeneu;Tangrowth;Pokémon Vigne;grass;;100;100;125;110;50;50;4;0;Ses lianes poussent plus rapidement s’il vit sous un climat chaud. Quand elles deviennent trop longues, il se les coupe.
+466;Élekable;Electivire;Pokémon Foudrélec;electric;;75;123;67;95;85;95;4;0;La quantité d’électricité qu’il génère est énorme, même pour un Pokémon Électrik. Il inflige de fortes décharges du bout de ses queues.
+467;Maganon;Magmortar;Pokémon Explosion;fire;;75;95;67;125;95;83;4;0;Au fil du temps, son corps est devenu similaire à un volcan, et un de ses organes ressemble désormais à une chambre magmatique.
+468;Togekiss;Togekiss;Pokémon Célébration;fairy;flying;85;50;95;120;115;80;4;0;On dit que ce Pokémon dispense ses bienfaits, ce qui explique pourquoi il est représenté sur les porte-bonheurs depuis fort longtemps.
+469;Yanmega;Yanmega;Pokémon Libellogre;bug;flying;86;76;86;116;56;95;4;0;Il peut voler avec aise tout en portant un adulte dans ses six pattes. Les ailes de sa queue lui servent de balancier.
+470;Phyllali;Leafeon;Pokémon Verdoyant;grass;;65;110;130;60;65;95;4;0;Grâce à sa queue aussi effilée qu’une lame, il est capable de fendre en deux des arbres immenses.
+471;Givrali;Glaceon;Pokémon Poudreuse;ice;;65;60;110;130;95;65;4;0;Ce Pokémon exhale un vent glacial qui crée une neige poudreuse. Sa présence est très appréciée dans les stations de ski.
+472;Scorvol;Gliscor;Pokémon Scorpicroc;ground;flying;75;95;125;45;75;95;4;0;Il vole sans un bruit, et capture ses proies avec sa queue pour leur infliger une morsure critique.
+473;Mammochon;Mamoswine;Pokémon Deudéfenses;ice;ground;110;130;80;70;60;80;4;0;Comme son physique le laisse deviner, il est très fort. La taille de ses défenses de glace augmente à mesure que la température baisse.
+474;Porygon-Z;Porygon-Z;Pokémon Virtuel;normal;;85;80;70;135;75;90;4;0;On dit qu’un nouveau programme l’a fait évoluer, mais les avis des scientifiques divergent quant à savoir s’il s’agit réellement d’une évolution.
+475;Gallame;Gallade;Pokémon Lame;psychic;fighting;68;125;65;65;115;80;4;0;Ses sens aiguisés lui indiquent lorsque quelqu’un est en danger. Il accourt alors à la rescousse.
+476;Tarinorme;Probopass;Pokémon Boussole;rock;steel;60;55;145;75;150;40;4;0;Il utilise ses trois petites unités pour combattre ses ennemis et capturer ses proies. Le reste de son corps se contente de donner des ordres.
+477;Noctunoir;Dusknoir;Pokémon Mainpince;ghost;;45;100;135;65;135;45;4;0;Il dévore l’âme de ses ennemis en les engloutissant dans sa bouche ventrale. Il recrache ensuite leur enveloppe corporelle.
+478;Momartik;Froslass;Pokémon Enneigement;ice;ghost;70;80;70;80;70;110;4;0;Il gèle ses proies avec son souffle à - 50 °C, les amène dans son antre, puis les y aligne avec soin.
+479;Motisma;Rotom;Pokémon Plasma;electric;ghost;50;50;77;95;77;91;4;0;Son corps composé de plasma lui permet d’infiltrer diverses machines. Il adore surprendre les gens.
+480;Créhelf;Uxie;Pokémon Savoir;psychic;;75;75;130;75;130;95;4;1;On dit que sa venue a fourni aux humains le bon sens nécessaire pour améliorer leur existence.
+481;Créfollet;Mesprit;Pokémon Émotion;psychic;;80;105;105;105;105;80;4;1;Il dort au fond d’un lac. On dit que son esprit abandonne son corps pour voler à sa surface.
+482;Créfadet;Azelf;Pokémon Volonté;psychic;;75;125;70;125;70;115;4;1;On raconte que Créhelf, Créfollet et Créfadet proviennent du même Œuf.
+483;Dialga;Dialga;Pokémon Temps;steel;dragon;100;120;120;150;100;90;4;1;Il peut contrôler le temps. Les mythes de Sinnoh en parlent comme d’une divinité ancienne.
+484;Palkia;Palkia;Pokémon Espace;water;dragon;90;120;100;150;120;100;4;1;Il peut modeler l’espace. Les mythes de Sinnoh en parlent comme d’une divinité ancienne.
+485;Heatran;Heatran;Pokémon Caldeira;fire;steel;91;90;106;130;106;77;4;1;Le sang de ce Pokémon des cratères bouillonne dans son corps comme du magma.
+486;Regigigas;Regigigas;Pokémon Prodigieux;normal;;110;160;110;80;110;100;4;1;On raconte qu’après avoir créé des Pokémon avec différentes matières, il aurait placé les continents à leur position actuelle.
+487;Giratina;GiratinaAltered Forme;Pokémon Renégat;ghost;dragon;150;100;120;100;120;90;4;1;Sa grande violence lui a valu d’être banni. Il observe les hommes en silence depuis le Monde Distorsion.
+488;Cresselia;Cresselia;Pokémon Lunaire;psychic;;120;70;120;75;130;85;4;0;Dormir avec une de ses plumes à la main permet de faire de beaux rêves. On le surnomme « avatar du croissant de lune ».
+489;Phione;Phione;Pokémon Dérivenmer;water;;80;80;80;80;80;80;4;0;Ce Pokémon des mers chaudes revient toujours à son lieu de naissance, peu importe la distance.
+490;Manaphy;Manaphy;Pokémon Voyagenmer;water;;100;100;100;100;100;100;4;0;Il possède l’étrange pouvoir de s’entendre avec n’importe quel Pokémon.
+491;Darkrai;Darkrai;Pokémon Noirtotal;dark;;70;90;90;135;90;125;4;1;Il a la capacité de bercer les gens pour les faire rêver. Il se montre durant les nuits de nouvelle lune.
+492;Shaymin;ShayminLand Forme;Pokémon Gratitude;grass;;100;100;100;100;100;100;4;1;Il prend son essor pour répandre la gratitude lorsque les Gracidées fleurissent.
+493;Arceus;Arceus;Pokémon Alpha;normal;;120;120;120;120;120;120;4;1;Dans la mythologie, ce Pokémon existait déjà avant la formation de l’univers.
+494;Victini;Victini;Pokémon Victoire;psychic;fire;100;100;100;100;100;100;5;1;L’énergie sans limites qu’il produit donne une force incroyable à ceux qui entrent en contact avec elle.
+495;Vipélierre;Snivy;Pokémon Serpenterbe;grass;;45;45;55;45;55;63;5;0;Il laisse sa queue prendre le soleil pour sa photosynthèse. Quand il est malade, sa queue pend tristement.
+496;Lianaja;Servine;Pokémon Serpenterbe;grass;;60;60;75;60;75;83;5;0;La saleté l’empêchant d’utiliser la photosynthèse, il prend grand soin d’être toujours propre.
+497;Majaspic;Serperior;Pokémon Majestueux;grass;;75;75;95;75;95;113;5;0;Il peut paralyser l’ennemi d’un regard. Il amplifie l’énergie du soleil dans son corps.
+498;Gruikui;Tepig;Pokémon Cochon Feu;fire;;65;63;45;45;45;45;5;0;Il adore se goinfrer de Baies grillées, mais il lui arrive de les réduire en cendres dans son excitation.
+499;Grotichon;Pignite;Pokémon Cochon Feu;fire;fighting;90;93;55;70;55;55;5;0;Quand le feu dans son corps s’embrase, sa vitesse et son agilité augmentent. En cas d’urgence, il crache de la fumée.
+500;Roitiflam;Emboar;Pokémon Grochon Feu;fire;fighting;110;123;65;100;65;65;5;0;Il a une barbe enflammée. Il maîtrise des techniques de combat au corps à corps rapides et puissantes.
+501;Moustillon;Oshawott;Pokémon Loutre;water;;55;55;45;63;45;45;5;0;Il combat avec le coupillage de son ventre. Il peut parer un assaut et immédiatement contre-attaquer.
+502;Mateloutre;Dewott;Pokémon Entraînement;water;;75;75;60;83;60;60;5;0;Chaque Mateloutre a sa propre technique d’escrime au coupillage, acquise grâce à un entraînement drastique.
+503;Clamiral;Samurott;Pokémon Dignitaire;water;;95;100;85;108;70;70;5;0;Il peut terrasser ses ennemis d’un coup de la lame enchâssée dans son armure, et les faire taire d’un seul regard.
+504;Ratentif;Patrat;Pokémon Espion;normal;;45;55;39;35;39;42;5;0;Très prudent, il surveille attentivement son territoire, mais oublie souvent de regarder derrière lui.
+505;Miradar;Watchog;Pokémon Vigilant;normal;;60;85;69;60;69;77;5;0;Il attaque en crachant les graines des Baies qu’il accumule dans ses bajoues. S’il voit un ennemi, il dresse la queue.
+506;Ponchiot;Lillipup;Pokémon Chiot;normal;;45;60;45;25;45;55;5;0;Ce Pokémon est plus intelligent que la plupart des enfants. Il n’oublie ni l’affection qu’il a reçue ni les mauvais traitements qu’il a pu subir.
+507;Ponchien;Herdier;Pokémon Chien Fidèle;normal;;65;80;65;35;65;60;5;0;Les poils sombres qui recouvrent son dos sont si épais et si souples qu’ils peuvent même repousser des crocs acérés.
+508;Mastouffe;Stoutland;Pokémon Magnanime;normal;;85;110;90;45;90;80;5;0;Sa moustache remarquable fait sa fierté, car sa longueur permettrait de déterminer la hiérarchie au sein de l’espèce.
+509;Chacripan;Purrloin;Pokémon Scélérat;dark;;41;50;37;50;37;66;5;0;Malheur à qui se laisse berner par ses gestes adorables : une fois les gens à sa portée, il les griffe sans crier gare, en ricanant.
+510;Léopardus;Liepard;Pokémon Implacable;dark;;64;88;50;88;50;106;5;0;Sans un bruit, il approche ses victimes par-derrière pour les frapper. Il dispute son territoire avec les Roublenard.
+511;Feuillajou;Pansage;Pokémon Singe Herbe;grass;;50;53;48;53;48;64;5;0;Il est très doué pour trouver des Baies et aime les partager avec ses amis sans rien demander en échange.
+512;Feuiloutan;Simisage;Pokémon Singépine;grass;;75;98;63;98;63;101;5;0;Il a un tempérament violent et se bat avec sa queue pleine d’épines. La feuille sur sa tête est très amère.
+513;Flamajou;Pansear;Pokémon Brûlant;fire;;50;53;48;53;48;64;5;0;Il vit dans les cratères des volcans. L’intérieur de la mèche qu’il a sur la tête peut atteindre 300 °C.
+514;Flamoutan;Simisear;Pokémon Braise;fire;;75;98;63;98;63;101;5;0;Quand il est excité, des flammèches brûlantes dansent sur sa tête et sa queue. Il raffole des choses sucrées.
+515;Flotajou;Panpour;Pokémon Jet d’Eau;water;;50;53;48;53;48;64;5;0;L’eau contenue dans la mèche sur sa tête est pleine de nutriments. Elle fait pousser les plantes avec vigueur.
+516;Flotoutan;Simipour;Pokémon Drainage;water;;75;98;63;98;63;101;5;0;Il aime les endroits où l’eau est pure. Il se ravitaille en eau en l’aspirant avec sa queue.
+517;Munna;Munna;Pokémon Mangerêve;psychic;;76;25;45;67;55;24;5;0;Il se nourrit de songes et expire de la fumée qui prend la couleur rose si le rêve est joyeux, ou noire s’il s’agit d’un cauchemar.
+518;Mushana;Musharna;Pokémon Rêveur;psychic;;116;55;85;107;95;29;5;0;Il est sans cesse assoupi, plongé dans ses rêves. Il vaut mieux éviter de le déranger, car il est toujours mal luné au réveil.
+519;Poichigeon;Pidove;Pokémon Tipigeon;normal;flying;50;55;50;36;30;43;5;0;Il n’est pas très malin et un peu distrait, mais beaucoup de Dresseurs l’apprécient pour son caractère affectueux et sa bonne volonté.
+520;Colombeau;Tranquill;Pokémon Sauvapigeon;normal;flying;62;77;62;50;42;65;5;0;Il est intelligent et possède une bonne mémoire. On raconte que les livreurs le choisissent souvent comme partenaire.
+521;Déflaisan;Unfezant;Pokémon Fier;normal;flying;80;115;80;65;55;93;5;0;Ce Pokémon est aussi intelligent qu’il est arrogant. Les Dresseurs de Déflaisan sont tenus en haute estime.
+522;Zébibron;Blitzle;Pokémon Étincélec;electric;;45;60;32;50;32;76;5;0;Sa crinière luit quand il lâche des décharges. Il module leur rythme et leur nombre pour communiquer avec ses pairs.
+523;Zéblitz;Zebstrika;Pokémon Foudrélec;electric;;75;100;63;80;63;116;5;0;Il réagit à la vitesse de l’éclair. Lorsqu’il est en plein galop, on peut entendre le grondement du tonnerre.
+524;Nodulithe;Roggenrola;Pokémon Manteau;rock;;55;75;85;25;25;15;5;0;Il se déplace en réagissant aux sons environnants. Son noyau d’énergie rend son corps légèrement chaud au toucher.
+525;Géolithe;Boldore;Pokémon Minerai;rock;;70;105;105;50;40;20;5;0;Il sonde les environs grâce au son. Lorsqu’un importun le met en colère, il se lance à sa poursuite sans changer l’orientation de son corps.
+526;Gigalithe;Gigalith;Pokémon Surpression;rock;;85;135;130;60;80;25;5;0;Il est capable d’envoyer des boules d’énergie assez puissantes pour balayer un camion-benne, mais il ne peut tirer que les jours ensoleillés.
+527;Chovsourir;Woobat;Pokémon Chovsouris;psychic;flying;55;45;43;55;43;72;5;0;Il virevolte gaiement et émet des ultrasons pour trouver des Pokémon Insecte à grignoter.
+528;Rhinolove;Swoobat;Pokémon Cupidon;psychic;flying;67;57;55;77;55;114;5;0;Certaines contrées le vénèrent et pensent que la forme de son nez est un symbole de chance et de bonheur.
+529;Rototaupe;Drilbur;Pokémon Taupe;ground;;60;85;40;30;45;68;5;0;Les cultivateurs le détestent, car il abîme leurs légumes en creusant la terre avec ses griffes.
+530;Minotaupe;Excadrill;Pokémon Souterrain;ground;steel;110;135;60;50;65;88;5;0;On l’appelle le « roi de la vrille ». Il creuse la terre à une vitesse pouvant atteindre 150 km/h.
+531;Nanméouïe;Audino;Pokémon Audition;normal;;103;60;86;60;86;50;5;0;Ce Pokémon gentil est capable de deviner les émotions et l’état de santé des autres rien qu’en les touchant avec ses antennes.
+532;Charpenti;Timburr;Pokémon Costaud;fighting;;75;80;55;25;35;35;5;0;Lorsque Charpenti est capable de soulever une poutre faisant trois fois son poids, le jour de son évolution est proche.
+533;Ouvrifier;Gurdurr;Pokémon Costaud;fighting;;85;105;85;40;50;40;5;0;Il manie la poutre métallique avec habileté. Il est doué pour démanteler une bâtisse, mais peu adroit lorsqu’il s’agit d’en construire une.
+534;Bétochef;Conkeldurr;Pokémon Costaud;fighting;;105;140;95;55;65;45;5;0;Quand il décide de passer aux choses sérieuses, il jette ses piliers de béton et saute sur son adversaire pour le frapper du poing.
+535;Tritonde;Tympole;Pokémon Têtard;water;;50;50;40;50;40;64;5;0;Il communique avec ses compagnons en émettant des ondes. Son cri d’alerte est inaudible pour les humains et les autres Pokémon.
+536;Batracné;Palpitoad;Pokémon Vibration;water;ground;75;65;55;65;55;69;5;0;Il lui arrive de pousser des cris ravissants. Plus ses protubérances sont grosses, plus le son porte loin.
+537;Crapustule;Seismitoad;Pokémon Vibration;water;ground;105;95;75;85;75;74;5;0;Ce Pokémon est un excellent masseur grâce aux vibrations de ses pustules. Les personnes âgées l’apprécient particulièrement.
+538;Judokrak;Throh;Pokémon Judo;fighting;;120;100;85;30;85;45;5;0;Ils s’entraînent intensément par groupes de cinq. Ceux qui ne peuvent pas suivre le rythme abandonnent leur ceinture et se retirent.
+539;Karaclée;Sawk;Pokémon Karaté;fighting;;75;125;75;30;75;85;5;0;Après avoir suivi un entraînement intensif, la puissance du tranchant de sa main est telle qu’il peut fendre la mer en deux.
+540;Larveyette;Sewaddle;Pokémon Couture;bug;grass;45;53;70;40;60;42;5;0;La mascotte des créateurs de mode. Il découpe ses vêtements dans les feuilles qu’il trouve.
+541;Couverdure;Swadloon;Pokémon Capefeuille;bug;grass;55;63;90;50;80;42;5;0;Il se protège du froid en s’emmitouflant dans une feuille. Il se déplace en forêt et mange les feuilles tombées par terre.
+542;Manternel;Leavanny;Pokémon Précepteur;bug;grass;75;103;80;70;80;92;5;0;Il réchauffe les Œufs avec la chaleur de l’humus. Il fabrique des langes pour les Larveyette avec des feuilles.
+543;Venipatte;Venipede;Pokémon Chilopode;bug;poison;30;45;59;30;39;57;5;0;Ses crocs sont extrêmement venimeux. Dès qu’il voit une proie à son goût, il bondit sur elle sans penser aux conséquences.
+544;Scobolide;Whirlipede;Pokémon Coconplopode;bug;poison;40;55;99;40;79;47;5;0;Il se protège avec sa solide carapace et ses épines empoisonnées tandis qu’il rassemble l’énergie nécessaire à son évolution.
+545;Brutapode;Scolipede;Pokémon Mégaplopode;bug;poison;60;100;89;55;69;112;5;0;Il défend son territoire avec acharnement contre son ennemi Scolocendre. Le perdant sert de dîner au vainqueur.
+546;Doudouvet;Cottonee;Pokémon Boule Coton;grass;fairy;40;27;60;37;50;66;5;0;Les marques de luxe utilisent les étoffes splendides issues du mélange des cotons de Doudouvet et de Blancoton.
+547;Farfaduvet;Whimsicott;Pokémon Vole Vent;grass;fairy;60;67;85;77;75;116;5;0;Son coton se met à gonfler sous les rayons du soleil. Quand il est trop volumineux, il s’effiloche et se répand aux alentours.
+548;Chlorobule;Petilil;Pokémon Racine;grass;;45;35;50;70;50;30;5;0;Plus ses feuilles sont foncées, plus il est en bonne santé. Il s’installe parfois dans les champs ou les parterres de fleurs bien entretenus.
+549;Fragilady;Lilligant;Pokémon Chef-Fleur;grass;;70;60;75;110;75;90;5;0;L’huile essentielle extraite de sa fleur dégage un parfum exceptionnel, mais elle coûte extrêmement cher.
+550;Bargantua;Basculin;Pokémon Violent;water;;70;92;65;80;55;98;5;0;On l’utilisait autrefois en cuisine. La chair grasse des Bargantua à motif rouge était plutôt destinée aux jeunes.
+551;Mascaïman;Sandile;Pokémon Croco Sable;ground;dark;50;72;35;35;35;65;5;0;Malgré son petit gabarit, il a beaucoup de force dans les pattes arrière. Il parcourt le désert comme s’il nageait dans le sable.
+552;Escroco;Krokorok;Pokémon Croco Sable;ground;dark;60;82;45;45;45;74;5;0;Bien que ses yeux particuliers lui permettent de voir dans l’obscurité, les nuits sont si froides dans le désert qu’il ne se déplace presque pas.
+553;Crocorible;Krookodile;Pokémon Intimidation;ground;dark;95;117;80;65;70;92;5;0;Il aime la violence, mais sait aussi se montrer patient lorsqu’il doit passer plusieurs jours dans le sable à attendre une proie.
+554;Darumarond;Darumaka;Pokémon Daruma;fire;;70;90;45;15;45;50;5;0;On a beau le pousser ou le tirer, quand il dort, rien ne le fait vaciller. Cette qualité lui a valu de devenir un emblème pour les porte-bonheurs.
+555;Darumacho;DarmanitanStandard Mode;Pokémon Enflammé;fire;;105;140;55;30;55;95;5;0;Sa puissance augmente à mesure que la flamme de son corps s’intensifie. La température de celle-ci peut parfois dépasser les 1 400 °C.
+556;Maracachi;Maractus;Pokémon Cactus;grass;;75;86;67;106;67;60;5;0;Il sème les graines de ses fleurs une fois par an. Celles-ci abondent en nutriments et représentent une denrée précieuse dans le désert.
+557;Crabicoque;Dwebble;Pokémon Lithicole;bug;rock;50;65;85;35;35;55;5;0;S’il ne trouve pas de bon caillou à creuser pour s’y loger, il élit domicile dans un des trous du corps d’Hippodocus.
+558;Crabaraque;Crustle;Pokémon Lapidicole;bug;rock;70;95;125;65;75;45;5;0;Ses meilleures armes sont ses pinces. Elles sont si dures qu’elles peuvent ébrécher les Protecteurs de Rhinastoc.
+559;Baggiguane;Scraggy;Pokémon Mue;dark;fighting;50;75;70;35;70;48;5;0;Il se protège grâce à sa peau robuste. On dit que quand celle-ci ne peut plus s’étirer davantage, c’est qu’il est sur le point d’évoluer.
+560;Baggaïd;Scrafty;Pokémon Gang;dark;fighting;65;90;115;45;115;58;5;0;Il est de nature violente, mais au fond de lui, il tient à sa famille, à ses amis et à son territoire.
+561;Cryptéro;Sigilyph;Pokémon Similoiseau;psychic;flying;72;58;80;103;80;97;5;0;En fouillant sous le sable du désert survolé par Cryptéro, on a retrouvé les vestiges de ce que l’on croit être une ville antique.
+562;Tutafeh;Yamask;Pokémon Âme;ghost;;38;30;85;55;65;30;5;0;Il est né de l’âme d’un être humain d’un peuple antique. Il erre dans les ruines à la recherche de quiconque reconnaîtra son visage.
+563;Tutankafer;Cofagrigus;Pokémon Cercueil;ghost;;58;50;145;95;105;30;5;0;On le voit souvent représenté sur les murs des vieilles sépultures des rois en tant que symbole de leur richesse.
+564;Carapagos;Tirtouga;Pokémon Tortantique;water;rock;54;78;103;53;45;22;5;0;Ancêtre présumé de nombreuses espèces de Pokémon tortues, il a été restauré à partir d’un fossile.
+565;Mégapagos;Carracosta;Pokémon Tortantique;water;rock;74;108;133;83;65;32;5;0;Bien qu’il soit moins à l’aise sur terre que dans l’eau, il s’aventure sur le rivage pour se nourrir.
+566;Arkéapti;Archen;Pokémon Oisancien;rock;flying;55;112;45;74;45;70;5;0;On dit que c’est l’ancêtre des Pokémon oiseaux. Il vivait à la cime des arbres et se nourrissait de Baies et de Pokémon Insecte.
+567;Aéroptéryx;Archeops;Pokémon Oisancien;rock;flying;75;140;65;112;65;110;5;0;Il savait voler, mais il semble qu’il était beaucoup plus doué pour chasser ses proies sur la terre ferme.
+568;Miamiasme;Trubbish;Pokémon Sac Poubelle;poison;;50;50;62;40;62;65;5;0;Il est né d’un sac poubelle rempli d’ordures. Le gaz empoisonné qu’il exhale est très apprécié des Smogogo de Galar.
+569;Miasmax;Garbodor;Pokémon Dépotoir;poison;;80;95;82;60;82;75;5;0;Le liquide qu’il projette de son bras droit est si toxique que si une créature fragile en est aspergée, elle succombe sur-le-champ.
+570;Zorua;Zorua;Pokémon Sombrenard;dark;;40;65;40;80;40;65;5;0;Il lui arrive de se changer en être humain, surtout en enfant, pour venir chercher de la nourriture en ville.
+571;Zoroark;Zoroark;Pokémon Polymorfox;dark;;60;105;60;120;60;105;5;0;Les Dresseurs en manque de compagnie ordonnent à Zoroark de leur montrer une illusion pour tromper leur solitude.
+572;Chinchidou;Minccino;Pokémon Chinchilla;normal;;55;50;40;40;40;75;5;0;Les Chinchidou se saluent en se frottant la queue. Celui qui a la plus volumineuse en tire une certaine fierté.
+573;Pashmilla;Cinccino;Pokémon Écharpe;normal;;75;95;60;65;60;115;5;0;La sécrétion huileuse de ses poils lui permet de dévier les attaques. Elle s’arrache à prix d’or sur les marchés.
+574;Scrutella;Gothita;Pokémon Dévisageur;psychic;;45;30;50;55;65;45;5;0;Parfois, ce Pokémon chuchote alors qu’il n’y a personne aux alentours. On raconte qu’il parle à une entité que personne ne peut voir.
+575;Mesmérella;Gothorita;Pokémon Magouilleur;psychic;;60;45;70;75;85;55;5;0;Ses pouvoirs psychiques semblent atteindre leur paroxysme pendant les nuits étoilées, mais nul ne sait s’il a un rapport avec l’espace.
+576;Sidérella;Gothitelle;Pokémon Cosmique;psychic;;70;55;95;95;110;65;5;0;Les criminels à qui Sidérella a révélé les derniers instants de leur vie ont tous été portés disparus le jour même.
+577;Nucléos;Solosis;Pokémon Cellule;psychic;;45;30;40;105;50;20;5;0;On raconte que le curieux fluide qui entoure le corps de ce Pokémon lui permet de survivre dans l’espace.
+578;Méios;Duosion;Pokémon Divisé;psychic;;65;40;50;125;60;30;5;0;Étant donné que ses deux cerveaux sont rarement sur la même longueur d’onde, il est impossible de prédire son comportement.
+579;Symbios;Reuniclus;Pokémon Multiplié;psychic;;110;65;75;125;85;30;5;0;S’il ne s’agissait pas d’un poison violent que seul Symbios peut boire, son curieux fluide pourrait, selon les dires, rendre plus intelligent.
+580;Couaneton;Ducklett;Pokémon Oiseaudo;water;flying;62;44;50;44;50;55;5;0;Un Pokémon doué pour la plongée qui passe son temps sous l’eau à chercher des sphaignes, son plat préféré.
+581;Lakmécygne;Swanna;Pokémon Cygne;water;flying;75;87;63;87;63;98;5;0;Ils se mettent à danser à la tombée de la nuit. Le Lakmécygne qui danse au centre est le chef de la troupe.
+582;Sorbébé;Vanillite;Pokémon Poudreuse;ice;;36;50;50;65;60;44;5;0;On raconte qu’il est né de stalactites. Il gèle les alentours en soufflant de l’air à - 50 °C pour améliorer son confort.
+583;Sorboul;Vanillish;Pokémon Grêle;ice;;51;65;65;80;75;59;5;0;Bien qu’il gèle ses ennemis en soufflant de l’air à - 100 °C, sa gentillesse l’empêche de leur ôter la vie.
+584;Sorbouboul;Vanilluxe;Pokémon Congère;ice;;71;95;85;110;95;79;5;0;La température de son corps est d’environ - 6 °C. On raconte que ce Pokémon naît lorsque deux Sorboul se collent l’un à l’autre.
+585;Vivaldaim;Deerling;Pokémon Saison;normal;grass;60;60;50;40;50;75;5;0;Quand la saison change, il change de pelage et d’odeur. Un Pokémon qui annonce le passage des saisons.
+586;Haydaim;Sawsbuck;Pokémon Saison;normal;grass;80;100;70;60;70;95;5;0;Il change d’habitat selon les saisons. Certains disent même qu’il est celui qui apporte le printemps.
+587;Emolga;Emolga;Pokémon Pteromys;electric;flying;55;75;60;75;60;103;5;0;Les Baies sucrées sont son péché mignon. Il lui arrive d’en conserver beaucoup trop dans ses bajoues, ce qui l’empêche de bien planer.
+588;Carabing;Karrablast;Pokémon Carabe;bug;;50;75;45;40;45;60;5;0;Il crache un liquide qui dissout les coquilles des Escargaume pour se régaler de leur contenu.
+589;Lançargot;Escavalier;Pokémon Chevalier;bug;steel;70;135;105;60;105;20;5;0;Il charge ses ennemis en brandissant ses lances. Il existe un célèbre tableau représentant la joute entre un Lançargot et un Palarticho.
+590;Trompignon;Foongus;Pokémon Champignon;grass;poison;69;55;45;55;55;15;5;0;Les spores qu’il libère de ses mains sont très toxiques, mais si on les sèche bien, elles peuvent soulager les maux de ventre.
+591;Gaulet;Amoonguss;Pokémon Champignon;grass;poison;114;85;70;85;80;30;5;0;Ce Pokémon a tendance à très peu se déplacer. Quand il voit une Poké Ball abandonnée au sol, il reste immobile à côté.
+592;Viskuse;Frillish;Pokémon Flottaison;water;ghost;55;40;50;65;85;40;5;0;Certaines légendes racontent que les Viskuse sont les habitants d’une ancienne cité engloutie qui ont été changés en Pokémon.
+593;Moyade;Jellicent;Pokémon Flottaison;water;ghost;100;60;70;85;105;60;5;0;Les nuits de pleine lune, ils se réunissent à la surface de la mer pour attendre leurs proies.
+594;Mamanbo;Alomomola;Pokémon Soigneur;water;;165;75;80;40;45;65;5;0;On pense qu’il protège les Pokémon affaiblis parce qu’il partage avec eux les mêmes prédateurs.
+595;Statitik;Joltik;Pokémon Crampon;bug;electric;50;47;50;57;50;65;5;0;Il s’accroche aux autres Pokémon pour aspirer leur électricité statique. On en trouve souvent collés au postérieur de Voltoutou.
+596;Mygavolt;Galvantula;Pokémon Araclectrik;bug;electric;70;77;60;97;60;108;5;0;Il piège les oisillons qui ne savent pas encore voler en tissant une toile électrique près des nids des Pokémon oiseaux.
+597;Grindur;Ferroseed;Pokémon Graine Épine;grass;steel;44;50;91;24;86;10;5;0;Il aime les grottes pleines de mousse. Les enzymes contenues dans ces plantes l’aident à obtenir des épines grandes et solides.
+598;Noacier;Ferrothorn;Pokémon Boule Épine;grass;steel;74;94;131;54;116;20;5;0;Ses épines sont plus solides que l’acier. Il plante celles de ses tentacules dans les parois rocheuses pour se déplacer.
+599;Tic;Klink;Pokémon Engrenage;steel;;40;55;70;45;60;30;5;0;Les humains auraient inventé les mécanismes à engrenages il y a fort longtemps, en observant ce Pokémon.
+600;Clic;Klang;Pokémon Engrenage;steel;;60;80;95;70;85;50;5;0;Ce Pokémon symbolisant la technologie industrielle est souvent utilisé dans le logo des entreprises de Galar.
+601;Cliticlic;Klinklang;Pokémon Engrenage;steel;;60;100;115;70;85;90;5;0;Bien que son nouveau rouage à pointes ne soit pas doué de vie, il parvient à le faire tourner à grande vitesse avec les deux autres.
+602;Anchwatt;Tynamo;Pokémon Électrophore;electric;;35;55;40;45;40;60;5;0;Tout seul, il ne dégage pas beaucoup d’électricité. Mais un banc d’Anchwatt produit des décharges surpuissantes.
+603;Lampéroie;Eelektrik;Pokémon Électrophore;electric;;65;85;70;75;70;40;5;0;Un Pokémon doté d’un gros appétit. Il paralyse ses proies avec des décharges électriques avant de les manger.
+604;Ohmassacre;Eelektross;Pokémon Électrophore;electric;;85;115;80;105;80;50;5;0;Il peut sortir de l’eau à la force de ses bras pour attraper des proies sur la rive. Il retourne à l’eau en un instant.
+605;Lewsor;Elgyem;Pokémon Cerveau;psychic;;55;55;55;85;55;30;5;0;Ce Pokémon a été découvert il y a environ 50 ans. Son cerveau surdéveloppé lui permet d’utiliser ses pouvoirs psychiques avec aisance.
+606;Neitram;Beheeyem;Pokémon Cerveau;psychic;;75;75;75;125;95;40;5;0;Il peut manipuler les souvenirs de son adversaire à loisir. Parfois, on l’aperçoit en train de vagabonder au-dessus des champs de blé.
+607;Funécire;Litwick;Pokémon Chandelle;ghost;fire;50;30;55;65;55;20;5;0;Plus les victimes dont il aspire l’énergie vitale sont jeunes, plus sa flamme grandit et luit lugubrement.
+608;Mélancolux;Lampent;Pokémon Lampe;ghost;fire;60;40;60;95;60;55;5;0;Il se cache en ville en se faisant passer pour un lampadaire. Lorsqu’il repère une personne dont l’heure est proche, il la suit en catimini.
+609;Lugulabre;Chandelure;Pokémon Invitation;ghost;fire;60;55;90;145;90;80;5;0;On raconte que dans les manoirs éclairés par des Lugulabre, les funérailles s’enchaînent sans discontinuer.
+610;Coupenotte;Axew;Pokémon Crocs;dragon;;46;87;60;30;40;57;5;0;Il joue avec ses congénères à se donner de grands coups de crocs. Peu importe s’ils se cassent : ils repousseront aussitôt.
+611;Incisache;Fraxure;Pokémon Hachomenton;dragon;;66;117;70;40;50;67;5;0;Son épiderme est dur comme une armure. Il est passé maître dans l’art de charger l’ennemi tout en le transperçant de ses crocs.
+612;Tranchodon;Haxorus;Pokémon Hachomenton;dragon;;76;147;90;60;70;97;5;0;D’un naturel doux, il est cependant redoutable lorsqu’il se fâche. Il est très fier de ses crocs qui peuvent même découper des poutres d’acier.
+613;Polarhume;Cubchoo;Pokémon Gelé;ice;;55;70;40;60;40;40;5;0;Il renifle avant d’utiliser une capacité. Le froid intense contenu dans sa morve lui permet de lancer les capacités de type Glace.
+614;Polagriffe;Beartic;Pokémon Congelé;ice;;95;110;80;70;80;50;5;0;Il sillonne les mers glaciales avec aisance. Quand il est fatigué, il gèle l’eau de mer d’un souffle et se repose sur l’iceberg improvisé.
+615;Hexagel;Cryogonal;Pokémon Cristal;ice;;70;50;30;95;135;105;5;0;Lorsqu’il fait trop chaud, il s’évapore, ce qui explique pourquoi on ne le voit presque pas en été.
+616;Escargaume;Shelmet;Pokémon Escargot;bug;;50;40;85;40;65;25;5;0;Il a l’étrange faculté de réagir à l’énergie électrique. On ne sait trop pourquoi, mais quand il se trouve aux côtés de Carabing, il évolue.
+617;Limaspeed;Accelgor;Pokémon Exuviateur;bug;;80;70;40;100;60;145;5;0;Il est bien plus agile sans sa coquille. La membrane en forme de bandelettes qui l’entoure l’empêche de se dessécher.
+618;Limonde;Stunfisk;Pokémon Piège;ground;electric;109;66;84;81;99;32;5;0;Lorsque les parties jaunes de son corps envoient une puissante décharge électrique, il ébauche un sourire. Personne ne sait pourquoi.
+619;Kungfouine;Mienfoo;Pokémon Art Martial;fighting;;45;85;50;55;50;65;5;0;De nature brutale malgré sa petite taille, il inflige une série de coups majestueux aux inconscients qui s’approchent trop près de lui.
+620;Shaofouine;Mienshao;Pokémon Art Martial;fighting;;65;125;60;95;60;105;5;0;Ses coups de pied ultrarapides et invisibles à l’œil nu peuvent réduire un énorme rocher en poussière.
+621;Drakkarmin;Druddigon;Pokémon Caverne;dragon;;77;120;90;60;90;48;5;0;Féroce et perfide, Drakkarmin s’approprie les terriers creusés par d’autres Pokémon pour en faire son antre.
+622;Gringolem;Golett;Pokémon Golem Ancien;ground;ghost;59;74;50;35;50;35;5;0;Ce Pokémon fait d’argile continue de respecter les ordres que son maître lui a donnés il y a quelques millénaires.
+623;Golemastoc;Golurk;Pokémon Golem Ancien;ground;ghost;89;124;80;55;80;55;5;0;Son énergie viendrait d’un mécanisme à mouvement perpétuel interne, mais jusqu’à présent, personne n’en a la preuve.
+624;Scalpion;Pawniard;Pokémon Coupant;dark;steel;45;85;70;40;40;60;5;0;Il vit en meute, sous les ordres d’un Scalproie. Il s’entraîne sans relâche en rêvant du jour où il sera chef de meute à son tour.
+625;Scalproie;Bisharp;Pokémon Tranchant;dark;steel;65;125;100;60;70;70;5;0;Sa recherche des meilleurs endroits où trouver des pierres pour affûter ses lames le conduit souvent à affronter des Incisache.
+626;Frison;Bouffalant;Pokémon Coup d’Bœuf;normal;;95;110;95;40;95;55;5;0;Les Frison vivent en troupeau d’une vingtaine d’individus. Pour une raison inconnue, si l’un d’eux trahit le groupe, il perd sa crinière.
+627;Furaiglon;Rufflet;Pokémon Aiglon;normal;flying;70;83;50;37;50;60;5;0;Sa poigne est telle qu’il peut réduire en miettes les plus dures des Baies. Belliqueux de nature, il n’hésite pas à défier tout le monde.
+628;Gueriaigle;Braviary;Pokémon Vaillant;normal;flying;100;123;75;57;75;80;5;0;Son caractère agressif et violent lui a valu de perdre son rôle de transporteur à Galar au profit de Corvaillus.
+629;Vostourno;Vullaby;Pokémon Couche;dark;flying;70;55;75;45;65;60;5;0;Il grandit vite. Au sein du nid, les petits Vostourno héritent des couches en crâne de leurs aînés.
+630;Vaututrice;Mandibuzz;Pokémon Vostour;dark;flying;110;65;105;55;95;80;5;0;Il se pare d’ossements qu’il a ramassés. Il semblerait qu’il choisisse la forme des os qu’il porte selon les dernières tendances.
+631;Aflamanoir;Heatmor;Pokémon Tamanoir;fire;;85;97;66;105;66;65;5;0;Il se sert de sa flamme comme d’une langue. Il fait fondre peu à peu l’exosquelette des Fermite pour se délecter de leur chair.
+632;Fermite;Durant;Pokémon Fourmi Dure;bug;steel;58;109;112;48;48;109;5;0;Sa grande mâchoire réduit même les rochers en miettes. Il se bat avec sa colonie pour protéger ses Œufs des attaques des Dunaconda.
+633;Solochi;Deino;Pokémon Rude;dark;dragon;52;65;50;45;50;38;5;0;Comme il ne voit rien, il se repère en mâchouillant tout ce qui se trouve autour de lui.
+634;Diamat;Zweilous;Pokémon Violent;dark;dragon;72;85;70;65;70;58;5;0;Ses deux têtes se disputent la même proie. Il est toujours couvert de blessures, même s’il n’a affronté personne.
+635;Trioxhydre;Hydreigon;Pokémon Brutal;dark;dragon;92;105;90;125;90;98;5;0;Chacune de ses trois têtes mord à tour de rôle. Il attaque ses adversaires sans relâche, jusqu’à ce qu’ils s’écroulent.
+636;Pyronille;Larvesta;Pokémon Torche;bug;fire;55;85;55;50;55;60;5;0;La température de son corps est très élevée. Il projette des flammes du bout de ses cornes pour intimider ses ennemis et ses proies.
+637;Pyrax;Volcarona;Pokémon Soleil;bug;fire;85;60;65;135;105;100;5;0;Né d’un cocon enflammé, ce Pokémon apparaît sur d’anciennes fresques représenté comme une divinité du feu.
+638;Cobaltium;Cobalion;Pokémon Cœur de Fer;steel;fighting;91;90;129;90;72;108;5;1;Dès la naissance, il a un air de chef. Même le plus terrible des adversaires file doux face à lui.
+639;Terrakium;Terrakion;Pokémon Grotte;rock;fighting;91;129;90;72;90;108;5;1;Selon une légende d’Unys, Terrakium se serait jadis dressé contre les humains pour protéger les Pokémon.
+640;Viridium;Virizion;Pokémon Plaine Verte;grass;fighting;91;90;72;90;129;108;5;1;Rapide comme le vent, il s’abat tel un tourbillon sur ses ennemis avant de les transpercer sans pitié de ses cornes acérées.
+641;Boréas;TornadusIncarnate Forme;Pokémon Tornade;flying;;79;115;70;125;80;111;5;1;L’énergie dégagée par sa queue provoque d’énormes tempêtes dont la force peut renverser des maisons.
+642;Fulguris;ThundurusIncarnate Forme;Pokémon Foudroyeur;electric;flying;79;115;70;125;80;111;5;1;Il vole dans le ciel d’Unys et fait tomber des éclairs, provoquant des incendies qui font sa mauvaise réputation.
+643;Reshiram;Reshiram;Pokémon Blanc Réel;dragon;fire;100;120;100;150;120;90;5;1;Selon un mythe, lorsque les gens ne font aucun cas de la Réalité et s’abandonnent à la cupidité, Reshiram rase le pays entier avec ses flammes.
+644;Zekrom;Zekrom;Pokémon Noir Idéal;dragon;electric;100;150;120;120;100;90;5;1;Selon la légende, lorsque les gens perdent tout sens de ce qui est juste, Zekrom réduit le pays entier en cendres avec de terribles éclairs.
+645;Démétéros;LandorusIncarnate Forme;Pokémon Fertilité;ground;flying;89;125;90;115;80;101;5;1;Il utilise l’énergie qu’il tire du vent et de la foudre pour enrichir les sols en nutriments pour les cultures.
+646;Kyurem;Kyurem;Pokémon Frontière;dragon;ice;125;130;90;130;90;95;5;1;Il se serait congelé lui-même avec son souffle glacé pour stabiliser sa structure cellulaire.
+647;Keldeo;KeldeoOrdinary Forme;Pokémon Poulain;water;fighting;91;72;90;129;90;108;5;0;Lorsqu’il livre un combat difficile, la corne sur son front se renforce et se développe, ce qui éveillerait sa véritable puissance.
+648;Meloetta;MeloettaAria Forme;Pokémon Mélodie;normal;psychic;100;77;77;128;128;90;5;0;Sa voix si particulière lui permet de chanter des mélodies qui ensorcellent les gens et modifient leurs émotions.
+649;Genesect;Genesect;Pokémon Paléozoïque;bug;steel;71;120;95;120;95;99;5;0;Un Pokémon existant depuis 300 millions d’années, et modifié par la Team Plasma. Il a maintenant un canon dans le dos.
+650;Marisson;Chespin;Pokémon Bogue;grass;;56;61;65;48;45;38;6;0;Sa tête et son dos sont recouverts d’une carapace tellement dure que même une collision avec un camion ne lui ferait rien.
+651;Boguérisse;Quilladin;Pokémon Épinarmure;grass;;61;78;95;56;58;57;6;0;Il renforce ses membres inférieurs en se ruant violemment sur ses congénères. Naturellement paisible, il ne provoque jamais un combat.
+652;Blindépique;Chesnaught;Pokémon Épinarmure;grass;fighting;88;107;122;74;75;64;6;0;Il se défend en joignant ses poings devant son visage. Dans cette posture, il peut même résister à l’onde de choc d’une explosion.
+653;Feunnec;Fennekin;Pokémon Renard;fire;;40;45;40;62;60;60;6;0;Il a toujours une brindille avec lui en cas de petit creux. Il projette de l’air chaud par ses oreilles pour intimider ses ennemis.
+654;Roussil;Braixen;Pokémon Renard;fire;;59;59;58;90;70;73;6;0;Quand il saisit la branche plantée dans sa queue, elle prend feu par friction. Il peut communiquer avec ses congénères en agitant ce bâton enflammé.
+655;Goupelin;Delphox;Pokémon Renard;fire;psychic;75;69;72;114;100;104;6;0;Ses pouvoirs psychiques lui permettent de créer des tourbillons de flammes à 3 000 °C qui enveloppent et consument ses ennemis.
+656;Grenousse;Froakie;Pokémon Crapobulle;water;;41;56;40;62;44;71;6;0;Il protège son corps en l’entourant d’une mousse délicate. Malgré son apparence insouciante, ce Pokémon est en fait constamment à l’affût.
+657;Croâporal;Frogadier;Pokémon Crapobulle;water;;54;63;52;83;56;97;6;0;Son agilité est incomparable. Il peut gravir une tour de 600 m de haut en moins d’une minute.
+658;Amphinobi;Greninja;Pokémon Ninja;water;dark;72;95;67;103;71;122;6;0;Aussi insaisissable qu’un ninja, il se joue de ses ennemis grâce à sa célérité, et les tranche de ses Sheauriken.
+659;Sapereau;Bunnelby;Pokémon Fouisseur;normal;;38;36;38;32;36;57;6;0;Il est sensible au danger. Lorsqu’il entend le battement d’ailes de Corvaillus, il creuse prestement un terrier et s’y cache.
+660;Excavarenne;Diggersby;Pokémon Fouisseur;normal;ground;85;56;77;50;77;78;6;0;La fourrure de son ventre est un excellent isolant thermique. Jadis, on fabriquait des vêtements chauds en se servant de sa mue.
+661;Passerouge;Fletchling;Pokémon Rougegorge;normal;flying;45;50;43;40;38;62;6;0;Quand il est surexcité, sa température corporelle augmente d’un coup, à tel point qu’il est possible de se brûler en le touchant à mains nues.
+662;Braisillon;Fletchinder;Pokémon Braise;fire;flying;62;73;55;56;52;84;6;0;De nature belliqueuse, il dispose d’un fort instinct territorial. Quand il chasse, il se dispute régulièrement les proies avec ses congénères.
+663;Flambusard;Talonflame;Pokémon Fournaise;fire;flying;78;81;71;74;69;126;6;0;Flambusard attaque à une vitesse de 500 km/h. Il achève ses proies d’un puissant coup de patte sans leur laisser la moindre chance de fuir.
+664;Lépidonille;Scatterbug;Pokémon Exhalécaille;bug;;38;35;40;27;25;35;6;0;La poudre qui recouvre son corps l’aide à réguler sa température. Il peut s’adapter à tous les climats.
+665;Pérégrain;Spewpa;Pokémon Exhalécaille;bug;;45;22;60;27;30;29;6;0;Même les becs acérés des Pokémon Oiseaux ne parviennent pas à meurtrir son corps très dur. Il se défend en crachant de la poudre.
+666;Prismillon;Vivillon;Pokémon Lépidécaille;bug;flying;80;52;50;90;50;89;6;0;Selon le climat de sa région d’origine, les motifs de ses ailes sont différents. Il sème des écailles aux couleurs vives.
+667;Hélionceau;Litleo;Pokémon Lionceau;fire;normal;62;50;58;73;54;72;6;0;Il déborde d’énergie et de curiosité. Quand il se fâche ou qu’il s’apprête à se battre, sa courte crinière s’échauffe.
+668;Némélios;Pyroar;Pokémon Royal;fire;normal;86;68;72;109;66;106;6;0;Son souffle enflammé atteint les 6 000 °C, mais il ne l’utilise jamais contre ses proies. Il préfère en effet la viande crue.
+669;Flabébé;Flabébé;Pokémon Uniflore;fairy;;44;38;39;61;79;42;6;0;Il confectionne la couronne qui orne sa tête en récoltant du pollen. Elle recèle de nombreuses propriétés curatives.
+670;Floette;Floette;Pokémon Uniflore;fairy;;54;45;47;75;98;52;6;0;Il fait profiter ses fleurs de ses pouvoirs et met tout son cœur à leur entretien. Gare à ceux qui ravagent ses plates-bandes !
+671;Florges;Florges;Pokémon Jardin;fairy;;78;65;68;112;154;75;6;0;Il peut vivre des centaines d’années, et consacre sa longue existence à l’entretien des jardins.
+672;Cabriolaine;Skiddo;Pokémon Monture;grass;;66;65;48;62;57;52;6;0;Tant qu’il a de l’eau et du soleil en abondance, ce Pokémon n’a pas besoin de nourriture. Les feuilles sur son dos produisent son énergie par photosynthèse.
+673;Chevroum;Gogoat;Pokémon Monture;grass;;123;100;62;97;81;68;6;0;Ce Pokémon vit dans les régions montagneuses. Le chef du troupeau s’impose à l’issue d’un combat de cornes.
+674;Pandespiègle;Pancham;Pokémon Garnement;fighting;;67;82;62;46;48;43;6;0;Il dévisage toujours ses adversaires d’un air renfrogné pour être pris au sérieux, mais dès que la tension retombe, son sourire reprend le dessus.
+675;Pandarbare;Pangoro;Pokémon Patibulaire;fighting;dark;95;124;78;69;71;58;6;0;Il anticipe les mouvements de son adversaire grâce à sa feuille. Ses coups de poing peuvent réduire un camion-benne en un tas de ferraille.
+676;Couafarel;Furfrou;Pokémon Caniche;normal;;75;80;60;65;90;102;6;0;Sa fourrure pousse indéfiniment, mais il refuse de se faire couper la toison par une personne en qui il n’a pas confiance.
+677;Psystigri;Espurr;Pokémon Retenue;psychic;;62;48;54;63;60;68;6;0;Il possède des pouvoirs psychiques si puissants qu’il peut faire valser un catcheur. Malheureusement, il a du mal à les contrôler.
+678;Mistigrix;MeowsticMale;Pokémon SelfContrôle;psychic;;74;48;76;83;81;104;6;0;Le mâle a un instinct de défense très développé. Il n’hésite pas à lancer une attaque à pleine puissance pour protéger ses partenaires et lui.
+679;Monorpale;Honedge;Pokémon Glaive;steel;ghost;45;80;100;35;37;28;6;0;L’œil bleu sur la garde de la lame est le véritable corps de Monorpale. Il aspire l’énergie vitale des gens avec son étoffe usée par le temps.
+680;Dimoclès;Doublade;Pokémon Glaive;steel;ghost;59;110;150;45;49;35;6;0;Ses deux lames abattent leurs proies en enchaînant les attaques et les parades à un rythme effréné.
+681;Exagide;AegislashBlade Forme;Pokémon Noble Lame;steel;ghost;60;150;50;150;50;60;6;0;Grâce à ses puissants pouvoirs spirituels, il a contrôlé des humains et des Pokémon pour créer un pays conforme à ses idéaux.
+682;Fluvetin;Spritzee;Pokémon Fragrance;fairy;;78;52;60;63;65;23;6;0;Une douce odeur qui charme les gens émane de son corps. Les dames nobles raffolaient de lui.
+683;Cocotine;Aromatisse;Pokémon Parfum;fairy;;101;72;72;99;89;29;6;0;Il peut émettre une puanteur si infâme qu’elle prive ses ennemis de leur combativité, ou un parfum si réconfortant qu’il encourage ses alliés.
+684;Sucroquin;Swirlix;Pokémon Confiserie;fairy;;62;48;66;59;57;49;6;0;Sa douce fourrure possède une odeur sucrée comme la barbe à papa. Il produit des filaments gluants pour empêtrer ses adversaires.
+685;Cupcanaille;Slurpuff;Pokémon Mousseline;fairy;;82;80;86;85;75;72;6;0;Sa fourrure est si aérée qu’elle le rend très doux et très agréable au toucher, et bien plus léger qu’il en a l’air.
+686;Sepiatop;Inkay;Pokémon Rotation;dark;psychic;53;54;53;37;46;45;6;0;Il sape la combativité de son adversaire en faisant clignoter son corps lumineux, puis profite de cet instant de répit pour s’enfuir.
+687;Sepiatroce;Malamar;Pokémon Révolution;dark;psychic;86;92;88;68;75;73;6;0;On raconte que ses pouvoirs hypnotiques seraient à l’origine d’évènements qui ont bouleversé le cours de l’Histoire.
+688;Opermine;Binacle;Pokémon Bimane;rock;water;42;52;67;39;56;50;6;0;Il faut que les deux bras travaillent bien ensemble s’ils souhaitent survivre, sinon leur défense et leur attaque en souffrent grandement.
+689;Golgopathe;Barbaracle;Pokémon Assemblage;rock;water;72;105;115;54;86;68;6;0;Il scrute les environs avec les yeux de ses paumes. En cas d’urgence, ses membres peuvent prendre des initiatives pour triompher de l’ennemi.
+690;Venalgue;Skrelp;Pokémon Simulalgue;poison;water;50;60;60;60;60;30;6;0;Ressembler à une algue en décomposition lui permet d’échapper à ses ennemis en se cachant au milieu des résidus de plantes aquatiques.
+691;Kravarech;Dragalge;Pokémon Simulalgue;poison;dragon;65;75;90;97;123;44;6;0;Il sort la crête sur sa tête à la surface de l’eau et l’expose à la lumière du soleil pour produire de l’énergie draconique.
+692;Flingouste;Clauncher;Pokémon Lance à Eau;water;;50;53;62;58;63;44;6;0;Il concentre du gaz dans sa pince droite et le fait exploser pour tirer une rafale d’eau sur ses ennemis, comme une balle de pistolet.
+693;Gamblast;Clawitzer;Pokémon Blaster;water;;71;73;88;120;89;59;6;0;Sa pince droite est un canon pouvant projeter des obus d’eau assez puissants pour couler un navire-citerne.
+694;Galvaran;Helioptile;Pokémon Générateur;electric;normal;44;38;33;61;43;70;6;0;Il peut générer de l’électricité grâce au soleil. Si on le dérange en pleine production d’énergie, cela le stresse et l’affaiblit.
+695;Iguolta;Heliolisk;Pokémon Générateur;electric;normal;62;55;52;109;94;109;6;0;Lorsqu’il déploie sa collerette pour emmagasiner la lumière du soleil, il génère à lui seul assez d’électricité pour alimenter une grande ville.
+696;Ptyranidur;Tyrunt;Pokémon Prince;rock;dragon;58;89;77;45;45;48;6;0;Capricieux, il veut toujours être le centre de l’attention. Il peut gravement blesser son Dresseur en essayant de jouer avec lui.
+697;Rexillius;Tyrantrum;Pokémon Tyran;rock;dragon;82;121;119;69;59;71;6;0;Ce Pokémon peut réduire une voiture en miettes d’un seul coup de mâchoire. Il était considéré comme le roi du monde préhistorique.
+698;Amagara;Amaura;Pokémon Toundra;rock;ice;77;59;50;67;63;46;6;0;Un Pokémon ancien qui s’est éteint. On trouve parfois des spécimens conservés dans la glace.
+699;Dragmara;Aurorus;Pokémon Toundra;rock;ice;123;77;72;99;92;58;6;0;Lorsqu’il se laisse emporter par sa rage, il relâche des bourrasques glacées qui gèlent tout ce qui l’entoure.
+700;Nymphali;Sylveon;Pokémon Attachant;fairy;;95;65;65;110;130;60;6;0;Un conte de Galar relate la victoire d’un beau Nymphali sur un terrible Pokémon Dragon.
+701;Brutalibré;Hawlucha;Pokémon Catcheur;fighting;flying;78;92;75;74;63;118;6;0;Il prend toujours la pose avant de donner le coup de grâce à son adversaire. Certains en profitent pour contre-attaquer.
+702;Dedenne;Dedenne;Pokémon Antenne;electric;fairy;67;58;57;81;67;101;6;0;Puisqu’il a du mal à générer sa propre électricité, il en vole aux autres Pokémon Électrik ou via les prises de courant.
+703;Strassie;Carbink;Pokémon Joyau;rock;fairy;50;50;150;50;150;50;6;0;On raconte qu’il existerait quelque part dans le monde un filon regorgeant de Strassie, qui abriterait également leur reine.
+704;Mucuscule;Goomy;Pokémon Mollusque;dragon;;45;50;35;55;75;40;6;0;Ses cornes sont des organes sensoriels qui lui permettent de se cacher quand il détecte des ennemis. C’est grâce à cela qu’il vit toujours.
+705;Colimucus;Sliggoo;Pokémon Mollusque;dragon;;68;75;53;83;113;60;6;0;Son petit cerveau est caché dans la bosse qui est sur son dos. Il ne pense pas à grand-chose, si ce n’est à se nourrir et à fuir devant ses ennemis.
+706;Muplodocus;Goodra;Pokémon Dragon;dragon;;90;100;70;110;150;80;6;0;Il attaque à l’aide de ses longues cornes. Ses coups sont cent fois plus puissants que ceux d’un champion poids lourds de boxe.
+707;Trousselin;Klefki;Pokémon Trousseau;steel;fairy;57;80;91;80;87;75;6;0;Il absorbe les ions métalliques avec l’appendice sur sa tête. Il paraît qu’il ressemble à une clé car il tient à imiter cet objet qu’il aime tant.
+708;Brocélôme;Phantump;Pokémon Souche;ghost;grass;43;70;48;50;60;38;6;0;Il imite des cris d’enfants pour pousser les adultes à venir se perdre au plus profond de la forêt.
+709;Desséliande;Trevenant;Pokémon Vieillarbre;ghost;grass;85;110;76;65;82;56;6;0;Il étire les fines racines de ses pieds pour établir une connexion avec les autres arbres de la forêt et ainsi les contrôler.
+710;Pitrouille;PumpkabooAverage Size;Pokémon Citrouille;ghost;grass;49;66;70;44;55;51;6;0;Il peut manipuler les humains et les Pokémon en les hypnotisant grâce à la lumière qui filtre par les trous de son ventre en forme de citrouille.
+711;Banshitrouye;GourgeistAverage Size;Pokémon Citrouille;ghost;grass;65;90;122;58;75;84;6;0;Les soirs de nouvelle lune, il frappe aux portes des maisons. Si quelqu’un a le malheur de lui ouvrir, il l’emporte aussitôt dans l’au-delà.
+712;Grelaçon;Bergmite;Pokémon Glaçon;ice;;55;69;85;32;35;28;6;0;Il vit dans les régions les plus froides, agrippé aux Séracrawl. Il gèle ses pattes sur leur dos pour se maintenir en place.
+713;Séracrawl;Avalugg;Pokémon Iceberg;ice;;95;117;184;44;46;28;6;0;Les crevasses sur son dos s’approfondissent au cours de la journée, mais se comblent de nouveau pendant la nuit.
+714;Sonistrelle;Noibat;Pokémon Ondes;flying;dragon;40;30;35;45;40;55;6;0;Il peut contrôler des ondes à n’importe quelle fréquence du spectre. Même les plus grands Pokémon ne peuvent supporter ses ultrasons.
+715;Bruyverne;Noivern;Pokémon Ondes;flying;dragon;85;70;80;97;80;123;6;0;Il plane dans les ténèbres, blessant ses ennemis à coups d’ultrasons pouvant briser des rochers avant de les achever de ses crocs acérés.
+716;Xerneas;Xerneas;Pokémon Existence;fairy;;126;131;95;131;98;99;6;1;D’après la légende, quand ses bois brillent de sept couleurs, cela signifie qu’il prodigue la vie éternelle.
+717;Yveltal;Yveltal;Pokémon Annihilation;dark;flying;126;131;95;131;98;99;6;1;Quand il sent que la fin de sa vie est proche, il aspire la force vitale des êtres vivants et retourne à l’état de cocon.
+718;Zygarde;Zygarde50% Forme;Pokémon Équilibre;dragon;ground;108;100;121;81;95;95;6;1;Ce Pokémon serait capable de prendre une forme encore plus puissante quand il se bat contre un ennemi qui menace l’écosystème.
+719;Diancie;Diancie;Pokémon Joyau;rock;fairy;50;100;150;100;150;50;6;1;Il peut créer une multitude de diamants en un instant en serrant ses mains, simplement en compressant les molécules de carbone contenues dans l’air.
+720;Hoopa;HoopaHoopa Confined;Pokémon Chenapan;psychic;ghost;80;110;60;150;130;70;6;1;On raconte que grâce à ses six anneaux et ses six énormes bras, il est capable de dérober tout ce qui lui plaît. Mais son pouvoir a été scellé, et il a été réduit à l’état d’un être minuscule.
+721;Volcanion;Volcanion;Pokémon Vapeur;fire;water;80;110;120;130;90;70;6;1;Il évacue la vapeur qui s’accumule à l’intérieur de son corps par les bras situés sur son dos. Ce jet est assez puissant pour raser des montagnes.

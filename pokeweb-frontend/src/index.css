@@ -11,6 +11,10 @@
   color-scheme: dark;
 }
 
+body {
+  background-color: #01030a; /* même couleur que le fond étoilé */
+}
+
 
 
 #root {

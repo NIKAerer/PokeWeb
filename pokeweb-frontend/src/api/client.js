@@ -5,6 +5,7 @@ import axios from "axios";
 // pointer vers l'API en ligne sans modifier le code.
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL ?? "http://127.0.0.1:8001/api",
+  headers: { Accept: "application/json" },
 });
 
 // Ajoute automatiquement le token JWT à chaque requête si le joueur est connecté.

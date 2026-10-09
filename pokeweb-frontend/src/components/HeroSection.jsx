@@ -21,6 +21,12 @@ const HeroSection = () => {
         >
           Commencer l’aventure
         </button>
+        <button
+          className="px-8 py-3 rounded-xl border border-slate-500 text-slate-200 hover:border-poke-blue hover:text-white hover:shadow-[0_0_25px_#3b82f6] transition-all translate-x-[-4%] -mt-4"
+          onClick={() => navigate("/pokedex")}
+        >
+          Explorer le Pokédex
+        </button>
       </div>
 
 
