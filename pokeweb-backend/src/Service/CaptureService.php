@@ -45,7 +45,7 @@ class CaptureService
         $legendary = $this->randomFloat() < self::LEGENDARY_APPEARANCE_RATE;
         $pokemon = $this->pokemonRepository->findRandom($legendary);
 
-        $encounter = new Encounter($user, $pokemon, self::BALLS_PER_ENCOUNTER);
+        $encounter = new Encounter($user, $pokemon, self::BALLS_PER_ENCOUNTER, BattleService::maxHp($pokemon));
         $this->em->persist($encounter);
         $this->em->flush();
 
@@ -53,11 +53,11 @@ class CaptureService
     }
 
     /**
-     * Chance de capture entre 0 et 1 : plus un Pokémon est fort, plus il est difficile.
+     * Chance de capture de base entre 0 et 1 : plus un Pokémon est fort, plus il est difficile.
      *
      * Exemples : Chenipan (total 195) ≈ 80 %, Dracaufeu (534) ≈ 31 %, Mewtwo ≈ 5 %.
      */
-    public function captureChance(Pokemon $pokemon): float
+    public function baseCaptureChance(Pokemon $pokemon): float
     {
         $chance = 1.2 - $pokemon->getTotal() / 600;
 
@@ -66,7 +66,19 @@ class CaptureService
         }
 
         // On garde toujours une petite chance, et jamais une capture certaine
-        return round(max(0.05, min(0.8, $chance)), 2);
+        return max(0.05, min(0.8, $chance));
+    }
+
+    /**
+     * Chance de capture pendant la rencontre : affaiblir le Pokémon en combat
+     * la multiplie jusqu'à 2 (×1 avec tous ses PV, presque ×2 avec 1 PV).
+     */
+    public function captureChance(Encounter $encounter): float
+    {
+        $hpRatio = $encounter->getWildHp() / BattleService::maxHp($encounter->getPokemon());
+        $chance = $this->baseCaptureChance($encounter->getPokemon()) * (2 - $hpRatio);
+
+        return round(min(0.9, $chance), 2);
     }
 
     /**
@@ -80,7 +92,7 @@ class CaptureService
         $roll ??= $this->randomFloat();
         $encounter->useBall();
 
-        if ($roll < $this->captureChance($encounter->getPokemon())) {
+        if ($roll < $this->captureChance($encounter)) {
             $encounter->setStatus(EncounterStatus::Caught);
             $capture = new PokemonUser($encounter->getUser(), $encounter->getPokemon());
             $this->em->persist($capture);

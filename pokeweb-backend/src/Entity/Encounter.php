@@ -30,17 +30,30 @@ class Encounter
     #[ORM\Column]
     private int $ballsLeft;
 
+    // Points de vie actuels du Pokémon sauvage : plus il est affaibli, plus il est facile à capturer
+    #[ORM\Column]
+    private int $wildHp;
+
+    // Le Pokémon que le joueur a envoyé combattre (optionnel)
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(onDelete: 'SET NULL')]
+    private ?PokemonUser $fighter = null;
+
+    #[ORM\Column(nullable: true)]
+    private ?int $fighterHp = null;
+
     #[ORM\Column(length: 20, enumType: EncounterStatus::class)]
     private EncounterStatus $status = EncounterStatus::Active;
 
     #[ORM\Column]
     private \DateTimeImmutable $startedAt;
 
-    public function __construct(User $user, Pokemon $pokemon, int $balls)
+    public function __construct(User $user, Pokemon $pokemon, int $balls, int $wildHp)
     {
         $this->user = $user;
         $this->pokemon = $pokemon;
         $this->ballsLeft = $balls;
+        $this->wildHp = $wildHp;
         $this->startedAt = new \DateTimeImmutable();
     }
 
@@ -67,6 +80,45 @@ class Encounter
     public function useBall(): void
     {
         --$this->ballsLeft;
+    }
+
+    public function getWildHp(): int
+    {
+        return $this->wildHp;
+    }
+
+    public function damageWild(int $damage): void
+    {
+        $this->wildHp = max(0, $this->wildHp - $damage);
+    }
+
+    public function getFighter(): ?PokemonUser
+    {
+        return $this->fighter;
+    }
+
+    public function setFighter(PokemonUser $fighter, int $hp): void
+    {
+        $this->fighter = $fighter;
+        $this->fighterHp = $hp;
+    }
+
+    public function getFighterHp(): ?int
+    {
+        return $this->fighterHp;
+    }
+
+    public function damageFighter(int $damage): void
+    {
+        $this->fighterHp = max(0, $this->fighterHp - $damage);
+    }
+
+    /**
+     * Le joueur peut attaquer si son Pokémon est en jeu et n'est pas K.O.
+     */
+    public function canAttack(): bool
+    {
+        return $this->isActive() && $this->fighter !== null && $this->fighterHp > 0;
     }
 
     public function getStatus(): EncounterStatus
