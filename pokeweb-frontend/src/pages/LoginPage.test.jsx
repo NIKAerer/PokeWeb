@@ -47,6 +47,16 @@ describe("LoginPage", () => {
     expect(await screen.findByRole("alert")).toHaveTextContent("Email ou mot de passe incorrect.");
   });
 
+  it("connecte en un clic avec le compte de démo", async () => {
+    vi.mocked(api.post).mockResolvedValue({ data: { token: "header.e30.signature" } });
+    renderLogin();
+
+    await userEvent.click(screen.getByRole("button", { name: "Essayer avec le compte de démo" }));
+
+    expect(api.post).toHaveBeenLastCalledWith("/login", { email: "demo@pokeweb.fr", password: "pokeweb-demo" });
+    expect(await screen.findByText("Page profil")).toBeInTheDocument();
+  });
+
   it("explique que la session a expiré", () => {
     renderLogin("/login?expired=1");
 

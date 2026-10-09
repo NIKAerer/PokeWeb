@@ -7,6 +7,7 @@ import FighterPicker from "../components/battle/FighterPicker";
 import HpBar from "../components/battle/HpBar";
 import { describeRound } from "../components/battle/battleMessages";
 import { TYPES, artworkUrl } from "../utils/pokemon";
+import Loading from "../components/Loading";
 
 const THROW_ANIMATION_MS = 1800; // durée des 3 secousses de la Pokéball
 
@@ -129,7 +130,7 @@ export default function ExplorePage() {
       <h1 className="mt-6 text-center font-orbitron text-4xl text-white md:text-5xl">Hautes herbes</h1>
 
       <section className="mt-8 flex flex-1 flex-col items-center justify-center rounded-3xl border border-slate-800 bg-slate-950/70 p-6 text-center backdrop-blur-xl sm:p-10">
-        {!state && !error && <p className="font-rajdhani text-slate-400">Chargement…</p>}
+        {!state && !error && <Loading />}
 
         {encounter && <WildPokemon encounter={encounter} throwing={throwing} />}
 

@@ -1,2 +1,5 @@
-node_modules
+# Dépendances et fichiers locaux (chaque dossier a aussi son propre .gitignore)
+node_modules/
+vendor/
 .claude/
+.DS_Store

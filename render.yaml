@@ -1,0 +1,19 @@
+# Déploiement de l'API sur Render (offre gratuite), lu par "New > Blueprint".
+# Le front est déployé à part sur Vercel (voir README).
+services:
+  - type: web
+    name: pokeweb-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./pokeweb-backend/Dockerfile
+    dockerContext: ./pokeweb-backend
+    healthCheckPath: /api
+    envVars:
+      # Valeurs secrètes générées par Render : elles ne sont jamais dans le dépôt
+      - key: APP_SECRET
+        generateValue: true
+      - key: JWT_PASSPHRASE
+        generateValue: true
+      # Adresse du front autorisée à appeler l'API (expression régulière), demandée à la création
+      - key: CORS_ALLOW_ORIGIN
+        sync: false

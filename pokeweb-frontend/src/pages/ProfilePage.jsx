@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import api from "../api/client";
 import TypeBadge from "../components/TypeBadge";
 import { artworkUrl } from "../utils/pokemon";
+import Loading from "../components/Loading";
 
 // Une case de statistique du profil
 function StatTile({ label, value, hint }) {
@@ -37,7 +38,7 @@ export default function ProfilePage() {
   if (!profile) {
     return (
       <main className="relative z-10 flex min-h-page items-center justify-center">
-        <p className="font-rajdhani text-slate-400">Chargement…</p>
+        <Loading />
       </main>
     );
   }

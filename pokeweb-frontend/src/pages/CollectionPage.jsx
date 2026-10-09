@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../api/client";
 import CollectionCard from "../components/CollectionCard";
+import Loading from "../components/Loading";
 
 export default function CollectionPage() {
   const [collection, setCollection] = useState(null);
@@ -54,7 +55,7 @@ export default function CollectionPage() {
       </header>
 
       {error && <p className="font-rajdhani text-red-400">{error}</p>}
-      {!collection && !error && <p className="font-rajdhani text-slate-400">Chargement…</p>}
+      {!collection && !error && <Loading />}
 
       {collection?.pokemons.length === 0 && (
         <div className="flex flex-col items-center gap-6 py-20 text-center">
