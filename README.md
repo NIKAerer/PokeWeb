@@ -83,7 +83,7 @@ Pokeweb/
 │ ├── src/Entity/
 │ ├── src/Command/
 │ ├── src/Controller/
-│ ├── public/pokemons.csv
+│ ├── data/pokemons.csv
 │ └── config/packages/
 │
 ├── pokeweb-frontend/

@@ -2,34 +2,50 @@
 
 namespace App\Entity;
 
-use App\Repository\PokemonRepository;
+use ApiPlatform\Metadata\ApiProperty;
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\GetCollection;
+use App\Repository\PokemonRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-// Le Pokédex est en lecture seule : l'API n'expose que la liste et le détail.
-// Les données sont importées avec la commande app:import-pokemons.
-#[ApiResource(operations: [new Get(), new GetCollection()])]
+/**
+ * Une espèce du Pokédex (721 Pokémon, générations 1 à 6).
+ *
+ * L'identifiant est le numéro officiel du Pokédex : /api/pokemon/25 = Pikachu.
+ * Les données sont en lecture seule et importées avec "app:import-pokemons".
+ */
 #[ORM\Entity(repositoryClass: PokemonRepository::class)]
+#[ApiResource(
+    operations: [
+        // La liste complète est petite (721 lignes) : on l'envoie en une fois,
+        // la recherche et les filtres se font instantanément côté front.
+        new GetCollection(paginationEnabled: false, order: ['id' => 'ASC']),
+        new Get(),
+    ],
+)]
 class Pokemon
 {
     #[ORM\Id]
-    #[ORM\GeneratedValue]
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 50)]
     private ?string $name = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 50)]
+    private ?string $englishName = null;
+
+    #[ORM\Column(length: 50)]
+    private ?string $category = null;
+
+    // Types stockés en anglais ("fire", "water"...) : ce sont des clés techniques,
+    // le front se charge de les traduire et de leur donner une couleur.
+    #[ORM\Column(length: 20)]
     private ?string $type1 = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
+    #[ORM\Column(length: 20, nullable: true)]
     private ?string $type2 = null;
-
-    #[ORM\Column]
-    private ?int $total = null;
 
     #[ORM\Column]
     private ?int $hp = null;
@@ -41,10 +57,10 @@ class Pokemon
     private ?int $defense = null;
 
     #[ORM\Column]
-    private ?int $sp_atk = null;
+    private ?int $specialAttack = null;
 
     #[ORM\Column]
-    private ?int $sp_def = null;
+    private ?int $specialDefense = null;
 
     #[ORM\Column]
     private ?int $speed = null;
@@ -55,9 +71,19 @@ class Pokemon
     #[ORM\Column]
     private ?bool $legendary = null;
 
+    #[ORM\Column(length: 500)]
+    private ?string $description = null;
+
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function setId(int $id): static
+    {
+        $this->id = $id;
+
+        return $this;
     }
 
     public function getName(): ?string
@@ -68,6 +94,30 @@ class Pokemon
     public function setName(string $name): static
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    public function getEnglishName(): ?string
+    {
+        return $this->englishName;
+    }
+
+    public function setEnglishName(string $englishName): static
+    {
+        $this->englishName = $englishName;
+
+        return $this;
+    }
+
+    public function getCategory(): ?string
+    {
+        return $this->category;
+    }
+
+    public function setCategory(string $category): static
+    {
+        $this->category = $category;
 
         return $this;
     }
@@ -92,18 +142,6 @@ class Pokemon
     public function setType2(?string $type2): static
     {
         $this->type2 = $type2;
-
-        return $this;
-    }
-
-    public function getTotal(): ?int
-    {
-        return $this->total;
-    }
-
-    public function setTotal(int $total): static
-    {
-        $this->total = $total;
 
         return $this;
     }
@@ -144,26 +182,26 @@ class Pokemon
         return $this;
     }
 
-    public function getSpAtk(): ?int
+    public function getSpecialAttack(): ?int
     {
-        return $this->sp_atk;
+        return $this->specialAttack;
     }
 
-    public function setSpAtk(int $sp_atk): static
+    public function setSpecialAttack(int $specialAttack): static
     {
-        $this->sp_atk = $sp_atk;
+        $this->specialAttack = $specialAttack;
 
         return $this;
     }
 
-    public function getSpDef(): ?int
+    public function getSpecialDefense(): ?int
     {
-        return $this->sp_def;
+        return $this->specialDefense;
     }
 
-    public function setSpDef(int $sp_def): static
+    public function setSpecialDefense(int $specialDefense): static
     {
-        $this->sp_def = $sp_def;
+        $this->specialDefense = $specialDefense;
 
         return $this;
     }
@@ -178,6 +216,16 @@ class Pokemon
         $this->speed = $speed;
 
         return $this;
+    }
+
+    /**
+     * Somme des 6 statistiques, calculée à la volée (pas stockée en base).
+     */
+    #[ApiProperty(description: 'Somme des statistiques de base')]
+    public function getTotal(): int
+    {
+        return $this->hp + $this->attack + $this->defense
+            + $this->specialAttack + $this->specialDefense + $this->speed;
     }
 
     public function getGeneration(): ?int
@@ -200,6 +248,18 @@ class Pokemon
     public function setLegendary(bool $legendary): static
     {
         $this->legendary = $legendary;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): static
+    {
+        $this->description = $description;
 
         return $this;
     }
