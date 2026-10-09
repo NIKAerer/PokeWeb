@@ -18,3 +18,9 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+when@test:
+    services:
+        # Les erreurs attendues par les tests (422, 405…) ne s'affichent pas dans la console
+        logger:
+            class: Psr\Log\NullLogger

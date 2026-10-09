@@ -10,4 +10,9 @@ export default defineConfig({
   server: {
     port: 3000, // même port qu'avant : l'API autorise déjà localhost:3000 (CORS)
   },
+  // Tests (Vitest) : un faux navigateur (jsdom) pour afficher les composants
+  test: {
+    environment: "jsdom",
+    setupFiles: "./src/test/setup.js",
+  },
 });
