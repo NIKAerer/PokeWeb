@@ -12,8 +12,11 @@ RUN composer dump-autoload --no-dev --classmap-authoritative
 # Étape 2 : l'image finale. FrankenPHP = PHP + un serveur web (Caddy), recommandé par Symfony.
 FROM dunglas/frankenphp:1.12.6-php8.3-bookworm
 
-# Réglages PHP de production (erreurs masquées, OPcache activé)
-RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+# Réglages PHP de production (erreurs masquées, OPcache activé).
+# setcap -r : l'image donne à FrankenPHP le droit d'écouter les ports < 1024, mais Render
+# interdit ce droit et refuse alors de lancer le programme. On écoute $PORT (10000) : inutile.
+RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" \
+    && setcap -r /usr/local/bin/frankenphp
 
 ENV APP_ENV=prod \
     APP_DEBUG=0
