@@ -1,15 +1,15 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
+
+// Réglages du fond étoilé (hors du composant : ils ne changent jamais)
+const STAR_COUNT = 250; // nombre d’étoiles
+const STAR_COLORS = ["#ffffff", "#cbd5e1", "#a5f3fc"]; // teintes subtiles
+const BACKGROUND_COLOR = "#01030a"; // bleu-noir spatial
+const STAR_SPEED = 0.12; // intensité du drift (vitesse globale)
+const STAR_MIN_RADIUS = 0.5; // taille min d’une étoile
+const STAR_MAX_RADIUS = 2.1; // taille max d’une étoile
+const MIN_OPACITY = 0.3; // opacité minimale pour le scintillement
 
 const GalaxyBackground = () => {
-
-  const STAR_COUNT = 250; // nombre d’étoiles
-  const STAR_COLORS = ["#ffffff", "#cbd5e1", "#a5f3fc"]; // teintes subtiles
-  const BACKGROUND_COLOR = "#01030a"; // bleu-noir spatial
-  const STAR_SPEED = 0.12; // intensité du drift (vitesse globale)
-  const STAR_MIN_RADIUS = 0.5; // taille min d’une étoile
-  const STAR_MAX_RADIUS = 2.1; // taille max d’une étoile
-  const MIN_OPACITY = 0.3; // opacité minimale pour le scintillement
-
   const canvasRef = useRef(null);
 
   useEffect(() => {
