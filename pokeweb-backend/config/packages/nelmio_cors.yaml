@@ -1,9 +1,11 @@
 nelmio_cors:
     defaults:
-        allow_origin: ['http://localhost:3000', 'http://127.0.0.1:3000']
-        allow_credentials: true
+        # Les origines autorisées viennent de CORS_ALLOW_ORIGIN (.env),
+        # pour pouvoir ajouter l'URL du front en production sans toucher au code.
+        origin_regex: true
+        allow_origin: ['%env(CORS_ALLOW_ORIGIN)%']
         allow_headers: ['Content-Type', 'Authorization']
-        allow_methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+        allow_methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS']
         max_age: 3600
     paths:
         '^/api/': ~

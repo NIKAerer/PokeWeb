@@ -3,12 +3,14 @@
 namespace App\Entity;
 
 use App\Repository\PokemonRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
-use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\GetCollection;
+use Doctrine\ORM\Mapping as ORM;
 
-#[ApiResource]
+// Le Pokédex est en lecture seule : l'API n'expose que la liste et le détail.
+// Les données sont importées avec la commande app:import-pokemons.
+#[ApiResource(operations: [new Get(), new GetCollection()])]
 #[ORM\Entity(repositoryClass: PokemonRepository::class)]
 class Pokemon
 {
@@ -52,17 +54,6 @@ class Pokemon
 
     #[ORM\Column]
     private ?bool $legendary = null;
-
-    /**
-     * @var Collection<int, PokemonUser>
-     */
-    #[ORM\OneToMany(targetEntity: PokemonUser::class, mappedBy: 'pokemon')]
-    private Collection $pokemonUsers;
-
-    public function __construct()
-    {
-        $this->pokemonUsers = new ArrayCollection();
-    }
 
     public function getId(): ?int
     {
@@ -209,36 +200,6 @@ class Pokemon
     public function setLegendary(bool $legendary): static
     {
         $this->legendary = $legendary;
-
-        return $this;
-    }
-
-    /**
-     * @return Collection<int, PokemonUser>
-     */
-    public function getPokemonUsers(): Collection
-    {
-        return $this->pokemonUsers;
-    }
-
-    public function addPokemonUser(PokemonUser $pokemonUser): static
-    {
-        if (!$this->pokemonUsers->contains($pokemonUser)) {
-            $this->pokemonUsers->add($pokemonUser);
-            $pokemonUser->setPokemon($this);
-        }
-
-        return $this;
-    }
-
-    public function removePokemonUser(PokemonUser $pokemonUser): static
-    {
-        if ($this->pokemonUsers->removeElement($pokemonUser)) {
-            // set the owning side to null (unless already changed)
-            if ($pokemonUser->getPokemon() === $this) {
-                $pokemonUser->setPokemon(null);
-            }
-        }
 
         return $this;
     }

@@ -27,20 +27,34 @@ git clone https://github.com/NIKAerer/PokeWeb.git
 
 cd PokeWeb/pokeweb-backend
 
-2️⃣ Installer les dépendances
+2️⃣ Installer le backend
 
-npm install three@0.152.2 @react-three/fiber@8.13.6 @react-three/drei@9.56.5
+```bash
 composer install
+```
 
-Créer la base de données :
+3️⃣ Créer ses secrets locaux (jamais commités)
+
+Créer un fichier `pokeweb-backend/.env.local` avec deux valeurs aléatoires :
+
+```bash
+echo "APP_SECRET=$(openssl rand -hex 16)" > .env.local
+echo "JWT_PASSPHRASE=$(openssl rand -hex 16)" >> .env.local
+```
+
+Générer les clés JWT (dans `config/jwt/`, ignorées par Git) :
+
+```bash
+php bin/console lexik:jwt:generate-keypair
+```
+
+Créer la base, lancer la migration et importer le Pokédex :
+
+```bash
 php bin/console doctrine:database:create
-
-Lancer les migrations :
 php bin/console doctrine:migrations:migrate
-
-3️⃣ Importer le Pokédex
-
 php bin/console app:import-pokemons
+```
 
 4️⃣ Lancer le backend
 

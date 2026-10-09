@@ -2,67 +2,50 @@
 
 namespace App\Controller;
 
+use App\Dto\RegisterRequest;
 use App\Entity\User;
+use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
-use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTManager;
+use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Security\Core\User\UserProviderInterface;
+use Symfony\Component\Routing\Attribute\Route;
 
-
+/**
+ * La connexion (POST /api/login) est gérée directement par Symfony :
+ * voir le firewall "login" dans config/packages/security.yaml.
+ */
 class AuthController extends AbstractController
 {
     #[Route('/api/register', name: 'api_register', methods: ['POST'])]
-    public function register(Request $request, UserPasswordHasherInterface $passwordHasher, EntityManagerInterface $em): JsonResponse
-    {
-        $data = json_decode($request->getContent(), true);
-
-        if (!isset($data['email']) || !isset($data['password'])) {
-            return new JsonResponse(['error' => 'Email and password required'], 400);
+    public function register(
+        #[MapRequestPayload] RegisterRequest $request,
+        UserRepository $userRepository,
+        UserPasswordHasherInterface $passwordHasher,
+        EntityManagerInterface $em,
+        JWTTokenManagerInterface $jwtManager,
+    ): JsonResponse {
+        if ($userRepository->findOneBy(['email' => $request->email]) !== null) {
+            return $this->json(
+                ['error' => 'Un compte existe déjà avec cet email.'],
+                Response::HTTP_CONFLICT,
+            );
         }
 
         $user = new User();
-        $user->setEmail($data['email']);
-        $user->setPassword($passwordHasher->hashPassword($user, $data['password']));
+        $user->setEmail($request->email);
+        $user->setPassword($passwordHasher->hashPassword($user, $request->password));
 
         $em->persist($user);
         $em->flush();
 
-        return new JsonResponse(['message' => 'User registered successfully']);
+        // On renvoie directement un token : l'utilisateur est connecté dès l'inscription.
+        return $this->json(
+            ['token' => $jwtManager->create($user)],
+            Response::HTTP_CREATED,
+        );
     }
-    
-
-    #[Route('/api/login', name: 'api_login', methods: ['POST'])]
-    public function login(
-        Request $request,
-        JWTManager $jwtManager,
-        UserProviderInterface $userProvider,
-        UserPasswordHasherInterface $passwordHasher
-    ): JsonResponse {
-        $data = json_decode($request->getContent(), true);
-        $email = $data['email'] ?? null;
-        $password = $data['password'] ?? null;
-
-        if (!$email || !$password) {
-            return new JsonResponse(['error' => 'Email et mot de passe requis'], 400);
-        }
-
-        $user = $userProvider->loadUserByIdentifier($email);
-
-        if (!$user instanceof User || !$passwordHasher->isPasswordValid($user, $password)) {
-            return new JsonResponse(['error' => 'Identifiants invalides'], 401);
-        }
-
-        try {
-            $token = $jwtManager->create($user);
-        } catch (\Throwable $e) {
-            return new JsonResponse(['error' => 'Erreur JWT : ' . $e->getMessage()], 500);
-        }
-
-        return new JsonResponse(['token' => $token]);
-    }
-
 }
